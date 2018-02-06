@@ -1,0 +1,18 @@
+PODS:
+  - JWPlayer-SDK (2.8.3)
+  - Smart-Core-SDK (1.0.0)
+  - Smart-Instream-SDK (1.0.0):
+    - Smart-Core-SDK (~> 1.0)
+
+DEPENDENCIES:
+  - JWPlayer-SDK
+  - Smart-Instream-SDK (= 1.0.0)
+
+SPEC CHECKSUMS:
+  JWPlayer-SDK: e94fcca5579b925f16cd026758703319219a5518
+  Smart-Core-SDK: 82ae48fbcc21dd560117a758bffcaf82228a0584
+  Smart-Instream-SDK: 7f1e7dd13d631d3afe1a3e72fa175548ca4b2946
+
+PODFILE CHECKSUM: 077e8186badf6003fc67ca09dc9d42e7edbb7807
+
+COCOAPODS: 1.4.0

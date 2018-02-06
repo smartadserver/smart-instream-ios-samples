@@ -1,0 +1,18 @@
+PODS:
+  - Brightcove-Player-Core/dynamic (6.2.0)
+  - Smart-Core-SDK (1.0.0)
+  - Smart-Instream-SDK (1.0.0):
+    - Smart-Core-SDK (~> 1.0)
+
+DEPENDENCIES:
+  - Brightcove-Player-Core/dynamic
+  - Smart-Instream-SDK (= 1.0.0)
+
+SPEC CHECKSUMS:
+  Brightcove-Player-Core: 4dafc89aa982191b72becca2fdb7e3f5e8e1f2bf
+  Smart-Core-SDK: 82ae48fbcc21dd560117a758bffcaf82228a0584
+  Smart-Instream-SDK: 7f1e7dd13d631d3afe1a3e72fa175548ca4b2946
+
+PODFILE CHECKSUM: 678274bc97ae6b7be8c23a64459c4f0a1179ffb9
+
+COCOAPODS: 1.4.0

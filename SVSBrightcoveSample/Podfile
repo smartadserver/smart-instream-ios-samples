@@ -1,0 +1,10 @@
+source 'https://github.com/brightcove/BrightcoveSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+target 'SVSBrightcoveSample' do
+  pod 'Brightcove-Player-Core/dynamic'
+  pod 'Smart-Instream-SDK', '1.0.0'
+end

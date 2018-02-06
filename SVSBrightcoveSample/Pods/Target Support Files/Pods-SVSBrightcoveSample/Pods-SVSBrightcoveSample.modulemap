@@ -1,0 +1,6 @@
+framework module Pods_SVSBrightcoveSample {
+  umbrella header "Pods-SVSBrightcoveSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

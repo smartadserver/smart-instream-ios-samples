@@ -1,0 +1,15 @@
+PODS:
+  - Smart-Core-SDK (1.0.0)
+  - Smart-Instream-SDK (1.0.0):
+    - Smart-Core-SDK (~> 1.0)
+
+DEPENDENCIES:
+  - Smart-Instream-SDK (= 1.0.0)
+
+SPEC CHECKSUMS:
+  Smart-Core-SDK: 82ae48fbcc21dd560117a758bffcaf82228a0584
+  Smart-Instream-SDK: 7f1e7dd13d631d3afe1a3e72fa175548ca4b2946
+
+PODFILE CHECKSUM: 22eb10878d1ad67347fa9e2b751a94637171b893
+
+COCOAPODS: 1.4.0
