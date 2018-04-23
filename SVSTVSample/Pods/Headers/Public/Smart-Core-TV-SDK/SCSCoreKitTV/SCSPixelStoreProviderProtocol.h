@@ -1,0 +1,1 @@
+../../../../Smart-Core-TV-SDK/SCSCoreKitTV.framework/Headers/SCSPixelStoreProviderProtocol.h

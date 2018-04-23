@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSNetworkInfo.h"
+
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+    #import "SCSNetworkInfo.h"
+#elif TARGET_OS_TV
+    #import "SCSEnums.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

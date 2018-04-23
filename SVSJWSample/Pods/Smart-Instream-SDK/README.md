@@ -11,6 +11,7 @@ For more information about _Smart AdServer_ products, check our website:
 * A _Smart AdServer_ account
 * _Xcode 9.0_ or higher
 * _iOS 8.0_ or higher
+* _tvOS 9.0_ or higher
 
 ## Installation
 

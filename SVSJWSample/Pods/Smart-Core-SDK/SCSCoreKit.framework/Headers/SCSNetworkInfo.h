@@ -7,57 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCSEnums.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-/// Type of connection that is being used by the device (if applicable).
-typedef NS_ENUM(NSUInteger, SCSNetworkInfoConnectionType) {
-    /// No connection is used (or connection type unknown).
-    SCSNetworkInfoConnectionTypeNotReachableOrUnknown,
-    
-    /// A WiFi connection is being used.
-    SCSNetworkInfoConnectionTypeWiFi,
-    
-    /// A non WiFi connection is being used (probably a data connection).
-    SCSNetworkInfoConnectionTypeOther,
-};
-
-/// Current status of the network connection.
-typedef NS_ENUM(NSUInteger, SCSNetworkInfoNetworkStatus) {
-    /// Network status unknown.
-    SCSNetworkInfoNetworkStatusUnknown,
-    
-    /// The network is reachable.
-    SCSNetworkInfoNetworkStatusNotReachable,
-    
-    /// The network is not reachable.
-    SCSNetworkInfoNetworkStatusReachable,
-};
-
-
-/// Current radio technology used by the device
-typedef NS_ENUM(NSUInteger, SCSNetworkInfoNetworkAccessType) {
-    /// Radio Technology is unknown.
-    SCSNetworkInfoNetworkAccessTypeUnknown,
-    
-    /// Radio Technology is Edge or equivalent.
-    SCSNetworkInfoNetworkAccessTypeEdge,
-    
-    /// Radio Technology is 3G or equivalent.
-    SCSNetworkInfoNetworkAccessType3G,
-    
-    /// Radio Technology is 3G+ or equivalent.
-    SCSNetworkInfoNetworkAccessType3GPlus,
-    
-    /// Radio Technology is H+ or equivalent.
-    SCSNetworkInfoNetworkAccessTypeHPlus,
-    
-    /// Radio Technology is 4G or equivalent.
-    SCSNetworkInfoNetworkAccessType4G,
-    
-    /// Radio Technology is WIFI or equivalent.
-    SCSNetworkInfoNetworkAccessTypeWIFI,
-};
 
 /**
  Class used to retrieve network informations.

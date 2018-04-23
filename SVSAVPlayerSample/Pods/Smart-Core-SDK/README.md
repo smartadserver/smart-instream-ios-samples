@@ -8,5 +8,6 @@ For more information about _Smart AdServer_ products, check our website:
 
 ## Requirements
 
-* Xcode 9.0 or higher
-* iOS 8.0 or higher
+* _Xcode 9.0_ or higher
+* _iOS 8.0_ or higher
+* _tvOS 9.0_ or higher

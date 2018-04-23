@@ -141,7 +141,6 @@
 				E40B925F200F9B7800F8C7F4 /* Resources */,
 				E40B9282200F9BA600F8C7F4 /* Embed Frameworks */,
 				B16D2EFE45172E539B4D64C4 /* [CP] Embed Pods Frameworks */,
-				6B3F8A38DB681636B6F8E8CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,21 +198,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6B3F8A38DB681636B6F8E8CE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6CB9A320DC36C7BCEFF32A87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54572X2VB;
-				FRAMEWORK_SEARCH_PATHS = $inherited;
+				FRAMEWORK_SEARCH_PATHS = "$inherited";
 				INFOPLIST_FILE = SVSAVPlayerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -417,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54572X2VB;
-				FRAMEWORK_SEARCH_PATHS = $inherited;
+				FRAMEWORK_SEARCH_PATHS = "$inherited";
 				INFOPLIST_FILE = SVSAVPlayerSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

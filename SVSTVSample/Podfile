@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SVSTVSample' do
+  
+  platform :tvos, 9.0
+  pod 'Smart-Instream-TV-SDK', '1.1.0'
+
+end
