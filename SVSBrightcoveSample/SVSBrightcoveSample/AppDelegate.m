@@ -93,6 +93,24 @@
     // your custom identifier.
     //[SVSConfiguration sharedInstance].customIdentifier = @"CustomIdentifier";
     
+    
+    /////////////////////////////////////////
+    // SDK - GDPR Compliance
+    // OPTIONAL
+    // By uncommenting the following code, you can set the GDPR consent string manually.
+    // As per IAB specifications in Transparency And Consent Framework:
+    // https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
+    // Smart Instream SDK will retrieve the consent string from the NSUserDefaults using the official IAB key "IABConsent_ConsentString"
+    /////////////////////////////////////////
+    // If you are using SmartCMP SDK, this step is not required since SmartCMP already complies with IAB specifications
+    // If you are using another CMP that is not validated by the IAB or not using the official key:
+    // you will have to manually store the computed consent string into the NSUserDefaults for Smart Instream SDK to retrieve it and forward it to its partners.
+    /////////////////////////////////////////
+    //NSString *myConsentString = @"yourCMPComputedConsentStringBase64format";
+    //[[NSUserDefaults standardUserDefaults] setObject:myConsentString forKey:@"IABConsent_ConsentString"];
+    //[[NSUserDefaults standardUserDefaults] synchronize];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

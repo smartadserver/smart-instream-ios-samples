@@ -44,6 +44,10 @@ typedef NS_ENUM(NSInteger, SCSIdentityType) {
 /// true if the transient ID has been allowed as an identity, false otherwise.
 @property (nonatomic, readonly) BOOL isTransientIDEnabled;
 
+/// The consent string stored on the device NSUserDefaults under IAB specifications key
+@property (nullable, nonatomic, readonly) NSString *gdprConsentString;
+
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /**

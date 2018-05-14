@@ -43,6 +43,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)localizedStringForKey:(NSString *)key stringFile:(NSString *)stringFile bundle:(NSBundle *)bundle;
 
 /**
+ Returns whether or not a string is a valid Consent String as per IAB Transparency and Consent Framework specifications.
+ https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
+ 
+ @param consentString the string to be validated.
+ @return whether or not a string is a valid Consent String as per IAB Transparency and Consent Framework specifications.
+ */
++ (BOOL)isValidGDPRConsentString:(NSString *)consentString;
+
+/**
  Transforms an hexadecimal color string to an UIColor.
  
  @param colorString The string to be transformed into an UIColor. Could be in one of those formats: #RGB, #ARGB, #RRGGBB, #AARRGGBB.

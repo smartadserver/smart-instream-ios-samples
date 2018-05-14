@@ -41,6 +41,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)generateNewTransientID;
 
+/**
+ Returns the base64url encoded GDPR consent string stored in NSUserDefaults by any IAB certified CMP.
+ 
+ @return the base64url encoded consent string.
+ */
+- (nullable NSString *)gdprConsentString;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
