@@ -4,6 +4,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'SVSJWSample' do
-  pod 'JWPlayer-SDK'
-  pod 'Smart-Instream-SDK', '1.2.0'
+  pod 'JWPlayer-SDK', '~> 2.8'
+  pod 'Smart-Instream-SDK', '7.0.0'
 end

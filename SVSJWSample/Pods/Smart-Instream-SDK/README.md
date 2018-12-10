@@ -4,12 +4,12 @@ This pod will install the _Smart AdServer Instream SDK_, which will allow you to
 
 For more information about _Smart AdServer_ products, check our website:
 
-> http://smartadserver.com
+> https://smartadserver.com
 
 ## Requirements
 
 * A _Smart AdServer_ account
-* _Xcode 9.0_ or higher
+* _Xcode 10.0_ or higher
 * _iOS 8.0_ or higher
 * _tvOS 9.0_ or higher
 

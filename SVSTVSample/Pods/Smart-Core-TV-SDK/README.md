@@ -4,10 +4,10 @@ The _Smart AdServer Core TV SDK is a dependency used by several other _Smart AdS
 
 For more information about _Smart AdServer_ products, check our website:
 
-> http://smartadserver.com
+> https://smartadserver.com
 
 ## Requirements
 
-* _Xcode 9.0_ or higher
+* _Xcode 10.0_ or higher
 * _iOS 8.0_ or higher
 * _tvOS 9.0_ or higher
