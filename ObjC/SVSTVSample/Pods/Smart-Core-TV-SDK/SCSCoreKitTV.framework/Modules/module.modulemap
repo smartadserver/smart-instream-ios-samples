@@ -1,0 +1,6 @@
+framework module SCSCoreKitTV {
+  umbrella header "SCSCoreKitTV.h"
+
+  export *
+  module * { export * }
+}

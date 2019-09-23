@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SVSJWSample/Pods-SVSJWSample-frameworks.sh
+${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework
+${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework
+${PODS_ROOT}/Smart-Instream-SDK/SVSVideoKit.framework

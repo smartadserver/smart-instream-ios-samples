@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+target 'SVSJWSample' do
+
+  pod 'JWPlayer-SDK', '~> 2.8'
+  pod 'Smart-Instream-SDK', '7.0.0'
+  
+end
