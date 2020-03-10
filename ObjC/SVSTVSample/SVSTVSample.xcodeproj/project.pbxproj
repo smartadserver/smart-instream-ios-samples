@@ -193,19 +193,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks.sh",
-				"${PODS_ROOT}/Smart-Core-TV-SDK/SCSCoreKitTV.framework",
-				"${PODS_ROOT}/Smart-Instream-TV-SDK/SVSVideoKitTV.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSCoreKitTV.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVSVideoKitTV.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6F2F416E4DDD0E1AEDA75F0C /* [CP] Check Pods Manifest.lock */ = {
@@ -375,7 +372,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SVSTVSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartadserver.SVSTVSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -396,7 +396,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SVSTVSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartadserver.SVSTVSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;

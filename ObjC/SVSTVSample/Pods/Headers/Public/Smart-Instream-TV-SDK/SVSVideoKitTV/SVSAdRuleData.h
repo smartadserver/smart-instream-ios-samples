@@ -1,1 +1,0 @@
-../../../../Smart-Instream-TV-SDK/SVSVideoKitTV.framework/Headers/SVSAdRuleData.h

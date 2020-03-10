@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Total time allowed for an AdBreak request. If the total timeout is reached before any ad is displayed, the AdBreak is cancelled and the content player is resumed.
 
- Default: 7s
+ Default: 8s
 */
 @property (nonatomic, assign) NSTimeInterval totalTimeout;
 

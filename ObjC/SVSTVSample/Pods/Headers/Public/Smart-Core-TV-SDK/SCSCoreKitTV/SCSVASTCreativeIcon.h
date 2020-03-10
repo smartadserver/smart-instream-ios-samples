@@ -1,1 +1,0 @@
-../../../../Smart-Core-TV-SDK/SCSCoreKitTV.framework/Headers/SCSVASTCreativeIcon.h

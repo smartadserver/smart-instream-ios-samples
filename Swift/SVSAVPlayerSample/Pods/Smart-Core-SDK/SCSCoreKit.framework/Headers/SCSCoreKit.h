@@ -8,6 +8,7 @@
 
 // Components
 #import "SCSVASTErrors.h"
+#import "SCSVASTError.h"
 #import "SCSVASTURL.h"
 #import "SCSVASTTrackingEvent.h"
 #import "SCSVASTClickEvent.h"
@@ -24,6 +25,7 @@
 #import "SCSVASTMediaFile.h" 
 #import "SCSVASTAdExtension.h"
 #import "SCSVASTMediaFileSelector.h"
+#import "SCSVASTPixelManager.h"
 
 #import "SCSVASTParser.h"
 #import "SCSVASTParserResponse.h"
@@ -33,6 +35,7 @@
 #import "SCSVASTAdAdapterProtocol.h"
 #import "SCSVASTManagerProtocol.h"
 #import "SCSVASTManagerDelegate.h"
+#import "SCSVASTManagerConfig.h"
 #import "SCSVASTManager.h"
 #import "SCSVASTManagerResponse.h"
 #import "SCSVASTTrackingEventFactory.h"
@@ -85,6 +88,8 @@
 
 // Logger
 #import "SCSLogNode.h"
+#import "SCSVASTErrorRemoteLoggerProtocol.h"
+#import "SCSLogVASTErrorNode.h"
 #import "SCSLogSDKNode.h"
 #import "SCSLogMeasureNode.h"
 #import "SCSLogErrorNode.h"
@@ -123,6 +128,8 @@
 #import "SCSTimerInterval.h"
 #import "SCSTimerDelegate.h"
 #import "SCSFuture.h"
+#import "SCSTCFString.h"
+#import "SCSCCPAString.h"
 
 // Platform specific headers
 #if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)

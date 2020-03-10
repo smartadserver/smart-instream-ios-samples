@@ -77,16 +77,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         
         /////////////////////////////////////////
-        // SDK - GDPR Compliance
+        // SDK - TCF Compliance
         // OPTIONAL
-        // By uncommenting the following code, you can set the GDPR consent string manually.
-        // As per IAB specifications in Transparency And Consent Framework:
-        // https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
-        // Smart Instream SDK will retrieve the consent string from the NSUserDefaults using the official IAB key "IABConsent_ConsentString"
+        // By uncommenting the following code, you can set the TCF consent string manually.
+        // As per IAB specifications in Transparency And Consent Framework.
+        // Smart Instream SDK will retrieve the TCF consent string from the NSUserDefaults using the official IAB key "IABTCF_TCString"
         /////////////////////////////////////////
+        // If you are using a CMP that is not validated by the IAB or not using the official key:
+        // you will have to manually store the computed consent string into the NSUserDefaults for Smart Instream SDK to retrieve it and forward it to its partners.
+        /////////////////////////////////////////
+        // let myTCFConsentString = "yourTCFConsentStringBase64format"
+        // UserDefaults.standard.set(myTCFConsentString, forKey: "IABTCF_TCString")
+        // UserDefaults.standard.synchronize()
         
-        // let myConsentString = "yourCMPComputedConsentStringBase64format"
-        // UserDefaults.standard.set(myConsentString, forKey: "IABConsent_ConsentString")
+        /////////////////////////////////////////
+        // SDK - CCPA Compliance
+        // OPTIONAL
+        // By uncommenting the following code, you can set the CCPA consent string manually.
+        // As per IAB specifications in CCPA Compliance Framework.
+        // Smart Instream SDK will retrieve the CCPA consent string from the NSUserDefaults using the official IAB key "IABUSPrivacy_String"
+        /////////////////////////////////////////
+        // If you are using a CMP that is not validated by the IAB or not using the official key:
+        // you will have to manually store the computed consent string into the NSUserDefaults for Smart Instream SDK to retrieve it and forward it to its partners.
+        /////////////////////////////////////////
+        // let myCCPAConsentString = "yourCCPAConsentString";
+        // UserDefaults.standard.set(myCCPAConsentString, forKey: "IABUSPrivacy_String")
         // UserDefaults.standard.synchronize()
         
         return true

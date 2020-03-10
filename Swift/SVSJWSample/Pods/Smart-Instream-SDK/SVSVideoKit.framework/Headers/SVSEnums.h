@@ -23,3 +23,19 @@ typedef NS_ENUM(NSInteger, SVSAdBreakType) {
     /// Postroll ad break.
     SVSAdBreakTypePostroll = 3,
 };
+
+
+/// The channel type of the current ad.
+typedef NS_ENUM(NSInteger, SVSRemoteLogChannelType) {
+    /// The channel type is unknown.
+    SVSRemoteLogChannelTypeUnknown = -1,
+    
+    /// There is no current ad because of a 'no ad'.
+    SVSRemoteLogChannelTypeNoAd = 0,
+    
+    /// The current ad is a direct ad.
+    SVSRemoteLogChannelTypeDirect = 1,
+    
+    /// The current ad is a RTB ad.
+    SVSRemoteLogChannelTypeRTB = 2,
+};

@@ -200,7 +200,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-frameworks.sh",
 				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
 				"${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework",
 				"${PODS_ROOT}/Smart-Instream-SDK/SVSVideoKit.framework",
@@ -213,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		20232412B51A15BD3E97C490 /* [CP] Check Pods Manifest.lock */ = {
@@ -240,7 +240,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Brightcove-Player-Core/BCOVPUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -249,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
