@@ -86,6 +86,25 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (nonatomic, assign) BOOL replayAds;
 
+/**
+ YES if you prefer to use Server-Side Ad-Rules for number of Ad Instances during each Ad Break.
+
+ Default: NO
+*/
+@property (nonatomic, assign) BOOL enableSSAR;
+
+/**
+ YES if you want to apply strict UniversalAdId control policy.
+ 
+ When activated, the SDK will discard every creative with a null or "unknown" UniversalAdId identification and replace it with a passback when possible.
+ Additionally, an ad identified with an UniversalAdId will not be displayed more than once in the same ad break and will be replaced by a passback when possible.
+ 
+ @note This feature is only available since VAST 4.0. If activated, every ad response with an inferior VAST version will be discarded.
+ 
+ Default: NO
+*/
+@property (nonatomic, assign) BOOL enableUniversalAdIdControlPolicy;
+
 @end
 
 NS_ASSUME_NONNULL_END

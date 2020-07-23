@@ -38,6 +38,9 @@ typedef NS_ENUM(NSUInteger, SCSVideoTrackingEventType) {
     /// CreativeView event. Only for non linear creatives.
     SCSVideoTrackingEventTypeCreativeView,
     
+    /// Loaded event.
+    SCSVideoTrackingEventTypeLoaded,
+    
     /// Start event.
     SCSVideoTrackingEventTypeStart,
     
@@ -73,6 +76,12 @@ typedef NS_ENUM(NSUInteger, SCSVideoTrackingEventType) {
     
     /// ExitFullscreen event.
     SCSVideoTrackingEventTypeExitFullscreen,
+    
+    /// Player Expand event.
+    SCSVideoTrackingEventTypePlayerExpand,
+    
+    /// Player Collapse event.
+    SCSVideoTrackingEventTypePlayerCollapse,
     
     /// Progress event.
     SCSVideoTrackingEventTypeProgress,

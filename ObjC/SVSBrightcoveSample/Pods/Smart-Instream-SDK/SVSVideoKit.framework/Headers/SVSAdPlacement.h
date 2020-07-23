@@ -110,7 +110,7 @@ typedef NS_ENUM(NSInteger, SVSAdPlacementTest) {
  * A string representing a set of keywords that will be passed to Smart AdServer to receive
  * more relevant ads when performing an Ad call for a Preroll Ads.
  *
- * If null, the globalKeywordsTargeting will be used.
+ * If nil, the globalKeywordsTargeting will be used.
  */
 @property (nonatomic, copy, nullable) NSString *preRollKeywordsTargeting;
 
@@ -118,7 +118,7 @@ typedef NS_ENUM(NSInteger, SVSAdPlacementTest) {
  * A string representing a set of keywords that will be passed to Smart AdServer to receive
  * more relevant ads when performing an Ad call for a Midroll Ads.
  *
- * If null, the globalKeywordsTargeting will be used.
+ * If nil, the globalKeywordsTargeting will be used.
  */
 @property (nonatomic, copy, nullable) NSString *midRollKeywordsTargeting;
 
@@ -126,9 +126,21 @@ typedef NS_ENUM(NSInteger, SVSAdPlacementTest) {
  * A string representing a set of keywords that will be passed to Smart AdServer to receive
  * more relevant ads when performing an Ad call for a Postroll Ads.
  *
- * If null, the globalKeywordsTargeting will be used.
+ * If nil, the globalKeywordsTargeting will be used.
  */
 @property (nonatomic, copy, nullable) NSString *postRollKeywordsTargeting;
+
+/**
+ * A string representing the Supply Chain Object that will be passed to Smart AdServer during ad calls.
+ *
+ * You should fill this parameter if you are reselling inventory from direct publishers.
+ * You can find more information about Supply Chain Object at this URL:
+ *
+ * https://help.smartadserver.com/s/article/Sellers-json-and-SupplyChain-Object
+ *
+ * If nil, no Supply Chain Object will be added to the ad call and Smart will add its own node.
+ */
+@property (nonatomic, copy, nullable) NSString *supplyChainObjectString;
 
 #pragma mark - Placement properties
 

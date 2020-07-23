@@ -1,10 +1,10 @@
 PODS:
-  - Smart-Core-TV-SDK (7.5.0)
-  - Smart-Instream-TV-SDK (7.5.0):
-    - Smart-Core-TV-SDK (~> 7.5)
+  - Smart-Core-TV-SDK (7.7.0)
+  - Smart-Instream-TV-SDK (7.7.0):
+    - Smart-Core-TV-SDK (~> 7.7)
 
 DEPENDENCIES:
-  - Smart-Instream-TV-SDK (= 7.5.0)
+  - Smart-Instream-TV-SDK (= 7.7.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Smart-Instream-TV-SDK
 
 SPEC CHECKSUMS:
-  Smart-Core-TV-SDK: 64358f3022e706fa5515494a43a76e216ec78fce
-  Smart-Instream-TV-SDK: e93788540ebedd5fb441376dc42984c07a227764
+  Smart-Core-TV-SDK: 95489cb34cf003b1a719a39e352708a40856b0b7
+  Smart-Instream-TV-SDK: 69e58225e2e9f90daf5237b7e71b660a0b9c8fd8
 
-PODFILE CHECKSUM: 3c9aff66f0f4de36c84d2c2c2f4ef4437ab9287d
+PODFILE CHECKSUM: 8273270e19b769b9cc8cbb4f8be81f9fefae36bf
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

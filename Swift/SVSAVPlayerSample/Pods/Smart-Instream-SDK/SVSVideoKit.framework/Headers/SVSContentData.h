@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  Represents the details of the content video. Passed to the AdServer for targeting.
  This object should be passed to your instance of SVSAdManager during initialization.
  */
-@interface SVSContentData : NSObject
+@interface SVSContentData : NSObject <NSCopying, NSCoding>
 
 #pragma mark - Content data initialization
 

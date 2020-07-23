@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTTrackingEvent, SCSVASTURL;
+@class SCSVASTTrackingEvent, SCSVASTURL, SCSVASTUniversalAdId;
 
 @interface SCSVASTCreative : NSObject
 
@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// An array of all the URLs to call when the creative is clicked.
 @property (nonatomic, readonly) NSMutableArray <SCSVASTURL *> *clickTracking;
+
+/// The UniversalAdIds for this Creative.
+@property (nonatomic, readonly) NSMutableArray <SCSVASTUniversalAdId *> *universalAdIds;
 
 /**
  Initializer from a dictionary.

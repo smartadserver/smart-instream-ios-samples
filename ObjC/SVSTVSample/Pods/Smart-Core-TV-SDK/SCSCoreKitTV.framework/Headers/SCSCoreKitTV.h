@@ -13,6 +13,7 @@
 #import "SCSVASTError.h"
 #import "SCSVASTURL.h"
 #import "SCSVASTTrackingEvent.h"
+#import "SCSVASTViewabilityEvent.h"
 #import "SCSVASTClickEvent.h"
 
 #import "SCSVASTModel.h"
@@ -26,6 +27,11 @@
 #import "SCSVASTCreativeIcon.h"
 #import "SCSVASTMediaFile.h"
 #import "SCSVASTAdExtension.h"
+#import "SCSVASTAdVerification.h"
+#import "SCSVASTAdVerificationResource.h"
+#import "SCSVASTAdVerificationEvent.h"
+#import "SCSVASTUniversalAdId.h"
+
 #import "SCSVASTMediaFileSelector.h"
 #import "SCSVASTPixelManager.h"
 
@@ -41,6 +47,7 @@
 #import "SCSVASTManager.h"
 #import "SCSVASTManagerResponse.h"
 #import "SCSVASTTrackingEventFactory.h"
+#import "SCSVASTAdExtensionAdVerification.h"
 
 #import "SCSTrackingEvent.h"
 #import "SCSTrackingEventFactory.h"
@@ -95,11 +102,14 @@
 #import "SCSRemoteLogger.h"
 #import "SCSRemoteLog.h"
 #import "SCSRemoteLogUtils.h"
+#import "SCSRemoteConfigurationErrorRemoteLogger.h"
 
 // Network
 #import "SCSAdRequestManager.h"
 #import "SCSAdRequestValidatorProtocol.h"
 #import "SCSAdRequestErrors.h"
+
+#import "SCSNetworkInfo.h"
 
 #import "SCSPixel.h"
 #import "SCSPixelManager.h"
