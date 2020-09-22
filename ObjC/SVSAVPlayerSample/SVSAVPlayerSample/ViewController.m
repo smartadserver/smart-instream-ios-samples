@@ -11,6 +11,7 @@
 #import "PlayerManager.h"
 
 #import <SVSVideoKit/SVSVideoKit.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 @interface ViewController () <SVSAdManagerDelegate, PlayerManagerDelegate>
 
@@ -49,11 +50,54 @@
     // Status bar
     [self setNeedsStatusBarAppearanceUpdate];
     
+    // Request Tracking authorization to access IDFA
+    [self requestTrackingAuthorization];
+    
     // Create the Ad manager
     [self createAdManager];
     
     // Create the content player
     [self createPlayerManager];
+}
+
+
+- (void)requestTrackingAuthorization {
+    
+    // Starting with iOS 14, you must ask the user for consent before being able to track it.
+    // If you do not ask consent (or if the user decline), the SDK will not use the device IDFA.
+    if (@available(iOS 14, *)) {
+        // Check if the tracking authorization status is not determined…
+        if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManagerAuthorizationStatusNotDetermined) {
+            
+            // Ask the user for tracking permission.
+            //
+            // Note:
+            // In order to get a good user experience, choose the right time to display this
+            // authorization request, and customize the autorization request description in the
+            // app Info.plist file.
+            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                    NSLog(@"[ATT] The tracking authorization has been granted by the user!");
+                    
+                    // The tracking authorization has been granted!
+                    // The SDK will be able to use the device IDFA during ad calls.
+                } else {
+                    NSLog(@"[ATT] The tracking authorization is not granted!");
+                    
+                    // The tracking authorization has not been granted!
+                    //
+                    // The SDK will only uses a technical randomly generated ID that will not be
+                    // shared cross apps and will be reset every 24 hours.
+                    // This 'transient ID' will only be used for technical purposes (ad fraud
+                    // detection, capping, …).
+                    //
+                    // You can disable it completely by using the following configuration flag:
+                    // SASConfiguration.shared.transientIDEnabled = false
+                }
+            }];
+        }
+    }
+
 }
 
 

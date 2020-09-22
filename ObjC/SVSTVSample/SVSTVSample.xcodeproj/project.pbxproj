@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C906B4C7B3FF39356FBDCBBA /* libPods-SVSTVSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47236BAF1C69E2DEBC01503 /* libPods-SVSTVSample.a */; };
+		2551B3BF79B996AD2B0936C1 /* Pods_SVSTVSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */; };
 		E93C4E1E207B92280022598B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E93C4E1D207B92280022598B /* AppDelegate.m */; };
 		E93C4E21207B92280022598B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93C4E20207B92280022598B /* ViewController.m */; };
 		E93C4E24207B92280022598B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93C4E22207B92280022598B /* Main.storyboard */; };
@@ -31,8 +31,8 @@
 
 /* Begin PBXFileReference section */
 		5658B7B9527876CDB23128AC /* Pods-SVSTVSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSTVSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.release.xcconfig"; sourceTree = "<group>"; };
+		99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVSTVSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94FD06A485079281283F7A1 /* Pods-SVSTVSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSTVSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.debug.xcconfig"; sourceTree = "<group>"; };
-		C47236BAF1C69E2DEBC01503 /* libPods-SVSTVSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SVSTVSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93C4E19207B92280022598B /* SVSTVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVSTVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93C4E1C207B92280022598B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E93C4E1D207B92280022598B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C906B4C7B3FF39356FBDCBBA /* libPods-SVSTVSample.a in Frameworks */,
+				2551B3BF79B996AD2B0936C1 /* Pods_SVSTVSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		23B3D67409D995F5FA9A2987 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C47236BAF1C69E2DEBC01503 /* libPods-SVSTVSample.a */,
+				99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

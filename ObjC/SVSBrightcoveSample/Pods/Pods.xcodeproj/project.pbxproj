@@ -457,13 +457,45 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		09063AED78E9296EA53A70FA005B5DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645609E245A16D9600529924699DBFC2 /* Pods-SVSBrightcoveSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1BC1861BD1EA2FB3BB074D5DFB2C71D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6C69A8BAAAE06CDDF2F16037F8C31A2 /* Smart-Core-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +508,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +515,36 @@
 			};
 			name = Release;
 		};
-		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+		4C50F4D2285F3C393CE9641429F01F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670465E6A267DB9D14CB02CBE793AE51 /* Brightcove-Player-Core.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		591D0D1FC134A76AFBB49444D2F789FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670465E6A267DB9D14CB02CBE793AE51 /* Brightcove-Player-Core.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
+				IBSC_MODULE = Brightcove_Player_Core;
+				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
+				PRODUCT_NAME = BCOVPUIResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -532,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,71 +604,7 @@
 			};
 			name = Release;
 		};
-		4C50F4D2285F3C393CE9641429F01F2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670465E6A267DB9D14CB02CBE793AE51 /* Brightcove-Player-Core.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		591D0D1FC134A76AFBB49444D2F789FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670465E6A267DB9D14CB02CBE793AE51 /* Brightcove-Player-Core.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
-				IBSC_MODULE = Brightcove_Player_Core;
-				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = BCOVPUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5ADCC0953BC128EFD8F944F7E13F164E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFC48558BB7BE2EE0E7DBDDF7BB83C95 /* Pods-SVSBrightcoveSample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -659,7 +655,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -678,7 +674,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -693,7 +688,6 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
 				IBSC_MODULE = Brightcove_Player_Core;
 				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = BCOVPUIResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -702,36 +696,9 @@
 			};
 			name = Debug;
 		};
-		EA9451980ADC72194F367CCCE18D01A2 /* Release */ = {
+		DE6A81F4C61A3D62C82624F83D5288BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AA02992F5495B2025D0F1A8DF2B57A5 /* Smart-Instream-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EDBFAA534D0242E3103A629094E0D8E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2664823F8C0CA48880284F3EB73D0DB7 /* Brightcove-Player-Core.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EE346F39F99325355F798A20B51941EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 645609E245A16D9600529924699DBFC2 /* Pods-SVSBrightcoveSample.release.xcconfig */;
+			baseConfigurationReference = BFC48558BB7BE2EE0E7DBDDF7BB83C95 /* Pods-SVSBrightcoveSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -745,7 +712,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
@@ -757,11 +723,35 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		EA9451980ADC72194F367CCCE18D01A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA02992F5495B2025D0F1A8DF2B57A5 /* Smart-Instream-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
 			name = Release;
+		};
+		EDBFAA534D0242E3103A629094E0D8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2664823F8C0CA48880284F3EB73D0DB7 /* Brightcove-Player-Core.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -769,8 +759,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
-				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -778,8 +768,8 @@
 		643BB47296754CE0CC73F672D76823A9 /* Build configuration list for PBXNativeTarget "Pods-SVSBrightcoveSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ADCC0953BC128EFD8F944F7E13F164E /* Debug */,
-				EE346F39F99325355F798A20B51941EF /* Release */,
+				DE6A81F4C61A3D62C82624F83D5288BA /* Debug */,
+				09063AED78E9296EA53A70FA005B5DB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
