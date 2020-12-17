@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "SCSRemoteConfigManagerDelegate.h"
-#import "SCSRemoteConfigurationErrorRemoteLogger.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSIdentity;
+@protocol SCSRemoteConfigManagerDelegate, SCSRemoteConfigurationErrorRemoteLogger;
+@class SCSIdentity, SCSRemoteConfigManager;
 
 /**
  Hold the configuration of an ad SDK.

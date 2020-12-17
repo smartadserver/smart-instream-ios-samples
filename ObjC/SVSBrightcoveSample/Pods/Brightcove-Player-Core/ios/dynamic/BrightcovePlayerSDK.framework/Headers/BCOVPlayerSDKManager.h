@@ -2,7 +2,7 @@
 // BCOVPlayerSDKManager.h
 // BrightcovePlayerSDK
 //
-// Copyright (c) 2017 Brightcove, Inc. All rights reserved.
+// Copyright (c) 2020 Brightcove, Inc. All rights reserved.
 // License: https://accounts.brightcove.com/en/terms-and-conditions
 //
 
@@ -85,17 +85,6 @@
  * options.
  */
 - (id<BCOVPlaybackSessionProvider>)createBasicSessionProviderWithOptions:(BCOVBasicSessionProviderOptions *)options;
-
-/**
- * Returns a view strategy that wraps the video view it is given with the
- * default playback controls.
- *
- * This view strategy is intended to provide a "stock" set of controls to aid
- * development, testing, and Brightcove code samples.
- *
- * @return A view strategy block that wraps the video view with stock controls.
- */
-- (BCOVPlaybackControllerViewStrategy)defaultControlsViewStrategy __attribute__((deprecated("Use the built-in PlayerUI controls instead; see the README for details")));
 
 /**
  * Registers the specified component object with the BCOVPlayerSDKManager. The

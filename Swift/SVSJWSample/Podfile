@@ -6,7 +6,7 @@ target 'SVSJWSample' do
   platform :ios, '9.0'
 
   pod 'JWPlayer-SDK', '~> 2.8'
-  pod 'Smart-Instream-SDK', '7.7.0'
+  pod 'Smart-Instream-SDK', '7.9.0'
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|
@@ -15,5 +15,5 @@ target 'SVSJWSample' do
       end
     end
   end
-  
+
 end

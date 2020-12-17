@@ -6,7 +6,11 @@
 //  Copyright © 2017 Smart AdServer. All rights reserved.
 //
 
-#import "SVSEnums.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SVSVideoKit/SVSEnums.h>
+#elif TARGET_OS_TV
+#import <SVSVideoKitTV/SVSEnums.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

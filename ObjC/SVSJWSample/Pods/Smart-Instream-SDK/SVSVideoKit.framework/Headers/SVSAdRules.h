@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SVSAdRule.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SVSAdRule;
 
 /**
  Represents a set of ad rules.

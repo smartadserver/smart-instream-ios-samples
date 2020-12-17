@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SVSAdPlayerConfigurationDisplayOptions.h"
-#import "SVSAdPlayerConfigurationPublisherOptions.h"
-#import "SVSAdPlayerConfigurationRTBOptions.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SVSAdPlayerConfigurationDisplayOptions, SVSAdPlayerConfigurationPublisherOptions, SVSAdPlayerConfigurationRTBOptions;
 
 /**
  Configuration of the ad player.

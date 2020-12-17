@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SVSAdRuleData.h"
 
 #define kSVSAdRuleInfiniteDuration NSIntegerMax
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SVSAdRuleData;
 
 /**
  Represents an ad rule for a particular media duration.

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <SceneKit/SceneKit.h>
-
-#import "SCSAxis3.h"
+#if TARGET_OS_IOS || (TARGET_OS_IPHONE && !TARGET_OS_TV)
+#import <SCSCoreKit/SCSAxis3.h>
+#elif TARGET_OS_TV
+#import <SCSCoreKitTV/SCSAxis3.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -53,6 +56,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param axis The axis around which the rotation will happen.
  */
 - (instancetype)initWithAngle:(double)angle axis:(SCSAxis3)axis;
+
+/**
+ Initialize the quaternion representing a rotation around an axis (X, Y or Z).
+ 
+ @param angle The rotation angle.
+ @param axisX The X coordinate of the axis around which the rotation will happen.
+ @param axisY The X coordinate of the axis around which the rotation will happen.
+ @param axisZ The X coordinate of the axis around which the rotation will happen.
+ */
+- (instancetype)initWithAngle:(double)angle axisX:(double)axisX axisY:(double)axisY axisZ:(double)axisZ;
 
 /**
  Initialize the quaternion representing a rotation defined using Euler angles.

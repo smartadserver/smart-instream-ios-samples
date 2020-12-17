@@ -7,34 +7,34 @@
 //
 
 // SDK Configuration
-#import "SVSConfiguration.h"
+#import <SVSVideoKit/SVSConfiguration.h>
 
 // Ad Manager
-#import "SVSAdManager.h"
-#import "SVSAdManagerDelegate.h"
+#import <SVSVideoKit/SVSAdManager.h>
+#import <SVSVideoKit/SVSAdManagerDelegate.h>
 
 // PlayHead
-#import "SVSContentPlayerPlayHead.h"
+#import <SVSVideoKit/SVSContentPlayerPlayHead.h>
 
 // PlayHead Adapter
-#import "SVSAVPlayerPlayHeadAdapter.h"
+#import <SVSVideoKit/SVSAVPlayerPlayHeadAdapter.h>
 
 // Ad Placement
-#import "SVSAdPlacement.h"
+#import <SVSVideoKit/SVSAdPlacement.h>
 
 // Ad Rules
-#import "SVSAdRules.h"
-#import "SVSAdRule.h"
-#import "SVSAdRuleData.h"
+#import <SVSVideoKit/SVSAdRules.h>
+#import <SVSVideoKit/SVSAdRule.h>
+#import <SVSVideoKit/SVSAdRuleData.h>
 
 // Configuration
-#import "SVSAdPlayerConfiguration.h"
-#import "SVSAdPlayerConfigurationDisplayOptions.h"
-#import "SVSAdPlayerConfigurationPublisherOptions.h"
-#import "SVSAdPlayerConfigurationRTBOptions.h"
+#import <SVSVideoKit/SVSAdPlayerConfiguration.h>
+#import <SVSVideoKit/SVSAdPlayerConfigurationDisplayOptions.h>
+#import <SVSVideoKit/SVSAdPlayerConfigurationPublisherOptions.h>
+#import <SVSVideoKit/SVSAdPlayerConfigurationRTBOptions.h>
 
 // Content Datas
-#import "SVSContentData.h"
+#import <SVSVideoKit/SVSContentData.h>
 
 //! Project version number for SVSVideoKit.
 FOUNDATION_EXPORT double SVSVideoKitVersionNumber;

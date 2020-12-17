@@ -5,7 +5,7 @@ target 'SVSAVPlayerSample' do
   use_frameworks!
   platform :ios, '9.0'
 
-  pod 'Smart-Instream-SDK', '7.7.0'
+  pod 'Smart-Instream-SDK', '7.9.0'
 
   post_install do |installer|
     installer.pods_project.targets.each do |target|

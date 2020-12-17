@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SCSLogDataSource;
+@protocol SCSLogDataSource, SCSLogOutput;
 
 /// Tell the severity of the logs. Debug level logs are a special case, see SCSLogLevelDebug for details.
 typedef NS_ENUM(NSUInteger, SCSLogLevel) {
@@ -23,6 +23,9 @@ typedef NS_ENUM(NSUInteger, SCSLogLevel) {
     
     /// Error logs warn the user about errors inside the SDK or about a bad usage of an API.
     SCSLogLevelError,
+    
+    /// Warning logs warn the user about potentially critical information inside the SDK or about a bad usage of an API.
+    SCSLogLevelWarning
 };
 
 /**
@@ -36,7 +39,7 @@ typedef NS_ENUM(NSUInteger, SCSLogLevel) {
  
  The new logger can than be used normally:
  
-     [[SDKLog sharedInstance] logMessage:@"Message"];
+     [[SDKLog sharedInstance] logDebug:@"Message"];
  */
 @interface SCSLog : NSObject
 
@@ -55,6 +58,29 @@ typedef NS_ENUM(NSUInteger, SCSLogLevel) {
 - (instancetype)initWithTag:(NSString *)tag dataSource:(id <SCSLogDataSource>)dataSource debugLoggingEnabled:(BOOL)debugLoggingEnabled NS_DESIGNATED_INITIALIZER;
 
 /**
+ Initialize a new Log object.
+ 
+ @param tag The tag that will be displayed before each log message.
+ @param dataSource the object that will be used to decide whether to log the message or not.
+ @param output the object that will be used to output the log message.
+ @param debugLoggingEnabled true if debug level logs should be displayed.
+ */
+- (instancetype)initWithTag:(NSString *)tag dataSource:(id <SCSLogDataSource>)dataSource output:(id <SCSLogOutput>)output debugLoggingEnabled:(BOOL)debugLoggingEnabled NS_DESIGNATED_INITIALIZER;
+
+/**
+ Log a message with the SCSLogLevelDebug level in Xcode console if possible.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @deprecated This method is deprecated, please use logDebug: instead.
+ 
+ @param message The message that should be logged.
+ */
+- (void)logMessage:(NSString *)message __deprecated;
+
+/**
  Log a message with the SCSLogLevelDebug level in Xcode console if possible.
  
  Note: Messages with log level debug will always be displayed when the framework is in DEBUG
@@ -63,7 +89,88 @@ typedef NS_ENUM(NSUInteger, SCSLogLevel) {
  
  @param message The message that should be logged.
  */
-- (void)logMessage:(NSString *)message;
+- (void)logDebug:(NSString *)message;
+
+/**
+ Log a message with the SCSLogLevelDebug level created by using a given format string as a template into which the remaining argument values are substituted.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param format The format message that should be logged.
+ @param ...  A comma-separated list of arguments to substitute into format.
+ */
+- (void)logDebugWithFormat:(NSString *)format, ...;
+
+/**
+ Log a message with the SCSLogLevelInfo level in Xcode console if possible.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param message The message that should be logged.
+ */
+- (void)logInfo:(NSString *)message;
+
+/**
+ Log a message with the SCSLogLevelInfo level created by using a given format string as a template into which the remaining argument values are substituted.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param format The format message that should be logged.
+ @param ...  A comma-separated list of arguments to substitute into format.
+ */
+- (void)logInfoWithFormat:(NSString *)format, ...;
+
+/**
+ Log a message with the SCSLogLevelWarning level in Xcode console if possible.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param message The message that should be logged.
+ */
+- (void)logWarning:(NSString *)message;
+
+/**
+ Log a message with the SCSLogLevelWarning level created by using a given format string as a template into which the remaining argument values are substituted.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param format The format message that should be logged.
+ @param ...  A comma-separated list of arguments to substitute into format.
+ */
+- (void)logWarningWithFormat:(NSString *)format, ...;
+
+/**
+ Log a message with the SCSLogLevelError level in Xcode console if possible.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param message The message that should be logged.
+ */
+- (void)logError:(NSString *)message;
+
+/**
+ Log a message with the SCSLogLevelError level created by using a given format string as a template into which the remaining argument values are substituted.
+ 
+ Note: Messages with log level debug will always be displayed when the framework is in DEBUG
+ and never displayed in RELEASE. Messages with other log level will be displayed if the dataSource
+ allows it.
+ 
+ @param format The format message that should be logged.
+ @param ...  A comma-separated list of arguments to substitute into format.
+ */
+- (void)logErrorWithFormat:(NSString *)format, ...;
 
 /**
  Log a message in Xcode console if possible.
@@ -88,6 +195,13 @@ typedef NS_ENUM(NSUInteger, SCSLogLevel) {
  @param level The level of the stack trace message.
  */
 - (void)logStackTrackWithLevel:(SCSLogLevel)level;
+
+/**
+ Get level name for given log level.
+ 
+ @param level The level of the log.
+ */
++ (NSString *)levelName:(SCSLogLevel)level;
 
 @end
 

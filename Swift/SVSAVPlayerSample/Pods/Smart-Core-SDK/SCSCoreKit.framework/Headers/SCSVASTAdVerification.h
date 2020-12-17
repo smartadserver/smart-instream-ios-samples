@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSVASTAdVerificationResource.h"
-#import "SCSVASTAdVerificationEvent.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class SCSVASTAdVerificationResource, SCSVASTAdVerificationEvent;
 
 /**
  Represent an AdVerification.

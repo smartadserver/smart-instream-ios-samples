@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SCSVASTError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SCSVASTTrackingEvent, SCSVASTURL, SCSVASTUniversalAdId;
+@class SCSVASTTrackingEvent, SCSVASTURL, SCSVASTUniversalAdId, SCSVASTError;
 
 @interface SCSVASTCreative : NSObject
 

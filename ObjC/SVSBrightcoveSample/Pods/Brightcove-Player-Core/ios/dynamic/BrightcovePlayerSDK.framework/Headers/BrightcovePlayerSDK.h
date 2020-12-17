@@ -2,15 +2,15 @@
 // BrightcovePlayerSDK.h
 // BrightcovePlayerSDK
 //
-// Copyright (c) 2017 Brightcove, Inc. All rights reserved.
+// Copyright (c) 2020 Brightcove, Inc. All rights reserved.
 // License: https://accounts.brightcove.com/en/terms-and-conditions
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-//! Project version string for BrightcovePlayerSDK.
-FOUNDATION_EXPORT const unsigned char BrightcovePlayerSDKVersionString[];
+// Open Source Software attributions
+#import <BrightcovePlayerSDK/BCOVAttributions.h>
 
 // Playback API
 #import <BrightcovePlayerSDK/BCOVPlaybackService.h>
@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char BrightcovePlayerSDKVersionString[];
 #import <BrightcovePlayerSDK/NSDictionary+BCOVURLSupport.h>
 
 // Management
+#import <BrightcovePlayerSDK/BCOVGlobalConfiguration.h>
 #import <BrightcovePlayerSDK/BCOVPlayerSDKManager.h>
 
 // Playback
@@ -31,6 +32,7 @@ FOUNDATION_EXPORT const unsigned char BrightcovePlayerSDKVersionString[];
 #import <BrightcovePlayerSDK/BCOVFPSAuthorizationProxy.h>
 #import <BrightcovePlayerSDK/BCOVFPSBrightcoveAuthProxy.h>
 #import <BrightcovePlayerSDK/BCOVFPSComponent.h>
+#import <BrightcovePlayerSDK/BCOVFairPlayManager.h>
 
 // Sidecar Subtitles
 #import <BrightcovePlayerSDK/BCOVSSComponent.h>
@@ -58,3 +60,16 @@ FOUNDATION_EXPORT const unsigned char BrightcovePlayerSDKVersionString[];
 // Offline Video Management
 #import <BrightcovePlayerSDK/BCOVOfflineVideoManager.h>
 #endif
+
+// TV UI
+#if TARGET_OS_TV
+#import <BrightcovePlayerSDK/BCOVTVCommon.h>
+#import <BrightcovePlayerSDK/BCOVTVControlsView.h>
+#import <BrightcovePlayerSDK/BCOVTVPlayerView.h>
+#import <BrightcovePlayerSDK/BCOVTVProgressView.h>
+#import <BrightcovePlayerSDK/BCOVTVSettingsView.h>
+#import <BrightcovePlayerSDK/BCOVTVTabBarItemView.h>
+#endif
+
+// Accessibility
+#import <BrightcovePlayerSDK/BCOVUILabel.h>

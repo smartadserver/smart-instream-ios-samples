@@ -70,8 +70,8 @@
     config.title = @"JWPlayer Sample";
     config.controls = YES;
     config.repeat = NO;
-    config.premiumSkin = JWPremiumSkinRoundster;
-    
+    config.skin = [JWSkinStyling new];
+
     /////////////////////////////
     // Create JWPlayerController
     /////////////////////////////
@@ -95,6 +95,7 @@
     self.player.view.frame = self.videoView.bounds;
     self.player.view.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
     [self.videoView addSubview:self.player.view];
+    
 }
 
 #pragma mark - JW Player Delegate <JWPlayerDelegate>
@@ -112,15 +113,15 @@
 }
 
 
-- (void)onFullscreen:(BOOL)status {
+- (void)onFullscreen:(JWEvent<JWFullscreenEvent> *)event {
     /////////////////////////////////////////////////////////////////////////////////
     // When JWPlayer change its fullscreen status, we must let the SVSAdManager know
     // about it so it can adjust the UI of the AdPlayer view.
     /////////////////////////////////////////////////////////////////////////////////
-    [self.adManager contentPlayerIsFullscreen:status];
+    [self.adManager contentPlayerIsFullscreen:event.fullscreen];
     
     // Automatically go to portrait when exiting fullscreen
-    if (!status) {
+    if (!event.fullscreen) {
         [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationPortrait) forKey:@"orientation"];
     }
 }
@@ -172,7 +173,23 @@
     // Note that we pass the newly created playhead adapter and the container view.
     // For JWPlayer, the player view can be used to display "overlay" over the content player.
     /////////////////////////////////////////////////////////////////////////////////////////////
-    [self.adManager startWithPlayHead:self.playheadAdapter adContainerView:self.player.view];
+    [self.adManager startWithPlayHead:self.playheadAdapter adContainerView:[self playerAdContainerView]];
+}
+
+- (UIView*)playerAdContainerView {
+    // Due to fullscreen states management changes between JWPlayer 2.x and 3.x,
+    // we need to insert ad player in the JWPlaybackView and not in the JWAVContainer view
+    
+    // Get the subviews of the view
+    NSArray *subviews = [self.player.view subviews];
+
+    // Return if there are no subviews
+    if ([subviews count] == 0) {
+        NSLog(@"No subview found in JWPlayer.view"); // just in case
+        return self.player.view;
+    }
+    
+    return [subviews firstObject];
 }
 
 #pragma mark - Smart Instream SDK - Object initialization
@@ -333,8 +350,8 @@
 - (void)adManagerDidRequestToEnterFullscreen:(SVSAdManager *)adManager {
     // Called when the enter fullscreen button of an Ad is clicked by the user.
     // Adapt your UI to properly react to this user action: you should resize your container view so it fits the whole screen.
-    [self.player enterFullScreen];
-    
+    self.player.fullscreen = YES;
+
     /*
      //////////////////////////////////////////////////
      // Note about fullscreen / exit fullscreen
@@ -352,7 +369,7 @@
 - (void)adManagerDidRequestToExitFullscreen:(SVSAdManager *)adManager {
     // Called when the exit fullscreen button of an Ad is clicked by the user.
     // Adapt your UI to properly react to this user action: you should resize your container view so it goes back to its original size.
-    [self.player exitFullScreen];
+    self.player.fullscreen = NO;
 }
 
 #pragma mark - SVSAdManagerDelegate - Modal presentation

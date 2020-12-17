@@ -1,132 +1,149 @@
-# Brightcove Player SDK for iOS, version 6.2.0.220
+# Brightcove Player SDK for iOS, version 6.8.1.1355
 
 
 # Table of Contents
 
+1. [Requirements](#Requirements)
 1. [Supported Platforms](#SupportedPlatforms)
-1. [What's New](#New)
+1. [Noteworthy](#Noteworthy)
+1. [FairPlay](#FairPlay)
+1. [Sidecar Subtitles](#SidecarSubtitles)
+1. [Offline Playback](#OfflinePlayback)
 1. [Installation](#Installation)
 1. [CocoaPods](#CocoaPods)
 1. [Manual Installaion](#ManualInstallation)
 1. [Imports](#Imports)
 1. [Quick Start](#QuickStart)
-1. [Built-In PlayerUI Controls](#PlayerUI)
-1. [FairPlay](#FairPlay)
-1. [Sidecar Subtitles](#SidecarSubtitles)
+1. [Built-In PlayerUI Controls for iOS](#PlayerUI)
+1. [Built-In TV Player Controls for tvOS](#TVPlayer)
+1. [AirPlay](#AirPlay)
 1. [Video 360](#Video360)
 1. [Architectural Overview](#ArchitecturalOverview)
 1. [Play, Pause, and Seek](#PlayPauseSeek)
 1. [Preloading Videos](#PreloadingVideos)
 1. [Source Selection (HLS, MP4, HTTP/HTTPS)](#SourceSelection)
-1. [Obtaining Content And Ad Playback Information](#PlaybackInformation)
+1. [Setting a Preferred Bitrate](#PreferredBitrate)
+1. [Obtaining Content and Ad Playback Information](#PlaybackInformation)
 1. [Handling Network Interruptions and Slowdowns](#HandlingNetworkInterruptionsAndSlowdowns)
 1. [Subclassing](#Subclassing)
 1. [Values](#Values)
 1. [Retrieving Brightcove Assets Using the Playback Service](#PlaybackService)
 1. [View Strategy](#ViewStrategy)
-1. [Playing Video In The Background and Picture In Picture](#BackgroundPIP)
+1. [Playing Video In The Background](#BackgroundVideo)
+1. [Picture In Picture](#PIP)
+1. [Thumbnail Scrubbing](#ThumbnailScrubbing)
 1. [Tracking Errors](#TrackingErrors)
 1. [Combining Plugins](#CombiningPlugins)
 1. [Buffer Optimization](#BufferOptimization)
 1. [Using an AVPlayerViewController with a BCOVPlaybackController](#AVPlayerViewController)
+1. [Playback Authorization Service](#PlaybackAuthorizationService)
+1. [VoiceOver Support](#VoiceOver)
 1. [Frequently Asked Questions](#FAQ)
+
+Requirements <a name="Requirements"></a>
+============
+
+- Xcode 11.0+
+- ARC
 
 Supported Platforms <a name="SupportedPlatforms"></a>
 ===================
 
-iOS 8.0 and above.
+iOS 11.0 and above.
 
-tvOS 9.0 and above.
+tvOS 11.0 and above.
 
-ARC is required.
+The Core SDK is localized for Arabic (ar), English (en), French (fr), German (de), Japanese (ja), Korean (ko), Spanish (es), Simplified Chinese (zh-Hans) and Traditional Chinese (zh-Hant). To gain the benefit of a localization, your app must also be localized for the same language and locale.
 
-What's New <a name="New"></a>
+Noteworthy <a name="Noteworthy"></a>
 ============
 
-Migrating From Earlier Versions
-------------------------------
-Version 6.0 has a few changes that you should be aware of, particularly if you have been using an earlier version:
+All SDK components - the core and plugin frameworks - are released with the same version number. When upgrading any single component, upgrade all components to the same version.
 
-- Podspecs are no longer hosted on [CocoaPods][cocoapods]. All podspecs are now hosted [here][podspecs] in a private specs repository.
-- All of the SDK components - core library and plugin frameworks - are now released with the same version. When upgrading any single component, you should upgrade them all so that they all have the same version.
-- In your project's podfile, be sure to add `source 'https://github.com/brightcove/BrightcoveSpecs.git'`, and remove any reference to `BCOVSpecs.git`.
-- If you install frameworks manually, we recommend removing any current Brightcove frameworks, and then add the new ones. Make sure your framework search paths in your Xcode target settings point to the new frameworks.
+**CocoaPods Podspec names (since release 6.8.1)**
 
-**Updated Podspec Names**
-
-Podspec names have been updated in the new BrightcoveSpecs repository to avoid confusion with older podspecs.
-
-Be sure to update the included podspecs in your own podfiles.
-
-Old Podspec Name  | New Podspec Name
-------------- | -------------
-Brightcove-Player-SDK | Brightcove-Player-Core
-Brightcove-Player-SDK-FW | Brightcove-Player-FreeWheel
-Brightcove-Player-SDK-IMA | Brightcove-Player-IMA
-Brightcove-Player-SDK-Omniture | Brightcove-Player-Omniture
-Brightcove-Player-SDK-OUX | Brightcove-Player-OnceUX
-Brightcove-Player-SDK-FairPlay | *integrated into the core framework*
-Brightcove-Player-SDK-Player-UI | *integrated into the core framework*
-Brightcove-Player-SDK-SidecarSubtitles | *integrated into the core framework*
+Release 6.8.1 of the Brightcove Player SDK updates the `Brightcove-Player-FreeWheel` and `Brightcove-Player-Omniture` podspecs to install the dynamic version of `BrightcovePlayerSDK`. A  `-static` podspec is now available for each plugin which will install the static version of `BrightcovePlayerSDK` along with the static version of the plugin framework itself. If there is no static version of a plugin, the dynamic version will be installed with the static version of `BrightcovePlayerSDK`.
 
 
-FairPlay
+Podspec Name  |  Framework Type  |  Dependency
+------------- | ------------- | -------------
+Brightcove-Player-Core | dynamic | -
+Brightcove-Player-Core-static | static  | -
+Brightcove-Player-FreeWheel | static | Brightcove-Player-Core for iOS,<br/>Brightcove-Player-Core for tvOS
+Brightcove-Player-FreeWheel-static | static | Brightcove-Player-Core-static for iOS,<br/>Brightcove-Player-Core for tvOS
+Brightcove-Player-GoogleCast | static | Brightcove-Player-Core
+Brightcove-Player-GoogleCast-static | static | Brightcove-Player-Core-static
+Brightcove-Player-IMA | dynamic | Brightcove-Player-Core
+Brightcove-Player-IMA-static | dynamic | Brightcove-Player-Core-static
+Brightcove-Player-Omniture | static | Brightcove-Player-Core
+Brightcove-Player-Omniture-static | static | Brightcove-Player-Core-static
+Brightcove-Player-Pulse | dynamic | Brightcove-Player-Core
+Brightcove-Player-Pulse-static | dynamic | Brightcove-Player-Core-static
+Brightcove-Player-SSAI | dynamic | Brightcove-Player-Core
+Brightcove-Player-SSAI-static | static | Brightcove-Player-Core-static
+
+
+FairPlay <a name="FairPlay"></a>
 --------
 
-The `BrightcoveFairPlay` plugin framework and module is now integrated into the core `BrightcovePlayerSDK` framework. If you are currently using the Brightcove FairPlay plugin, no functional code changes are required, but you will need to make some changes for your build. See the [FairPlay](#FairPlay) section below for details.
+Support for playing FairPlay-protected videos is integrated into the core _BrightcovePlayerSDK_ framework. Refer to the [FairPlay guide](FairPlay.md) for full details about using FairPlay with the Brightcove Native Player SDK.
 
-For full details about using FairPlay with the Brightcove Native Player SDK, see our [FairPlay guide](FairPlay.md).
-
-Sidecar Subtitles
+Sidecar Subtitles <a name="SidecarSubtitles"></a>
 --------
 
-The `BrightcoveSidecarSubtitles` plugin framework and module is now integrated into the core `BrightcovePlayerSDK` framework. If you are currently using the Brightcove Sidecar Subtitles plugin, no functional code changes are required, but you will need to make some changes for your build. See the [SidecarSubtitles](#SidecarSubtitles) section below for details.
+Support for Sidecar Subtitles is integrated into the core _BrightcovePlayerSDK_ framework. For full details about using Sidecar Subtitles with the Brightcove Native Player SDK, refer to the [Sidecar Subtitles guide](SidecarSubtitles.md).
 
-Note also that Sidecar Subtitles is generally not needed when working with Video Cloud Dynamic Delivery, as Dynamic Delivery ensures that your captions are added in-manifest before they are delivery to your app.
-
-For full details about using Sidecar Subtitles with the Brightcove Native Player SDK, see our [Sidecar Subtitles guide](SidecarSubtitles.md).
-
-Video Downloads and Offline Playback
+Video Downloads and Offline Playback <a name="OfflinePlayback"></a>
 --------------
 
-As of version 6.0.0, the Brightcove Native Player SDK allows you to download HLS videos, including those protected with FairPlay encryption, and play them back while online or offline. Please see our app developer's guide for full details:
+Since release 6.0.0, the Brightcove Native Player SDK allows you to download HLS videos, including those protected with FairPlay encryption, for playback later, whether online or offline. Refer to the app developer's guide for full details:
 
 [iOS App Developer's Guide to Video Downloading and Offline Playback with FairPlay](OfflinePlayback.md)
 
 Installation <a name="Installation"></a>
 ============
-The Brightcove Player SDK provides two installation packages for iOS, a static library framework and a dynamic framework. Deployment is supported on iOS 8 and above.
+The Brightcove Player SDK provides two installation packages for iOS, a static library framework and a dynamic framework. Deployment is supported on iOS 11 and above.
 
-The Brightcove Player SDK provides a dynamic framework to support tvOS 9.0 and above.
+The Brightcove Player SDK provides a dynamic framework to support tvOS 11.0 and above.
 
 CocoaPods <a name="CocoaPods"></a>
 --------------
 
-You can use [CocoaPods][cocoapods] to add the Brightcove Player SDK to your project. You can find the latest `Brightcove-Player-Core` podspec [here][podspecs]. The podspec supports both iOS and tvOS. CocoaPods 1.0 or newer is required.
+You can use [CocoaPods][cocoapods] to add the Brightcove Player SDK to your project. You can find the latest `Brightcove-Player-Core` podspec [here][podspecs]. The podspec supports both iOS and tvOS. CocoaPods 1.0 or newer is required and the latest version is recommended.
 
 When using Brightcove CocoaPods in your project, add `source 'https://github.com/brightcove/BrightcoveSpecs.git'` to the start of your Podfile.
 
-Specifying the default pod `Brightcove-Player-Core` will install the static library framework. To install the dynamic framework, declare the pod with the `dynamic` subspec: `Brightcove-Player-Core/dynamic`
+Specifying the default pod `Brightcove-Player-Core` will install the dynamic library framework. To install the static framework, append `-static` like this: `pod 'Brightcove-Player-Core-static'`.
+
+Dynamic Framework example:
+
+```
+source 'https://github.com/CocoaPods/Specs'
+source 'https://github.com/brightcove/BrightcoveSpecs.git'
+
+platform :ios, '11.0'
+use_frameworks!
+
+target 'MyVideoPlayer' do
+  pod 'Brightcove-Player-Core'
+end
+```
 
 Static Framework example:
 
 ```
+source 'https://github.com/CocoaPods/Specs'
 source 'https://github.com/brightcove/BrightcoveSpecs.git'
 
-pod 'Brightcove-Player-Core'
-```
-    
-Dynamic Framework example:
+platform :ios, '11.0'
+use_frameworks!
 
-```
-source 'https://github.com/brightcove/BrightcoveSpecs.git'
-
-pod 'Brightcove-Player-Core/dynamic'
+target 'MyVideoPlayer' do
+  pod 'Brightcove-Player-Core-static'
+end
 ```
 
-When updating your installation, it's a good idea to refresh the local copy of your BrightcoveSpecs repository so that you have the latest podspecs locally, just like you would update your CococaPods master repository.
-
-Typically if you use `pod update` in Terminal this will happen automatically, or alternatively you can update explicitly with `pod repo update brightcove`. (Your BrightcoveSpecs repository may have a different name if you explicitly added it to your list of podspecs repos.)
+When updating your installation, it's a good idea to refresh the local copy of your BrightcoveSpecs repository so that you have the latest podspecs locally, just as you would update your CococaPods master repository. Typically if you run `pod update` in Terminal this will happen automatically, or alternatively you can update explicitly with `pod repo update`.
 
 Manual Installation <a name="ManualInstallation"></a>
 --------------
@@ -136,16 +153,8 @@ To add the Brightcove Player SDK to your project manually:
 1. Download the latest zipped release from our [release page][release].
 2. Add `BrightcovePlayerSDK.framework` to your project. Be sure to use the version corresponding to your target, iOS or tvOS.
 3. On the "Build Settings" tab of your application target, ensure that the "Framework Search Paths" include the path to the framework. This should have been done automatically unless the framework is stored under a different root directory than your project.
-4. On the "General" tab of your application target, add the following to the "Linked Frameworks and Libraries" section:
+4. On the "General" tab of your application target, add the following to the "Frameworks, Libraries, Embedded Content" section:
 
-    * `AVFoundation`
-    * `CoreMedia`
-    * `CoreMotion`
-    * `GLKit`
-    * `MediaPlayer`
-    * `MediaAccessibility`
-    * `SafariServices`
-    * `WebKit`
     * `BrightcovePlayerSDK.framework`  
 5. (**Dynamic Framework** only) On the "General" tab of your application target, add 'BrightcovePlayerSDK.framework' to the "Embedded Binaries" section.
 6. (**Dynamic Framework** only) On the "Build Phases" tab, add a "Run Script" phase with the command `bash ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework/strip-frameworks.sh`. Check "Run script only when installing". This will remove unneeded architectures from the build, which is important for App Store submission.
@@ -160,7 +169,8 @@ Brightcove-Player-Core | <https://github.com/brightcove/brightcove-player-sdk-io
 Brightcove-Player-FreeWheel | <https://github.com/brightcove/brightcove-player-sdk-ios-fw/releases>
 Brightcove-Player-IMA | <https://github.com/brightcove/brightcove-player-sdk-ios-ima/releases>
 Brightcove-Player-Omniture | <https://github.com/brightcove/brightcove-player-sdk-ios-omniture/releases>
-Brightcove-Player-OnceUX | <https://github.com/brightcove/brightcove-player-sdk-ios-oux/releases>
+Brightcove-Player-Pulse | <https://github.com/brightcove/brightcove-player-sdk-ios-pulse/releases>
+Brightcove-Player-SSAI | <https://github.com/brightcove/brightcove-player-sdk-ios-ssai/releases>
 
 Imports <a name="Imports"></a>
 --------------
@@ -209,43 +219,11 @@ Playing video with the Brightcove Player SDK for iOS:
 
 You need to keep the controller from being automatically released at the end of the method. A common way to do this is to store a reference to the controller in a strong instance variable.
 
-Built-In PlayerUI Controls <a name="PlayerUI"></a>
+Built-in PlayerUI Controls <a name="PlayerUI"></a>
 ==========================
-As of version 5.1.0, the Brightcove Player SDK has the Brightcove PlayerUI Plugin integrated into its framework, so you can use its fully-featured set of controls for playback and advertising right out of the box.
+Since version 5.1.0, the Brightcove PlayerUI is fully integrated into the Core SDK framework. PlayerUI provides a fully-featured set of controls for playback and advertising, right out of the box.
 
-The PlayerUI is quick to set up, displays ad controls for Once and FreeWheel, and can be customized by creating your own layouts.
-
-Converting from Native Controls to PlayerUI Controls
-----------------------------------------------------
-If you were previously using the native controls via the `defaultControlsViewStrategy` like this:
-
-    BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
-    id<BCOVPlaybackController> playbackController = [manager createPlaybackControllerWithViewStrategy:[manager defaultControlsViewStrategy]];
-
-You should now set the view strategy to nil:
-
-    BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
-    id<BCOVPlaybackController> playbackController = [manager createPlaybackControllerWithViewStrategy:nil];
-
-You also no longer need to add the Playback Controller's view to your hierarchy, so you can remove code like this:
-
-    self.playbackController.view.frame = self.videoView.bounds;
-    self.playbackController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-	[self.videoView addSubview:self.playbackController.view]
-
-Instead, you will associate the Playback Controller with a new Player View and add that to your view hierarchy, as described in the **Setting up PlayerUI Controls** section of this document.
-
-Migrating from the Brightcove PlayerUI Plugin
-----------------------------
-With version 5.1 of the Brightcove Player SDK, the PlayerUI controls are integrated into the core framework, and so it's no longer necessary to use a separate Brightcove PlayerUI plugin. If you were previously using the Brightcove PlayerUI plugin, and had installed it manually, you may need to make a few modifications to your project:
-
-* Remove the reference to BrightcovePlayerUI.framework from your project listing
-* In your target's Build Settings, remove any reference to the BrightcovePlayerUI.framework from your Framework Search Paths
-* In your target's General settings, remove any reference to BrightcovePlayerUI from the Embedded Binaries and Linked Frameworks and Libraries sections
-
-If you install Brightcove libraries using CocoaPods, you can remove the BrightcovePlayerUI dependency from your Podfile, and then run `pod update` in Terminal.
-
-In your project code, any specific `#import` of a PlayerUI header file can be converted from `#import <BrightcovePlayerUI/filename.h>` to `#import <BrightcovePlayerSDK/filename.h>`. Alternately, you can import all the headers at once with `@import BrightcovePlayerSDK;`.
+The PlayerUI is quick to set up, displays ad controls for SSAI, Pulse and FreeWheel, and can be customized by creating your own layouts.
 
 Setting up PlayerUI Controls
 ----------------------------
@@ -253,22 +231,40 @@ Follow the guidelines below for setting up the PlayerUI controls.
 
 Create a property in your UIViewController to keep track of the BCOVPUIPlayerView. The BCOVPUIPlayerView will contain both the Playback Controller's view, and the controls view.
 
-	// PlayerUI's Player View
-	@property (nonatomic) BCOVPUIPlayerView *playerView;
+    // PlayerUI's Player View
+    @property (nonatomic) BCOVPUIPlayerView *playerView;
 
 Create the BCOVPUIBasicControlView, and then the BCOVPUIPlayerView. This is where we associate the Playback Controller (and thus all the videos it plays) with the controls.
-Set the player view to match the video container from your layout (`videoView`) when it resizes.
 
     // Create and configure Control View.
     BCOVPUIBasicControlView *controlView = [BCOVPUIBasicControlView basicControlViewWithVODLayout];
     self.playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:self.playbackController options:nil controlsView:controlView];
-    self.playerView.frame = self.videoView.bounds;
-    self.playerView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-
-Finally, add the BCOVPUIPlayerView to your video container, `videoView`.
-
     // Add BCOVPUIPlayerView to your video view.
     [self.videoView addSubview:self.playerView];
+
+You'll need to set up the layout for the player view, you can do this with Auto Layout or the older Springs & Struts approach. 
+
+**Springs & Struts:**
+
+Set the player view to match the video container from your layout (`videoView`) when it resizes.
+
+    self.playerView.frame = self.videoView.bounds;
+    self.playerView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;  
+
+**Auto Layout**
+
+Set the `translatesAutoresizingMaskIntoConstraints` on BCOVPUIPlayerView to `NO`.
+
+    self.playerView.translatesAutoresizingMaskIntoConstraints = NO;
+
+Then add the constraints for the layout; setting the top, right, left and bottom anchors of your BCOVPUIPlayerView to equal that of `videoView` 
+
+    [NSLayoutConstraint activateConstraints:@[
+                                              [self.playerView.topAnchor constraintEqualToAnchor:self.videoView.topAnchor],
+                                              [self.playerView.rightAnchor constraintEqualToAnchor:self.videoView.rightAnchor],
+                                              [self.playerView.leftAnchor constraintEqualToAnchor:self.videoView.leftAnchor],
+                                              [self.playerView.bottomAnchor constraintEqualToAnchor:self.videoView.bottomAnchor],
+                                              ]];
 
 **Reminder:** The PlayerUI uses a small font file for various graphics. If you are installing the static framework, and not using CocoaPods, be sure to add the file `bcovpuiiconfont.ttf` from the `BrightcovePlayerSDK.framework` bundle directly to your project listing so that the font file is copied into the app bundle
 
@@ -426,41 +422,47 @@ For more examples of PlayerUI customization, you can look at the sample code in 
 
 [github]: https://github.com/BrightcoveOS/ios-player-samples
 
-FairPlay <a name="FairPlay"></a>
+Built-in TV Player Controls for tvOS <a name="TVPlayer"></a>
+==========
+The Brightcove Native Player SDK includes built-in controls for playback in tvOS on Apple TV. For full details about using the built-in TV Player UI with the Brightcove Native Player SDK, see our [TV Player guide](TVPlayer.md).
+
+AirPlay <a name="AirPlay"></a>
 ==========
 
-The Brightcove Native Player SDK includes support for playing FairPlay-protected videos. For full details about using FairPlay with the Brightcove Native Player SDK, see our [FairPlay guide](FairPlay.md).
+Enable AirPlay functionality by setting the `setAllowsExternalPlayback` property on your `BCOVPlaybackController` to `true`. The AirPlay button will be displayed in the playback controls if AirPlay devices are found on your network.
 
-Migrating From the Brightcove FairPlay Plugin
------
+Currently, IMA is the only plugin that supports AirPlay and only when using pre-roll and/or post-roll ads. Using AirPlay with the Pulse, SSAI or FreeWheel ad plugins may result in unexpected behavior.
 
-If you were using the Brightcove FairPlay Plugin with the Brightcove Native Player SDK prior to verison 6.0, be aware that the `BrightcoveFairPlay` module is now integrated into the core `BrightcovePlayerSDK` framework. No functional code changes are required, but you should make these changes for your build:
+If you also want to support AirPlay 2 and allow for multiple devices to be selected for audio output you will have to do a few additional things. First, you'll need to configure AVAudioSession so that you can set the `routeSharingPolicy`. For example:
 
-* If using CocoaPods, remove all references to `BrightcoveFairPlay` from your Podfiles, and then update.
-* For manual installations, remove the BrightcoveFairPlay.framework from your project.
-* In your source code, change any #includes from `<BrightcoveFairPlay/header_name.h>` to `<BrightcovePlayerSDK/header_name.h>`.
-* Remove any imports that refer to the `BrightcoveFairPlay` module.
-* In your target's Build Settings, remove any reference to the BrightcoveFairPlay.framework from your Framework Search Paths.
-* In your target's General settings, remove any reference to BrightcoveFairPlay from the Embedded Binaries and Linked Frameworks and Libraries sections
+```
+[AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback mode:AVAudioSessionModeMoviePlayback routeSharingPolicy:AVAudioSessionRouteSharingPolicyLongForm options:0 error:nil];
+```
+You will also need to configure at least one playback command via `MPRemoteCommandCenter`. At the very least you'll want to configure both the `pauseCommand` and `playCommand`. For Example:
 
-Sidecar Subtitles <a name="SidecarSubtitles"></a>
-==========
+```
+MPRemoteCommandCenter *center = MPRemoteCommandCenter.sharedCommandCenter;
 
-The Brightcove Native Player SDK includes support for playing external subtitle files, also know as Sidecar Subtitles. For full details about using Sidecar Subtitles with the Brightcove Native Player SDK, see our [Sidecar Subtitles guide](SidecarSubtitles.md).
+[center.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+[self.playbackController pause];
+return MPRemoteCommandHandlerStatusSuccess;
+}];
 
-Please note that if you are a Brightcove Video Cloud customer using Dynamic Delivery, **you will most likely not need to use Sidecar Subtitles**. Please read the [Sidecar Subtitles guide](SidecarSubtitles.md) to confirm your specific use case.
+[center.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+[self.playbackController play];
+return MPRemoteCommandHandlerStatusSuccess;
+}];
+```
+Devices that are running iOS 11 or later will take advantage of `AVRoutePickerView` which has two delegate methods. These delegate methods are passed through to `BCOVPUIPlayerViewDelegate`. The methods are:
 
-Migrating From the Brightcove Sidecar Subtitles Plugin
------
+```
+- (void)routePickerViewWillBeginPresentingRoutes:(AVRoutePickerView *)routePickerView;
+- (void)routePickerViewDidEndPresentingRoutes:(AVRoutePickerView *)routePickerView;
+```
 
-If you were using the Brightcove Sidecar Subtitles Plugin with the Brightcove Native Player SDK prior to verison 6.0, be aware that the `BrightcoveSidecarSubtitles` module is now integrated into the core `BrightcovePlayerSDK` framework. No functional code changes are required, but you should make these changes for your build:
+For more information on incorporating AirPlay 2 into your app please see the [Getting Airplay 2 into Your App](https://developer.apple.com/documentation/avfoundation/airplay_2/getting_airplay_2_into_your_app) documentation.
 
-* If using CocoaPods, remove all references to `BrightcoveSidecarSubtitles` from your Podfiles, and then update.
-* For manual installations, remove the BrightcoveSidecarSubtitles.framework from your project.
-* In your source code, change any #includes from `<BrightcoveSidecarSubtitles/header_name.h>` to `<BrightcovePlayerSDK/header_name.h>`.
-* Remove any imports that refer to the `BrightcoveSidecarSubtitles` module.
-* In your target's Build Settings, remove any reference to the BrightcoveSidecarSubtitles.framework from your Framework Search Paths.
-* In your target's General settings, remove any reference to BrightcoveSidecarSubtitles from the Embedded Binaries and Linked Frameworks and Libraries sections
+**Important Note: AirPlay 2 is only supported on devices running iOS 11.4 or later.**
 
 Video 360 <a name="Video360"></a>
 ==========
@@ -562,28 +564,20 @@ The Brightcove Player SDK for iOS provides play, pause, and seek methods on the 
 
 Preloading Videos <a name="PreloadingVideos"></a>
 -------------------------------
-**NOTE:** *Preloading videos is no longer recommended, and this functionality may be removed in a future release.*
+If desired you may choose to preload upcoming videos in a playlist. One possible approach is to double-buffer a list of videos using two playback controllers, for example:
 
-The Brightcove Player SDK for iOS provides the ability to preload upcoming videos in a playlist. By default, this functionality is disabled because of the large amount of memory preloading may use. You can turn on preloading to help ensure futures videos load quickly, however you might want to take into account the amount of memory available on the client's device and speed of their connection. If they are not on Wifi, preloading a video may affect the current video's network resources.
+1. Initialize two playback controllers
+1. Set up your player view and assign one of the two playback controllers to the playerView's playbackController property (now your active playback controller)
+1. Once your playlist is ready assign the playlist (or just the videos array property) to a property as we'll need to access each video separately
+1. Get the first video in the videos array and give it to the active playback controller (`[self.playbackController1 setVideos:@[self.videos.firstObject]]`)
+1. Utilizing the `playbackController:didProgressTo:` delegate method of the playback controller determine if the current video has progressed far enough to where you want to begin preloading the next video
+1. Once you determine it's time to preload get the next video in the videos array and set it on the alternate playback controller
+1. Once the current video has completed set the playbackController on the playerView to the alternate playback controller
+1. Rinse and repeat steps 5-7
 
-[`BCOVBasicSessionProviderOptions`][options] and [`BCOVBasicSessionLoadingPolicy`][loadingpolicy] provide two factory methods to modify preloading behavior that are described below:
+For a working example you may download our [VideoPreloading](https://github.com/BrightcoveOS/ios-player-samples/tree/master/Player/VideoPreloading) sample app from our [Player Samples](https://github.com/BrightcoveOS/ios-player-samples) repository.
 
-* `+sessionPreloadingNever` This method returns a session preloading policy that never preloading videos. This is the default setting. 
-* `+sessionPreloadingWithProgressPercentage:` This method returns a session preloading policy that preloads the next video in a playlist after the provided percentage of the current video has been reached. If a value below 0 or greater than 100 is used, then `sessionPreloadingNever` is used. Some plugins may ignore this setting.
-
-An example:
-
-         BCOVPlayerSDKManager *manager = [BCOVPlayerSDKManager sharedManager];
-     [1] BCOVBasicSessionLoadingPolicy *policy = [BCOVBasicSessionLoadingPolicy sessionPreloadingWithProgressPercentage:50];     
-          BCOVBasicSessionProviderOptions *options = [[BCOVBasicSessionProviderOptions alloc] init];
-          options.sessionPreloadingPolicy = policy;
-          id<BCOVPlaybackSessionProvider> provider = [manager createBasicSessionProviderWithOptions:options];
-
-1. Create a session preloading policy which starts preloading of an upcoming session when the current session reaches 50% of progress. 
-
-[options]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVBasicSessionProvider.h#L108-L126
-
-[loadingpolicy]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVBasicSessionProvider.h#L78-L99
+**Note: You might want to take into account the amount of memory available on the client's device and speed of their connection. If they are not on Wifi, preloading a video may affect the current video's network resources.**
 
 Source Selection (HLS, MP4, HTTP/HTTPS) <a name="SourceSelection"></a>
 ---------------------------------------
@@ -617,20 +611,45 @@ If this default selection policy does not work for you, there are a few alternat
 
 Please be aware there are App Store limitations regarding the use of MP4 videos. Check the latest Apple Developer information for details.
 
+Setting a Preferred Bitrate <a name="PreferredBitrate"></a>
+---------------------------
+The Brightcove Player SDK for iOS provides a way to set the preferred bitrate for a video. You can create a BCOVPreferredBitrateConfig object that contains your desired bitrate options, along with some configuration for the view controller which is created to display the options. 
 
-Obtaining Content And Ad Playback Information <a name="PlaybackInformation"></a>
+The title for the menu is optional. The bitrate options are an array of NSDictionary's with each dictionary having one key:value pair. The key will be used as the option name, and the value is an NSNumber with the bitrate for that option in bps (bits per second). The bitrates you enter are values that can be mapped to bitrates of the renditions of your video assets. You can learn more about renditions in [Ingest Profiles Best Practices]. 
+
+Here is an example:
+
+    BCOVPUIPlayerViewOptions *options = [[BCOVPUIPlayerViewOptions alloc] init];
+    options.preferredBitrateConfig = [BCOVPreferredBitrateConfig configWithMenuTitle:@"Select an Option" andBitrateOptions:@[@{@"Auto":@(0)}, @{@"Setting 1":@(aBitrateValue)}, @{@"Setting 2":@(aBitrateValue)}]];
+
+When the end-user selects one of the options, the [preferredPeakBitRate] property of the current AVPlayerItem will be set to the option's value. If the video is in a playlist, the next video played will also have the preferredPeakBitRate value set. 
+
+After setting a non-zero value for [preferredPeakBitRate] you may not notice a difference in quality until AVPlayer has reached the end of its current buffered cache.
+
+You may additionally use the `configWithMenuTitle:bitrateOptions:andIndexofInitialSelection:` initializer that provides the ability to set the index of your preferred initial value. The index should correlate to the index of the desired option in the `bitrateOptions` array. 
+
+You may additionally use the `setPreferredPeakBitRate:` method on your `BCOVPlaybackController` object to programatically set the preferred bitrate for the current and future sessions. 
+
+NOTE: End-users must be given a way to return to the default value (0) of [preferredPeakBitRate]. You can do this by providing an option with a bitrate value of 0. If you do not provide a bitrate option of 0 an "Automatic" option will be appended to your list of options for the end-user.
+
+Please see Apple's documentation on [preferredPeakBitRate] for more information.
+
+[preferredPeakBitRate]:https://developer.apple.com/documentation/avfoundation/avplayeritem/1388541-preferredpeakbitrate
+[Ingest Profiles Best Practices]:https://support.brightcove.com/ingest-profiles-best-practices
+
+Obtaining Content and Ad Playback Information <a name="PlaybackInformation"></a>
 --------------------------------------
 The Brightcove Player SDK for iOS provides two mechanisms for obtaining playback information. The playback controller provides a delegate property that implements [`BCOVPlaybackControllerDelegate`][delegate]. A delegate can implement these optional methods to get notified of playback metadata like progress, duration changes, and other events. If an ad plugin is installed, it may also use this delegate to provide information about [ad playback][adplayback]. The [lifecycle event][lifecycle] delegate method provides events to signal changes in playback state. For example, when a player goes from the paused state to the playing state, the lifecycle event delegate method will be called with the `kBCOVPlaybackSessionLifecycleEventPlay` event. The default Lifecycle events are declared in [`BCOVPlaybackSession`][lifecycleevents]. Plugins provided by Brightcove add additional lifecycle events which are defined in each plugin.
 
-[adplayback]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVAdvertising.h#L120-L192
-[lifecycle]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L577-L588
+[adplayback]:https://github.com/brightcove/brightcove-player-sdk-ios/blob/fd5e766693e533854f202f270d3d62e32ceaae04/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVAdvertising.h#L120-L192
+[lifecycle]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/fd5e766693e533854f202f270d3d62e32ceaae04/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L630-L641
 [lifecycleevents]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackSession.h
 
 The playback controller allows for a single delegate. In many cases, this will be enough to retrieve information; the delegate implementations can disseminate values and events to different parts of the app as necessary. In cases where multiple delegates would be required, as is the case when developing a plugin, the [`BCOVPlaybackSessionConsumer`][consumer] delegates provide equivalent functionality to the [`BCOVPlaybackControllerDelegate`][delegate] methods, including [ad data][adconsumer].
 
-[consumer]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L259-L367
-[adconsumer]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVAdvertising.h#L195-L259
-[delegate]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/master/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L379-L495
+[consumer]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/fd5e766693e533854f202f270d3d62e32ceaae04/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L538-L655
+[adconsumer]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/fd5e766693e533854f202f270d3d62e32ceaae04/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVAdvertising.h#L195-L259
+[delegate]: https://github.com/brightcove/brightcove-player-sdk-ios/blob/fd5e766693e533854f202f270d3d62e32ceaae04/ios/dynamic/BrightcovePlayerSDK.framework/Headers/BCOVPlaybackController.h#L667-L793
 
 Here is an example of how one might use `BCOVPlaybackSessionConsumer` to create an analytics plugin:
 
@@ -666,7 +685,7 @@ You must wait before calling `- [BCOVPlaybackController resumeVideoAtTime:withAu
 
 When the `AVPlayer` is still able to access the network, but the video stalls because the network is too slow, the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackStalled` event. When playback is able to resume, the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackRecovered` event. These events only cover the case where normal playback stopped and does not cover buffering that occurs during a seek or initial load of the video.
 
-When the video is initially loading, when a seek occurs, or when playback stalls due to a slow network, the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackBufferEmpty` event.  When playback is able to resume,  the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackLikelyToKeepUp` event. You may wish to implement a loading spinner in this case.
+When the video is initially loading, when a seek occurs, or when playback stalls due to a slow network, the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackBufferEmpty` event.  When playback is able to resume,  the lifecycle delegate method will be called with a `kBCOVPlaybackSessionLifecycleEventPlaybackLikelyToKeepUp` event.
 
 Subclassing <a name="Subclassing"></a>
 -----------
@@ -711,7 +730,7 @@ As you can see in the example, `video1` has not been changed by the `-update` me
 Retrieving Brightcove Assets Using the Playback Service <a name="PlaybackService"></a>
 ------------------------
 
-The playback service class, `BCOVPlaybackService`, provides functionality for retrieving your Brightcove video assets and playlists via the [Brightcove Playback API][PlaybackAPI] , including rich metadata such as text tracks, previews, and thumbnails. The following example shows how to retrieve a video with a video ID. Methods for retrieving a video or playlist with that video's reference ID are also available..
+The playback service class, `BCOVPlaybackService`, provides functionality for retrieving your Brightcove video assets and playlists via the [Brightcove Playback API][PlaybackAPI] , including rich metadata such as text tracks, previews, and thumbnails. The following example shows how to retrieve a video with a video ID. Methods for retrieving a video or playlist with that video's reference ID are also available.
 
     [1] NSString *policyKey = <your-policy-key>;
         NSString *accountId = <your-account-id>;
@@ -735,6 +754,8 @@ The playback service class, `BCOVPlaybackService`, provides functionality for re
                                    }];
 
 1. The playback service requests **policy key** for authentication. To learn more about policy key and how to obtain one, please refer to the [policy key documentation][PolicyKey].
+
+**NOTE: If you are using the Playback Authorization Service please review the [section](#PlaybackAuthorizationService) of this README related to that feature.
 
 **Playlist Paging**
 
@@ -767,67 +788,54 @@ For example, if you have a playlist with 100 videos, you can request only 6 vide
 
 View Strategy <a name="ViewStrategy"></a>
 -------------
-**NOTE:** *Using a view strategy block is no longer recommended, as this functionality may be removed in a future release.*
 
-`BCOVPlaybackController` objects are constructed with a **view strategy**, which allows you, as the client of the SDK, to define the exact UIView object that is returned from the playback controller's `view` property. This is important when using plugins that affect the playback controller's view, such as an advertising plugin that overlays the video view with an ad view. Imagine trying to integrate custom controls with such a plugin: normally, custom controls are just regular UIView objects in the view hierarchy that float above the playback controller's video view. But with an advertising plugin, you generally want the ads to float over your custom controls. How to accomplish this without having in-depth knowledge of the structure of the playback controller's view hierarchy? The solution is to construct a view strategy that composes the video view, your custom controls, and the advertising view in a hierarchy of your choosing. The playback controller will call this view strategy the first time you access its `view` property. The final UIView object returned from the strategy will serve as its view permanently (until the controller is destroyed).
-
-Many apps will have no need to create a view strategy, and can simply pass `nil` when creating a new playback controller. This will create a standard video view in the playback controller. However, for apps that do need the control offered by a view strategy, we provide a more detailed explanation here.
+The `BCOVPlaybackController` object is constructed with a view strategy, which allows you, as the client of the SDK, to define the exact UIView object that is returned from the playback controller's view property. This is important when using plugins that affect the playback controller's view, such as an advertising plugin that overlays the video view with an ad view. 
+Many apps will have no need to create a view strategy, and can simply pass `nil` when creating a new playback controller. This will create a standard video view in the playback controller.
 
 The `BCOVPlaybackControllerViewStrategy` typedef aliases (and documents) this more complex block signature:
 
-    UIView *(^)(UIView *view, id<BCOVPlaybackController> playbackController);
+```objc
+UIView *(^)(UIView *videoView, id<BCOVPlaybackController> playbackController);
+```
 
-This signature describes an Objective-C block that returns a UIView and takes two parameters: a UIView and a playback controller. The return value is easy to understand: it is the UIView object that you want the playback controller's `view` property to point to. But what about the parameters to the block; what is the UIView that is passed as the first parameter? And why is the playback controller passed as the second parameter?
+This signature describes an Objective-C block that returns a UIView and takes two parameters: a UIView and a playback controller. The return value is the UIView object that the playback controller's view property will point to.
+The first parameter is an UIView that contains the video layer, the UIView will show the video. The second parameter is the playback controller object to which the view strategy has been given, the playback controller can be used to add necessary session consumers such as video controls or ad controls.
 
-The first parameter is a UIView that *would* have become the playback controller's `view` property, if your view strategy didn't exist to specify otherwise. To illustrate, you could create a pointless no-op view strategy by implementing the block to return its `view` parameter directly:
+Example of view strategy implementation:
 
-    BCOVPlaybackControllerViewStrategy viewStrategy =
-            ^ UIView *(UIView *videoView, id<BCOVPlaybackController> playbackController) {
+```objc
+BCOVPlaybackControllerViewStrategy viewStrategy = ^(UIView *videoView, id<BCOVPlaybackController> playbackController) {
 
-        return videoView;
-
-    };
-
-This has the same effect as passing a `nil` view strategy when creating the playback controller.
-
-The second parameter is the same playback controller object to which the view strategy has been given. Why would the view strategy need to reference its playback controller? In many cases, it probably doesn't, and the second parameter can be safely ignored. But some apps might need a view strategy that adds a session consumer to the playback controller. For example, to update custom controls every time the controller advances to a new playback session, you need to be notified of new sessions. The playback controller is made available in the second parameter to the block, so that the view strategy can add any necessary session consumers.
-
-It is very important not to retain this reference to the playback controller. That is, it is safe to use within the block if you need, but don't try to assign it to a `__block` variable or global variable so that you can access it later. The parameter is passed in only because there is no playback controller reference that can be closed-over within the block at the time the view strategy is defined.
-
-Here's an example of a more sensible view strategy implementation:
-
-    BCOVPlaybackControllerViewStrategy viewStrategy =
-            ^(UIView *videoView, id<BCOVPlaybackController> playbackController) {
-
-        // Create some custom controls for the video view,
-        // and compose both into a container view.
-        UIView<BCOVPlaybackSessionConsumer> *myControlsView = [[MyControlsView alloc] init];
-        UIView *controlsAndVideoView = [[UIView alloc] init];
-        [controlsAndVideoView addSubview:videoView];
+    // Create some custom controls for the video view,
+    // and compose both into a container view.
+    [1] UIView<BCOVPlaybackSessionConsumer> *myControlsView = [[MyControlsView alloc] init];
+    [2] UIView *controlsAndVideoView = [[UIView alloc] init];
+    [3] [controlsAndVideoView addSubview:videoView];
         [controlsAndVideoView addSubview:myControlsView];
-
-        // Compose the container with an advertising view
-        // into another container view.
-        UIView<BCOVPlaybackSessionConsumer> *adView = [[SomeAdPluginView alloc] init];
-        UIView *adAndVideoView = [[UIView alloc] init];
-        [adAndVideoView addSubview:controlsAndVideoView];
+    // Compose the container with an advertising view
+    // into another container view.
+    [4] UIView<BCOVPlaybackSessionConsumer> *adView = [[SomeAdPluginView alloc] init];
+    [5] UIView *adAndVideoView = [[UIView alloc] init];
+    [6] [adAndVideoView addSubview:controlsAndVideoView];
         [adAndVideoView addSubview:adView];
-
-        [playbackController addSessionConsumer:myControlsView];
+    [7] [playbackController addSessionConsumer:myControlsView];
         [playbackController addSessionConsumer:adView];
-
-        // This container view will become `playbackController.view`.
-        return adAndVideoView;
-
-    };
-
-Let's review what this view strategy does in detail: first, it creates a custom controls view that conforms to the `BCOVPlaybackSessionConsumer` protocol. (Note that custom views are not required to conform to this protocol; some other non-view object could have been added as a session consumer instead. This just makes the example easier to follow.) Notice how the view hierarchy is composed in this view strategy block: a container view is created to hold both the video view and the controls. These views are added in an order such that the controls will appear *over* the video view. Next, a container view is created to hold the ad view and the first container view. They are added in an order such that the ad view will appear over the container with the custom controls and video view. Finally, the custom controls and the ad view are registered as session consumers, so that when a new playback session is delivered to the playback controller, these views can subscribe to the appropriate events on the session.
-
-Again, for most use cases it should suffice to not use a view strategy at all. Just add the playback controller's view to a view hierarchy, and compose custom controls on top of it. But for more nuanced cases such as when using certain plugins, it helps to have an opportunity to take control of the composition of the playback controller's view, and that's exactly why you can pass a view strategy to the `BCOVPlayerSDKManager` when creating a new playback controller.
+    // This container view will become `playbackController.view`.
+    return adAndVideoView;
+};
+```
+Breaking the code down into steps:
+[1] Create a custom controls view that conforms to the `BCOVPlaybackSessionConsumer` protocol. `BCOVPlaybackSessionConsumer`protocol allows to receive basic playback information for each video in addition to advertising.
+[2] Create a container view for the video view and custom controls.
+[3] Add as a subview the video container and the custom controls. The hierarchy is composed in the same order that views are added.
+[4] Create an ad controls view that conforms to the `BCOVPlaybackSessionConsumer` protocol.
+[5] Create a container view for the video view and controls, and the advertising view.
+[6] Add as a subview the video container and the ad controls view.
+[7] Register the custom controls view and the ad controls view as session consumers using the playback controller object returned by the block.
 
 There is one caveat to using a view strategy: you must not access the playback controller's `view` property from within the view strategy block. Since the block is being called *because* the playback controller's `view` property was accessed for the first time, accessing the `view` property again *within* the view strategy block will cause your program to crash.
 
-Playing Video In The Background and Picture In Picture <a name="BackgroundPIP"></a>
+Playing Video In The Background <a name="BackgroundVideo"></a>
 -------------
 By default, when an iOS application is sent to the background, or the device is locked, iOS will pause any video that is playing. To change this behavior, set the `allowsBackgroundAudioPlayback` property of the `BCOVPlaybackController` object to `YES`. (The default value is `NO`, indicating playback will pause in the background.)
 
@@ -835,11 +843,94 @@ You should also follow the guidelines set by Apple in [Technical Q&A QA1668][tqa
 
 It's important that the `AVPlayerLayer` be detached from the `AVPlayer` before the app is switched to the background (and reattached when the app returns to the foreground). The Brightcove Player SDK will handle this for you when `allowsBackgroundAudioPlayback` is set to `YES`.
 
-Finally, when playing background videos (and particularly when using playlists), you should use the iOS `MPRemoteCommandCenter` API to give the user playback control on the lock screen and in the control center. Note that `MPRemoteCommandCenter` is only available in iOS 7.1 and later; if you need to support iOS 7.0, you should use `UIApplication`'s `beginReceivingRemoteControlEvents` and `endReceivingRemoteControlEvents`.
-
-**Important Picture in Picture Note:** When you want to support background audio and Picture in Picture on the same player, you must update the `pictureInPictureActive` property on `BCOVPlaybackController` with the Picture in Picture status. If you are using the `AVPictureInPictureController`, you can use the `pictureInPictureControllerDidStartPictureInPicture:` and `pictureInPictureControllerDidStopPictureInPicture:` delegate methods to update this property.
+Finally, when playing background videos (and particularly when using playlists), you should use the iOS `MPRemoteCommandCenter` API to give the user playback control on the lock screen and in the control center.
 
 [tqa1668]: https://developer.apple.com/library/ios/qa/qa1668
+
+Picture in Picture <a name="PIP"></a>
+-------------
+To enable Picture-in-Picture in your application, set the `showPictureInPictureButton` property of the `BCOVPUIPlayerViewOptions` object to `YES` when instantiating your `BCOVPUIPlayerView` object. The Picture-in-Picture button will then be displayed in the controls bar on any device that support it. 
+
+For Picture-in-Picture to work properly you will need to ensure that the `Audio, AirPlay, and Picture in Picture` mode is turned in the `Background Modes` section of the target Capabilities tab of your project. You should also follow the guidelines set by Apple in [Technical Q&A QA1668][tqa1668] to set the proper background modes and audio session category for your app.
+
+Some `AVPictureInPictureControllerDelegate` methods are passed along via `BCOVPUIPlayerViewDelegate`. These methods are:
+
+```
+- (void)pictureInPictureControllerDidStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+- (void)pictureInPictureControllerDidStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+- (void)pictureInPictureControllerWillStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+- (void)pictureInPictureControllerWillStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+- (void)pictureInPictureController:(AVPictureInPictureController *)pictureInPictureController failedToStartPictureInPictureWithError:(NSError *)error
+```
+
+To implement your own Picture-in-Picture behavior, keep the `pictureInPictureActive` property of `BCOVPlaybackController` updated with the Picture-in-Picture status. If you are using the `AVPictureInPictureController`, you can use the `pictureInPictureControllerDidStartPictureInPicture:` and `pictureInPictureControllerDidStopPictureInPicture:` delegate methods to update this property.
+
+You can read more about implmeneting Picture-in-Picture in Apple's [Adopting Picture in Picture in a Custom Player](https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a_custom_player) documentation.
+
+**Important: The Brightcove Native Player SDK's Picture-in-Picture functionality does not support videos with ad playback. Trying to use a video with ads with the Picture-in-Picture functionality active will result in unexpected behavior.**
+
+Thumbnail Scrubbing <a name="ThumbnailScrubbing"></a>
+-------------
+Thumbnail scrubbing allows users to drag the playhead along the timeline and view thumbnails as a preview of the associated content. This gives users the ability to quickly navigate a video file and find the content that they are interested in.
+
+This feature is also referred to by Apple as Trick Play, and is referenced in their [HLS Authoring Specification](https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices?language=objc).
+
+This feature is enabled by default. If you wish to disable thumbnail scrubbing you can do so by setting the `thumbnailScrubbingEnabled` property on your `BCOVPlaybackController` to `NO`. 
+
+```
+self.playbackController.thumbnailScrubbingEnabled = NO;
+```
+
+You can customize the layout of the thumbnail preview by making use of a delegate method with your `BCOVPUIPlayerView` or `BCOVTVPlayerView`. 
+
+On iOS you can adjust the height, width and vertical offset:
+
+```
+- (void)setupPlayerView
+{
+    BCOVPUIPlayerView *playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:nil];
+    playerView.delegate = self;
+    ...
+}
+
+#pragma mark - BCOVPUIPlayerViewDelegate
+
+- (CGRect)playerViewShouldDisplayThumbnailPreviewWithRect:(BCOVPUIPlayerView *)playerView
+{
+    CGFloat width = 100;
+    CGFloat height = 56;
+    CGFloat verticalOffset = -60;
+    CGFloat modifier = 1;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        modifier = 2;
+    }
+    return CGRectMake(0, verticalOffset * modifier, width * modifier, height * modifier);
+}
+```
+
+On tvOS you can adjust the height and width:
+
+```
+- (void)setupPlayerView
+{
+    self.playerView = [[BCOVTVPlayerView alloc] initWithOptions:nil];    
+    self.playerView.delegate = self;
+    ...
+}
+
+#pragma mark - BCOVTVPlayerViewDelegate
+
+- (CGSize)playerViewShouldDisplayThumbnailPreviewWithSize:(BCOVTVPlayerView *)playerView
+{
+    CGSize size = self.view.frame.size;
+    size.width = size.width / 6;
+    size.height = size.height / 6;
+    return size;
+}
+```
+
+Thumbnail scrubbing is only available for online videos; downloaded/offline videos do not support this feature. 
 
 Tracking Errors <a name="TrackingErrors"></a>
 -----
@@ -856,7 +947,7 @@ The session ID is a unique string that does not change during the app life cycle
 Combining Plugins <a name="CombiningPlugins"></a>
 -----
 
-If you need to combine Player SDK plugins, for example to add subtitles to a DRM-protected video which plays ads managed by Google IMA. To achieve this, `BCOVSessionProviders` from each plugin are created and chained together, and the chain is used to construct the `BCOVPlaybackController`.
+If you need to combine Player SDK plugins, for example to add subtitles to a DRM-protected video which plays ads managed by Google IMA, `BCOVSessionProviders` from each plugin are created and chained together and the chain is used to construct the `BCOVPlaybackController`.
 
 ```
 BCOVPlayerSDKManager *sdkManager = [BCOVPlayerSDKManager sharedManager];
@@ -900,7 +991,7 @@ Buffer Optimization <a name="BufferOptimization"></a>
 Overview
 -----
 
-With the release of iOS 10, you now have control over the size of the forward playback buffer used by the `AVPlayer`. This is done by setting the `preferredForwardBufferDuration` property in the `AVPlayerItem` class.
+Developers have control over the size of the forward playback buffer used by the `AVPlayer`. This is done by setting the `preferredForwardBufferDuration` property in the `AVPlayerItem` class.
 
 By default, the Brightcove Native Player SDK sets the `preferredForwardBufferDuration` property in a way that optimizes overall bandwidth without sacrificing playback quality. This behavior can be overridden with your own values.
 
@@ -936,7 +1027,7 @@ These options should be set before calling `-BCOVPlaybackController setVideos:`.
 - If the values are set too small, playback may stall under erratic network conditions. 
 - If the values are set too large, the `AVPlayer` may buffer data that is never viewed. 
 - Testing based on your expected use cases is important. 
-- Values are specified in seconds of time, and must be greater than or equal to 1.0. (Zero is a special value in the `AVPlayerItem` that tells the `AVPlayer` to determine its own buffer size, as is done with iOS 9 and earlier).
+- Values are specified in seconds of time, and must be greater than or equal to 1.0. (Zero is a special value in the `AVPlayerItem` that tells the `AVPlayer` to determine its own buffer size.
 
 
 Turning Off Buffer Optimization
@@ -952,7 +1043,7 @@ If you do not want any buffer optimization active in your current playback sessi
     // Set new dictionary in your playback controller
     self.playbackController.options = options;
 
-With the method set to “None”, iOS will maintain full control of the forward buffer size, as is done on iOS 9 and earlier.
+With the method set to “None”, iOS will maintain full control of the forward buffer size.
 
 Implementing Your Own Buffer Optimization Method
 -----
@@ -960,7 +1051,7 @@ If you want to set your own buffer size for playback, first turn off buffer opti
 
 	- (void)playbackController:(id<BCOVPlaybackController>)controller didAdvanceToPlaybackSession:(id<BCOVPlaybackSession>)session
 	{
-	  // Make sure the property exists on the current AVPlayerItem. This will return false for iOS 9 or earlier.
+	  // Make sure the property exists on the current AVPlayerItem.
       if ([session.player.currentItem respondsToSelector:NSSelectorFromString(@"preferredForwardBufferDuration")])
       {
         // Set your preferredForwardBufferDuration value here.
@@ -968,13 +1059,11 @@ If you want to set your own buffer size for playback, first turn off buffer opti
       }
 	}
 
-**Important:** You must compile against the iOS 10 SDK to use the `preferredForwardBufferDuration` property directly. Do not attempt to access this property on iOS 9 or earlier, or your app will crash.
-
 If you want to change the buffer size dynamically over time, you can set `session.player.currentItem.preferredForwardBufferDuration` in the `BCOVPlaybackController`'s progress delegate method in a similar fashion:
 
 	- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didProgressTo:(NSTimeInterval)progress
 	{
-	  // Make sure the property exists on the current AVPlayerItem. This will return false for iOS 9 or earlier.
+	  // Make sure the property exists on the current AVPlayerItem.
       if ([session.player.currentItem respondsToSelector:NSSelectorFromString(@"preferredForwardBufferDuration")])
       {
         // Set preferredForwardBufferDuration based on your own logic here
@@ -1008,18 +1097,96 @@ To use the AVPlayerViewController, you can set a BCOVPlaybackController dictiona
 
 The default value of kBCOVAVPlayerViewControllerCompatibilityKey is @NO, which means that a BCOVPlaybackController created without this dictionary property explicitly set will use the BCOVPlaybackSession's AVPlayerLayer by default.
 
+Sample Projects
+---------------
+We have sample projects demonstrating the use of AVPlayerViewController with the Brightcove iOS SDK.  You can find the [iOS sample project here](https://github.com/BrightcoveOS/ios-player-samples/tree/master/Player/NativeControls) and the [tvOS sample project here](https://github.com/BrightcoveOS/ios-player-samples/tree/master/IMA/NativeControlsIMAPlayer_tvOS).
+
 Limitations to Using the AVPlayerViewController
 -----------------------------------------------
-Advertising:
-Using the AVPlayerViewController's AVPlayerLayer will not work with the iOS SDK advertising plugins:
-IMA Plugin
-FreeWheel Plugin
-OnceUX Plugin
+**Advertising:**
 
-due to the use by those plugins of a separate instance of the AVPlayer.
+The Brightcove IMA and FreeWheel ad plugins are compatible when using AVPlayerViewController. You can use the AVPlayerViewController's `contentOverlayView` for the view in which to display ads. 
 
-Analytics:
+You may wish to hide/show the AVPlayerViewController's playback controls before and after ads play:
+
+```
+- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didEnterAdSequence:(BCOVAdSequence *)adSequence
+{
+    self.avpvc.showsPlaybackControls = NO;
+}
+
+- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didExitAdSequence:(BCOVAdSequence *)adSequence
+{
+    self.avpvc.showsPlaybackControls = YES;
+}
+```
+The Brightcove SSAI and Pulse ad plugins are not currently compatible with AVPlayerViewController.
+
+**Analytics:**
+
 When using the AVPlayerViewController, the video_engagement events sent to the Brightcove Analytics server will report 0 for player_width and player_height.
+
+Playback Authorization Service <a name="PlaybackAuthorizationService"></a>
+=================
+If you are using the Playback Authorization Service you will need to use the playback service methods that allow you to pass in an authorization token. 
+
+```
+- (void)findPlaylistWithPlaylistID:(NSString *)playlistID authToken:(NSString *)authToken parameters:(NSDictionary *)parameters completion:(void (^)(BCOVPlaylist *playlist, NSDictionary *jsonResponse, NSError *error))completionHandler;
+
+- (void)findPlaylistWithReferenceID:(NSString *)referenceID authToken:(NSString *)authToken parameters:(NSDictionary *)parameters completion:(void (^)(BCOVPlaylist *playlist, NSDictionary *jsonResponse, NSError *error))completionHandler;
+
+- (void)findVideoWithVideoID:(NSString *)videoID authToken:(NSString *)authToken parameters:(NSDictionary *)parameters completion:(void (^)(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error))completionHandler;
+
+- (void)findVideoWithReferenceID:(NSString *)referenceID authToken:(NSString *)authToken parameters:(NSDictionary *)parameters completion:(void (^)(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error))completionHandler;
+
+```
+
+**Note: In the case of playlists, all videos in the playlist must use the same token.  In a subsequent release, assigning a different token to each video in a playlist will be possible.  You will be responsible for maintaining the mapping between video id and token.**
+
+VoiceOver Support <a name="VoiceOver"></a>
+=================
+
+VoiceOver is supported out-of-the-box for the playback controls. By default, if VoiceOver is enabled, the BCOVPlayerUI control view will not auto-hide. Using the double-tap VoiceOver activation gesture on the playback controller's view will toggle the visibility of the control view. There is an associated `accessibilityHint` that is set on the playback controller's view. The `accessibilityLabel` of each BCOVPlayerUI control can be customized within your application. 
+
+To change the `accessibilityLabel` values of any of the buttons in the control view you must set an object to be a `BCOVPUIButtonAccessibilityDelegate` like this:
+
+    [self.playerView.controlsView setButtonsAccessibilityDelegate:self];
+
+You must then have that object conform to the `BCOVPUIButtonAccessibilityDelegate` protocol by implmenting the `- (NSString *)accessibilityLabelForButton:(BCOVPUIButton *)button isPrimaryState:(BOOL)isPrimaryState` method similar to this:
+
+    - (NSString *)accessibilityLabelForButton:(BCOVPUIButton *)button isPrimaryState:(BOOL)isPrimaryState
+    {
+        switch (button.tag)
+        {
+            case BCOVPUIViewTagButtonPlayback:
+                return isPrimaryState ? NSLocalizedString(@"Start Playback", nil) : NSLocalizedString(@"Stop PLayback", nil);
+            case BCOVPUIViewTagButtonScreenMode:
+                return isPrimaryState ? NSLocalizedString(@"Enter Fullscreen", nil) : NSLocalizedString(@"Exit Fullscreen", nil);
+            case BCOVPUIViewTagButtonJumpBack:
+                return nil;
+            case BCOVPUIViewTagButtonClosedCaption:
+                return nil;
+            case BCOVPUIViewTagButtonVideo360:
+                return nil;
+            case BCOVPUIViewTagButtonPreferredBitrate:
+                return nil;
+            default:
+                return nil;
+        }
+    }
+
+If a `nil` value is returned the default value will be used.
+
+Setting the `accessibilityHint` on the playback controller can be done like this:
+
+    self.playbackController.view.accessibilityHint = @"Double tap to show or hide controls";
+
+Similarly you can set the `accessibilityLabel` on the current time and duration labels, along with the progress slider, like this:
+
+    self.playerView.controlsView.durationLabel.accessibilityLabelPrefix = @"Total Time";
+    self.playerView.controlsView.currentTimeLabel.accessibilityLabelPrefix = @"Current Time";
+    self.playerView.controlsView.progressSlider.accessibilityLabel = @"Timeline";
+
 
 Frequently Asked Questions <a name="FAQ"></a>
 ==========================

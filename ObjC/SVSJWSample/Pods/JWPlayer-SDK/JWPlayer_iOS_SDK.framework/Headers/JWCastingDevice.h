@@ -8,31 +8,37 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-    googleChromeCast = 1
-}JWCastingService;
+NS_ASSUME_NONNULL_BEGIN
 
-/*!
- @class JWCastingDevice
+/**
+    Type of casting service
+ */
+typedef NS_ENUM(NSInteger, JWCastingService) {
+    /// Google Chromecast 
+    JWCastingServiceGoogleChromeCast = 1
+};
+
+/**
  A class that encapsulates a casting device and holds its identifiers and attributes.
  */
 @interface JWCastingDevice : NSObject
 
-/*!
+/**
  The casting service supported the device. i.e. a chromeCast device returns googleChromeCast as its casting service.
  */
 @property (nonatomic, readonly) JWCastingService castingService;
 
-/*!
+/**
  The casting device's friendly name; i.e. "Dining Room".
  */
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy, readonly) NSString *name;
 
-/*!
+/**
  A unique identifier for the casting device.
  */
-@property (nonatomic, readonly) NSString *identifier;
+@property (nonatomic, copy, readonly) NSString *identifier;
 
-- (instancetype)init __attribute__((unavailable("init not available")));
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
+NS_ASSUME_NONNULL_END

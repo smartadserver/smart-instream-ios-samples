@@ -24,7 +24,11 @@ typedef NS_ENUM(NSInteger, SCSPostClickModalType) {
     SCSPostClickModalTypeOther                      = 2,
 };
 
+/**
+ Delegate for the post click manager class.
+ */
 @protocol SCSPostClickManagerDelegate <NSObject>
+
 @required
 - (nullable UIViewController *)postClickManagerRequestsPresentationController:(SCSPostClickManager *)postClickManager;
 - (void)postClickManagerDidCountClick:(SCSPostClickManager *)postClickManager;
@@ -34,6 +38,9 @@ typedef NS_ENUM(NSInteger, SCSPostClickModalType) {
 - (void)postClickManager:(SCSPostClickManager *)postClickManager willCloseModalControllerWithType:(SCSPostClickModalType)type;
 - (void)postClickManager:(SCSPostClickManager *)postClickManager didCloseModalControllerWithType:(SCSPostClickModalType)type;
 - (void)postClickManager:(SCSPostClickManager *)postClickManager didFailToOpenURL:(NSURL *)url error:(nullable NSError *)error;
+
+@optional
+- (BOOL)postClickManager:(SCSPostClickManager *)postClickManager shouldHandleURL:(NSURL *)url;
 
 @optional
 // Methods for unit testing purpose only
