@@ -26,15 +26,15 @@ class JWPlayerPlayheadAdapter: NSObject, SVSContentPlayerPlayHead {
     // MARK: - Content Player Playhead methods
     
     func contentPlayerCurrentTime() -> TimeInterval {
-        if let playbackPosition = playerController.playbackPosition {
-            return playbackPosition.doubleValue
-        } else {
-            return 0.0
-        }
+        return TimeInterval(self.playerController.position)
     }
 
     func contentPlayerTotalTime() -> TimeInterval {
-        return infiniteDuration ? Double(kSVSContentPlayerTotalDurationInfinite) : playerController.duration
+        if infiniteDuration {
+            return TimeInterval(kSVSContentPlayerTotalDurationInfinite)
+        } else {
+            return TimeInterval(playerController.duration)
+        }
     }
 
     func contentPlayerVolumeLevel() -> Float {
@@ -42,7 +42,7 @@ class JWPlayerPlayheadAdapter: NSObject, SVSContentPlayerPlayHead {
     }
 
     func contentPlayerIsPlaying() -> Bool {
-        return playerController.playerState == "playing"
+        return playerController.state == JWPlayerState.playing
     }
 
 }

@@ -334,6 +334,11 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
         return self
     }
     
+    func adManager(_ adManager: SVSAdManager, didGenerate cuePoints: [SVSCuePoint]) {
+        // Called when cuepoints used for midroll ad break have been computed.
+        // You can use this delegate method to display the ad break position in your content player UI…
+    }
+    
     // MARK: - PlayerManager delegate
     
     func playerManager(playerManager: PlayerManager, didUpdateFullscreenStatus isFullscreen: Bool) {

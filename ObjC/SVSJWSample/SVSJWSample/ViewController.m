@@ -372,6 +372,12 @@
     self.player.fullscreen = NO;
 }
 
+
+- (void)adManager:(SVSAdManager *)adManager didGenerateCuePoints:(NSArray<SVSCuePoint *> *)cuePoints {
+    // Called when cuepoints used for midroll ad break have been computed.
+    // You can use this delegate method to display the ad break position in your content player UI…
+}
+
 #pragma mark - SVSAdManagerDelegate - Modal presentation
 
 - (UIViewController *)adManagerDidRequestPostClickPresentationViewController:(SVSAdManager *)adManager {

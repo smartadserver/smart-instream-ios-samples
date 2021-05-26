@@ -176,13 +176,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework"
-  install_framework "${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework"
-  install_framework "${PODS_ROOT}/Smart-Instream-SDK/SVSVideoKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKit/SCSCoreKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKit/SVSVideoKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework"
-  install_framework "${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.framework"
-  install_framework "${PODS_ROOT}/Smart-Instream-SDK/SVSVideoKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKit/SCSCoreKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKit/SVSVideoKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

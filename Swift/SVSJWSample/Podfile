@@ -3,17 +3,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SVSJWSample' do
 
   use_frameworks!
-  platform :ios, '9.0'
+  platform :ios, '11.0'
 
-  pod 'JWPlayer-SDK', '~> 2.8'
-  pod 'Smart-Instream-SDK', '7.9.0'
-
-  post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
-      end
-    end
-  end
+  pod 'JWPlayer-SDK', '3.19.1'
+  pod 'Smart-Instream-SDK', '7.11.0'
 
 end

@@ -19,7 +19,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>JWPlayerKey</key>
-	<string>I99rC3OXN9G9pH1rqHnW1pte65rea4dEpRTU326Zhd5RutPyTxMJd3PA5LeU3tPc</string>
+	<string>YOUR_JWPLAYER_LICENCE_KEY</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

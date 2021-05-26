@@ -1,12 +1,12 @@
 PODS:
-  - JWPlayer-SDK (3.18.2)
-  - Smart-Core-SDK (7.9.0)
-  - Smart-Instream-SDK (7.9.0):
-    - Smart-Core-SDK (~> 7.9)
+  - JWPlayer-SDK (3.19.1)
+  - Smart-Core-SDK (7.11.0)
+  - Smart-Instream-SDK (7.11.0):
+    - Smart-Core-SDK (~> 7.11)
 
 DEPENDENCIES:
-  - JWPlayer-SDK (= 3.18.2)
-  - Smart-Instream-SDK (= 7.9.0)
+  - JWPlayer-SDK (= 3.19.1)
+  - Smart-Instream-SDK (= 7.11.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - Smart-Instream-SDK
 
 SPEC CHECKSUMS:
-  JWPlayer-SDK: d2fee6f41f91be118a3b36791ad4db0cc55a85dd
-  Smart-Core-SDK: e489e9231223ab4c3e34b7445111e7c804d5f48c
-  Smart-Instream-SDK: 6b6d09b186723f7b4f11812b42dfed48505c2ff7
+  JWPlayer-SDK: 8cebd2d86bcaa6c505d0bb07260b5c9e668ab257
+  Smart-Core-SDK: 71d1c27d7a177432bd61db1b30426917bf1c9c21
+  Smart-Instream-SDK: 08e21ccd5d79ec890696408d7389b48fd6a68086
 
-PODFILE CHECKSUM: 745c4e1855538d4e6325aa3cfaf6da11baf793f1
+PODFILE CHECKSUM: 3d86b4433a2b9c13e36acd7ec59769b445eb0eee
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

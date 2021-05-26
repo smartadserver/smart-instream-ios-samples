@@ -175,12 +175,12 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/Smart-Core-TV-SDK/SCSCoreKitTV.framework"
-  install_framework "${PODS_ROOT}/Smart-Instream-TV-SDK/SVSVideoKitTV.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKitTV/SCSCoreKitTV.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKitTV/SVSVideoKitTV.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/Smart-Core-TV-SDK/SCSCoreKitTV.framework"
-  install_framework "${PODS_ROOT}/Smart-Instream-TV-SDK/SVSVideoKitTV.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKitTV/SCSCoreKitTV.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKitTV/SVSVideoKitTV.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

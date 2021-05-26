@@ -57,11 +57,12 @@ class ViewController: UIViewController, SVSAdManagerDelegate, JWPlayerDelegate {
         // Create JW Player Config
         ///////////////////////////
         let config = JWConfig()
-        config.sources = [JWSource(file: Constants.contentVideoURL, label: "Video", isDefault: true)!]
+        config.sources = [JWSource(file: Constants.contentVideoURL, label: "Video", isDefault: true)]
+        //config.sources = [JWSource(file: Constants.contentVideoURL, label: "Video", isDefault: true)!]
         config.title = "JWPlayer Sample"
         config.controls = true
         config.repeat = false
-        config.premiumSkin = JWPremiumSkinRoundster
+        config.skin = JWSkinStyling.init()
         
         /////////////////////////////
         // Create JWPlayerController
@@ -76,11 +77,12 @@ class ViewController: UIViewController, SVSAdManagerDelegate, JWPlayerDelegate {
     }()
     
     func setupPlayerViewIfNeeded() {
-        guard !playerController.view.isDescendant(of: videoContainerView) else { return }
-        
-        playerController.view.frame = videoContainerView.bounds
-        playerController.view.autoresizingMask = [.flexibleBottomMargin, .flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleWidth]
-        videoContainerView.addSubview(playerController.view)
+        if let playerView = playerController.view {
+            guard !(playerView.isDescendant(of: videoContainerView)) else { return }
+            playerView.frame = videoContainerView.bounds
+            playerView.autoresizingMask = [.flexibleBottomMargin, .flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleWidth]
+            videoContainerView.addSubview(playerView)
+        }
     }
     
     // MARK: - Ad Manager instantiation
@@ -131,7 +133,17 @@ class ViewController: UIViewController, SVSAdManagerDelegate, JWPlayerDelegate {
         // Note that we pass the newly created playhead and the container view.
         // For AVPlayer, we pass the videoContainerView which already contains the player view.
         ///////////////////////////////////////////////////////////////////////////////////////
-        adManager.start(with: playheadAdapter!, adContainerView: videoContainerView)
+        adManager.start(with: playheadAdapter!, adContainerView: playerAdContainerView())
+    }
+    
+    func playerAdContainerView() -> UIView {
+        // Due to fullscreen states management changes between JWPlayer 2.x and 3.x,
+        // we need to insert ad player in the JWPlaybackView and not in the JWAVContainer view
+        
+        if let firstSubview = playerController.view?.subviews.first {
+            return firstSubview
+        }
+        return playerController.view! // just in case
     }
     
     func instantiatePlayheadAdapter(playerController: JWPlayerController) -> SVSContentPlayerPlayHead {
@@ -278,7 +290,7 @@ class ViewController: UIViewController, SVSAdManagerDelegate, JWPlayerDelegate {
     func adManagerDidRequest(toEnterFullscreen adManager: SVSAdManager) {
         // Called when the enter fullscreen button of an Ad is clicked by the user.
         // Adapt your UI to properly react to this user action: you should resize your container view so it fits the whole screen.
-        playerController.enterFullScreen()
+        playerController.fullscreen = true
         
         /*
          //////////////////////////////////////////////////
@@ -296,11 +308,17 @@ class ViewController: UIViewController, SVSAdManagerDelegate, JWPlayerDelegate {
     func adManagerDidRequest(toExitFullscreen adManager: SVSAdManager) {
         // Called when the exit fullscreen button of an Ad is clicked by the user.
         // Adapt your UI to properly react to this user action: you should resize your container view so it goes back to its original size.
-        playerController.exitFullScreen()
+        playerController.fullscreen = false
+
     }
     
     func adManagerDidRequestPostClickPresentationViewController(_ adManager: SVSAdManager) -> UIViewController {
         return self
+    }
+    
+    func adManager(_ adManager: SVSAdManager, didGenerate cuePoints: [SVSCuePoint]) {
+        // Called when cuepoints used for midroll ad break have been computed.
+        // You can use this delegate method to display the ad break position in your content player UI…
     }
     
     // MARK: - JW Player Delegate

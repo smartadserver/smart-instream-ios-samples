@@ -8,49 +8,54 @@
 
 #import <Foundation/Foundation.h>
 
-/*!
- An object providing info about captions. Supports DFXP (TTML), SRT, WebVTT formats.
+NS_ASSUME_NONNULL_BEGIN
+/**
+ An object providing info about captions or thumbnails. Supports DFXP (TTML), SRT, WebVTT formats.
  */
 @interface JWTrack : NSObject
 
 
 /* ========================================*/
-/** @name Accessing Captions Track Attributes */
-
-/*!
- Path to the captions file.
+/** @name Accessing Captions Track Attributes
  */
-@property (nonatomic, retain) NSString *file;
 
-/*!
+/**
+ Path to the captions or thumbnails track file.
+ @note Captions accept WEBVTT, SRT, and DFXP format, though JW Player strongly suggests using WEBVTT if possible. Thumbnail files must be in WEBVTT format, these VTT files contain links to the actual thumbnail images, which can be in JPG, PNG or GIF format.
+ */
+@property (nonatomic, copy) NSString *file;
+
+/**
  Label to be shown in the player in captions popup.
- @discussion not shown if only 1 captions track provided.
+ @note Only for captions. Not shown if only 1 captions track provided.
  */
-@property (nonatomic, retain) NSString *label;
+@property (nonatomic, copy) NSString *label;
 
-/*!
+/**
  String representing kind of track.
- @discussion only 'captions' currently supported.
+ @note 'captions' and 'thumbnails' are currently supported.
  */
-@property (nonatomic, retain) NSString *kind;
+@property (nonatomic, nullable, copy) NSString *kind;
 
-/*!
+/**
  If set to yes the player shows this captions track upon launch.
+ @note Only for captions.
  */
-@property (nonatomic) BOOL defaultValue;
+@property (nonatomic) BOOL defaultTrack;
 
 /* ========================================*/
-/** @name Creating Captions Track Object */
+/** @name Creating Captions Track Object
+ */
 
 
-/*!
+/**
  Factory method that creates JWTrack object with provided file and label.
  @param file Path to the captions file.
  @param label Label to be shown in the player in captions popup.
  */
 + (instancetype)trackWithFile:(NSString *)file label:(NSString *)label;
 
-/*!
+/**
  Factory method that creates JWTrack object with provided file and label and sets current captions track as default.
  @param file Path to the captions file.
  @param label Label to be shown in the player in captions popup.
@@ -59,17 +64,30 @@
 + (instancetype)trackWithFile:(NSString *)file label:(NSString *)label isDefault:(BOOL)def;
 
 /* ========================================*/
-/** @name Initializing Captions Track Object */
+/** @name Creating Thumbnails Track Object
+ */
 
 
-/*!
+/**
+ Factory method that creates JWTrack object with provided thumbnails file.
+ @param file Path to the thumbnails file.
+ @see file
+ */
++ (instancetype)trackWithThumbnailsFile:(NSString *)file;
+
+/* ========================================*/
+/** @name Initializing Captions Track Object
+ */
+
+
+/**
  Inits JWTrack object with provided file and label.
  @param file Path to the captions file.
  @param label Label to be shown in the player in captions popup.
  */
 - (instancetype)initWithFile:(NSString *)file label:(NSString *)label;
 
-/*!
+/**
  Inits JWTrack object with provided file and label and sets current captions track as default.
  @param file Path to the captions file.
  @param label Label to be shown in the player in captions popup.
@@ -77,4 +95,15 @@
  */
 - (instancetype)initWithFile:(NSString *)file label:(NSString *)label isDefault:(BOOL)def;
 
+/**
+ Inits JWTrack object with provided thumbnails file.
+ @param file Path to the thumbnails file.
+ @see file
+ */
+- (instancetype)initWithThumbnailsFile:(NSString *)file;
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)new NS_UNAVAILABLE;
+
 @end
+NS_ASSUME_NONNULL_END

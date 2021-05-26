@@ -9,8 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		A98015F3C2F2ADC7840D82CFD0C8AB2A /* Smart-Core-TV-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 6795247AC54A2086C5524F975F69501C /* Build configuration list for PBXAggregateTarget "Smart-Core-TV-SDK" */;
+			buildConfigurationList = 74325CE7296E21104F96304E6F91D3E1 /* Build configuration list for PBXAggregateTarget "Smart-Core-TV-SDK" */;
 			buildPhases = (
+				9D129D8719E528B0174E8E3D7CC98DCE /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -18,11 +19,12 @@
 		};
 		AF937B3B73080C9E48FA3E32E46C3439 /* Smart-Instream-TV-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 368CDF008086063CC55634DF28F8B387 /* Build configuration list for PBXAggregateTarget "Smart-Instream-TV-SDK" */;
+			buildConfigurationList = 57340B85EB5C6E80D0AE7B2CD9B437B8 /* Build configuration list for PBXAggregateTarget "Smart-Instream-TV-SDK" */;
 			buildPhases = (
+				1C1106382D359B7B0FCA814DD3616B1E /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				F7937FBF942EAFC28FCCD452166CF916 /* PBXTargetDependency */,
+				6C9D4EC95537E7879CF1492A144381AD /* PBXTargetDependency */,
 			);
 			name = "Smart-Instream-TV-SDK";
 		};
@@ -42,41 +44,43 @@
 			remoteGlobalIDString = A98015F3C2F2ADC7840D82CFD0C8AB2A;
 			remoteInfo = "Smart-Core-TV-SDK";
 		};
-		37E31F5F415F14296F2859CEB3A738F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A98015F3C2F2ADC7840D82CFD0C8AB2A;
-			remoteInfo = "Smart-Core-TV-SDK";
-		};
-		7D6B40DED8792A9DA5747D1A352FE4E1 /* PBXContainerItemProxy */ = {
+		56B26FA894F7EF64FDA0836AD25C4BC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AF937B3B73080C9E48FA3E32E46C3439;
 			remoteInfo = "Smart-Instream-TV-SDK";
 		};
+		5C3B99A5B8624FDDCF91E8F32C6769F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98015F3C2F2ADC7840D82CFD0C8AB2A;
+			remoteInfo = "Smart-Core-TV-SDK";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		055C1719E32EA78C74E06FD1A5C60005 /* SVSVideoKitTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SVSVideoKitTV.framework; sourceTree = "<group>"; };
 		169CFAA332E3225E3169CEE1F55FA166 /* Pods-SVSTVSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SVSTVSample.modulemap"; sourceTree = "<group>"; };
 		28DEF97AC950C1A1EA21ED8AF12D3C07 /* Pods-SVSTVSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVSTVSample-umbrella.h"; sourceTree = "<group>"; };
 		2AE0DB0E54C86F558AD91C876C372855 /* Pods-SVSTVSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSTVSample-Info.plist"; sourceTree = "<group>"; };
+		39C235D1B1E524C0772D3D7B9176E8DA /* Smart-Core-TV-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-TV-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		3A25DC8F7C799B572393D9C981A8C847 /* Pods-SVSTVSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSTVSample.release.xcconfig"; sourceTree = "<group>"; };
+		45B1668691E270CE70787C2D2E0BE446 /* Smart-Core-TV-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Core-TV-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		4CBE36AE5E74F1AC9B1D46DB72E605DF /* Pods-SVSTVSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSTVSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		526F0D324E1B6D85957452C3518F78CF /* Smart-Instream-TV-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Instream-TV-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		56ED7429F47972D7917FEFAA2A49C275 /* Pods-SVSTVSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVSTVSample-frameworks.sh"; sourceTree = "<group>"; };
-		6FF83309D5335CAAE2F0B2CD5987F6D3 /* Smart-Instream-TV-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-TV-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		8E3F1EF733D170066C311CA78FBB2E39 /* Smart-Core-TV-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-TV-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		6FE00F7B4ED1E59B4A7671E5F20A8F8C /* SVSVideoKitTV.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SVSVideoKitTV.xcframework; sourceTree = "<group>"; };
 		9195D9243BEE9146CCA322C41991749F /* Pods-SVSTVSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVSTVSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98E73A469D8A75D948FFE6FA4DC46315 /* Smart-Instream-TV-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-TV-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		98EF2B289230BECC44DBD7F5FB2B07C9 /* Pods-SVSTVSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSTVSample.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A34BD18F22E0CC796C7874DA0405E740 /* Smart-Core-TV-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-TV-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		A7C542850AD8F6ED8568882BBC0B4B97 /* SCSCoreKitTV.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SCSCoreKitTV.xcframework; sourceTree = "<group>"; };
+		AAEAA0C3F8703FE29C423868B86F956D /* Smart-Core-TV-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-TV-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B0A3F03EFC12F615EFF8626CAFF70306 /* Smart-Instream-TV-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-TV-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		C4BDB9F50D1CF1FC94A2BC692D80DAFA /* Pods-SVSTVSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVSTVSample-dummy.m"; sourceTree = "<group>"; };
 		CB91C50E9F8AF8792C0AF9C30559BEF2 /* Pods_SVSTVSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SVSTVSample.framework; path = "Pods-SVSTVSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDDFE1B20B4C087C29C2CFEC6BF8FFD3 /* SCSCoreKitTV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSCoreKitTV.framework; sourceTree = "<group>"; };
-		D5810FA60237AC0E66D3FD6126828D74 /* Smart-Instream-TV-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-TV-SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0FAF023E57F5B3AB1836CA5F33AF1790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C542850AD8F6ED8568882BBC0B4B97 /* SCSCoreKitTV.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F9FCB3618DC551B524D67B669081319 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,57 +119,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6AF24E92A75586786B0B27278E840713 /* Support Files */ = {
+		787D5739D1B425EAC2D3946A4669B75F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6FF83309D5335CAAE2F0B2CD5987F6D3 /* Smart-Instream-TV-SDK.debug.xcconfig */,
-				D5810FA60237AC0E66D3FD6126828D74 /* Smart-Instream-TV-SDK.release.xcconfig */,
+				526F0D324E1B6D85957452C3518F78CF /* Smart-Instream-TV-SDK-xcframeworks.sh */,
+				98E73A469D8A75D948FFE6FA4DC46315 /* Smart-Instream-TV-SDK.debug.xcconfig */,
+				B0A3F03EFC12F615EFF8626CAFF70306 /* Smart-Instream-TV-SDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Smart-Instream-TV-SDK";
 			sourceTree = "<group>";
 		};
-		7378168E048098B7585051C56C7CA018 /* Frameworks */ = {
+		C756E1D3CD8AA38336A3415C09E57204 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				055C1719E32EA78C74E06FD1A5C60005 /* SVSVideoKitTV.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		88709739ADB35B22C94E202569AEF07C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E3F1EF733D170066C311CA78FBB2E39 /* Smart-Core-TV-SDK.debug.xcconfig */,
-				A34BD18F22E0CC796C7874DA0405E740 /* Smart-Core-TV-SDK.release.xcconfig */,
+				45B1668691E270CE70787C2D2E0BE446 /* Smart-Core-TV-SDK-xcframeworks.sh */,
+				39C235D1B1E524C0772D3D7B9176E8DA /* Smart-Core-TV-SDK.debug.xcconfig */,
+				AAEAA0C3F8703FE29C423868B86F956D /* Smart-Core-TV-SDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Smart-Core-TV-SDK";
 			sourceTree = "<group>";
 		};
-		9EE6EDD75712E73242A197F76A743E7B /* Smart-Core-TV-SDK */ = {
+		CBECBF5542BFD46F8D339C10C4F64652 /* Smart-Core-TV-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				A4C4D39D7813CE7778D2424E0CCA3D3C /* Frameworks */,
-				88709739ADB35B22C94E202569AEF07C /* Support Files */,
+				0FAF023E57F5B3AB1836CA5F33AF1790 /* Frameworks */,
+				C756E1D3CD8AA38336A3415C09E57204 /* Support Files */,
 			);
 			name = "Smart-Core-TV-SDK";
 			path = "Smart-Core-TV-SDK";
 			sourceTree = "<group>";
 		};
-		A4C4D39D7813CE7778D2424E0CCA3D3C /* Frameworks */ = {
+		CDF6F9CF0E6B49F6DCA6394A31799A3B /* Smart-Instream-TV-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				CDDFE1B20B4C087C29C2CFEC6BF8FFD3 /* SCSCoreKitTV.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B16EF10961C1C3785D8B2FF8B8686BBA /* Smart-Instream-TV-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				7378168E048098B7585051C56C7CA018 /* Frameworks */,
-				6AF24E92A75586786B0B27278E840713 /* Support Files */,
+				D2686A405DD7F1A6BE8876779860F6F6 /* Frameworks */,
+				787D5739D1B425EAC2D3946A4669B75F /* Support Files */,
 			);
 			name = "Smart-Instream-TV-SDK";
 			path = "Smart-Instream-TV-SDK";
@@ -172,6 +170,14 @@
 				0784382EEB1F558C60A10A1AFE2A74CE /* Products */,
 				EB9240C3794C00479F3338005C8DE70F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D2686A405DD7F1A6BE8876779860F6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE00F7B4ED1E59B4A7671E5F20A8F8C /* SVSVideoKitTV.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DCADEF5968BA4BD0936606315FB57A49 /* tvOS */ = {
@@ -210,8 +216,8 @@
 		F3D66F0021B2BC696D3C77E25008EF36 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9EE6EDD75712E73242A197F76A743E7B /* Smart-Core-TV-SDK */,
-				B16EF10961C1C3785D8B2FF8B8686BBA /* Smart-Instream-TV-SDK */,
+				CBECBF5542BFD46F8D339C10C4F64652 /* Smart-Core-TV-SDK */,
+				CDF6F9CF0E6B49F6DCA6394A31799A3B /* Smart-Instream-TV-SDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -243,7 +249,7 @@
 			);
 			dependencies = (
 				F525DECF4B90A3C970C4E18136695DE8 /* PBXTargetDependency */,
-				8A58098832B716B9B97AD810EF4A7876 /* PBXTargetDependency */,
+				B4BDC446182F3140849FE39A4E86749F /* PBXTargetDependency */,
 			);
 			name = "Pods-SVSTVSample";
 			productName = "Pods-SVSTVSample";
@@ -289,6 +295,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C1106382D359B7B0FCA814DD3616B1E /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Smart-Instream-TV-SDK/Smart-Instream-TV-SDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Smart-Instream-TV-SDK/Smart-Instream-TV-SDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Smart-Instream-TV-SDK/Smart-Instream-TV-SDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D129D8719E528B0174E8E3D7CC98DCE /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Smart-Core-TV-SDK/Smart-Core-TV-SDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Smart-Core-TV-SDK/Smart-Core-TV-SDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Smart-Core-TV-SDK/Smart-Core-TV-SDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CB90AA2937E68738033E481B2DA5CE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,23 +344,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A58098832B716B9B97AD810EF4A7876 /* PBXTargetDependency */ = {
+		6C9D4EC95537E7879CF1492A144381AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Smart-Core-TV-SDK";
+			target = A98015F3C2F2ADC7840D82CFD0C8AB2A /* Smart-Core-TV-SDK */;
+			targetProxy = 5C3B99A5B8624FDDCF91E8F32C6769F5 /* PBXContainerItemProxy */;
+		};
+		B4BDC446182F3140849FE39A4E86749F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Smart-Instream-TV-SDK";
 			target = AF937B3B73080C9E48FA3E32E46C3439 /* Smart-Instream-TV-SDK */;
-			targetProxy = 7D6B40DED8792A9DA5747D1A352FE4E1 /* PBXContainerItemProxy */;
+			targetProxy = 56B26FA894F7EF64FDA0836AD25C4BC0 /* PBXContainerItemProxy */;
 		};
 		F525DECF4B90A3C970C4E18136695DE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Smart-Core-TV-SDK";
 			target = A98015F3C2F2ADC7840D82CFD0C8AB2A /* Smart-Core-TV-SDK */;
 			targetProxy = 17AA58D88D9D64F734D3D562051CB376 /* PBXContainerItemProxy */;
-		};
-		F7937FBF942EAFC28FCCD452166CF916 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-TV-SDK";
-			target = A98015F3C2F2ADC7840D82CFD0C8AB2A /* Smart-Core-TV-SDK */;
-			targetProxy = 37E31F5F415F14296F2859CEB3A738F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,6 +430,23 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
+		};
+		21BC586CBD17ACE48A6D4C3CB974435C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A3F03EFC12F615EFF8626CAFF70306 /* Smart-Instream-TV-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		22FE1E856D53E217D7620574F8D93EF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -486,25 +546,9 @@
 			};
 			name = Release;
 		};
-		4D0ED648BB360A8A7A8CD26C81149CB6 /* Debug */ = {
+		4C0A40FE1F3782CA34D6DE5F1EA269D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E3F1EF733D170066C311CA78FBB2E39 /* Smart-Core-TV-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		8162B4FF4C88D5D622810545E0DF8A6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FF83309D5335CAAE2F0B2CD5987F6D3 /* Smart-Instream-TV-SDK.debug.xcconfig */;
+			baseConfigurationReference = 98E73A469D8A75D948FFE6FA4DC46315 /* Smart-Instream-TV-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,9 +599,9 @@
 			};
 			name = Release;
 		};
-		BE85522D818A3DB9713B81C8F6E6CDB7 /* Release */ = {
+		CFC4A0686345F42E643D5A8BF8CE226A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5810FA60237AC0E66D3FD6126828D74 /* Smart-Instream-TV-SDK.release.xcconfig */;
+			baseConfigurationReference = AAEAA0C3F8703FE29C423868B86F956D /* Smart-Core-TV-SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -572,9 +616,9 @@
 			};
 			name = Release;
 		};
-		EC34EF3EC0BD874FED13607F32A890F7 /* Release */ = {
+		E74686F783EAF166146F81693D72577C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A34BD18F22E0CC796C7874DA0405E740 /* Smart-Core-TV-SDK.release.xcconfig */;
+			baseConfigurationReference = 39C235D1B1E524C0772D3D7B9176E8DA /* Smart-Core-TV-SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -585,22 +629,12 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		368CDF008086063CC55634DF28F8B387 /* Build configuration list for PBXAggregateTarget "Smart-Instream-TV-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8162B4FF4C88D5D622810545E0DF8A6A /* Debug */,
-				BE85522D818A3DB9713B81C8F6E6CDB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -610,11 +644,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6795247AC54A2086C5524F975F69501C /* Build configuration list for PBXAggregateTarget "Smart-Core-TV-SDK" */ = {
+		57340B85EB5C6E80D0AE7B2CD9B437B8 /* Build configuration list for PBXAggregateTarget "Smart-Instream-TV-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D0ED648BB360A8A7A8CD26C81149CB6 /* Debug */,
-				EC34EF3EC0BD874FED13607F32A890F7 /* Release */,
+				4C0A40FE1F3782CA34D6DE5F1EA269D5 /* Debug */,
+				21BC586CBD17ACE48A6D4C3CB974435C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74325CE7296E21104F96304E6F91D3E1 /* Build configuration list for PBXAggregateTarget "Smart-Core-TV-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74686F783EAF166146F81693D72577C /* Debug */,
+				CFC4A0686345F42E643D5A8BF8CE226A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
