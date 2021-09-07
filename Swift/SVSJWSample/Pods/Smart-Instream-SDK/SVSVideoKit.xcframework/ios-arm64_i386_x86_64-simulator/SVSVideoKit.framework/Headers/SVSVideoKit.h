@@ -33,6 +33,7 @@
 #import <SVSVideoKit/SVSAdPlayerConfigurationDisplayOptions.h>
 #import <SVSVideoKit/SVSAdPlayerConfigurationPublisherOptions.h>
 #import <SVSVideoKit/SVSAdPlayerConfigurationRTBOptions.h>
+#import <SVSVideoKit/SVSAdPlayerConfigurationVPAIDOptions.h>
 
 // Content Datas
 #import <SVSVideoKit/SVSContentData.h>

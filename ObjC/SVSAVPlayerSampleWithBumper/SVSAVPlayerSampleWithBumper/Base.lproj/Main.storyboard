@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-VU-hCa" customClass="VideoContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hzi-VU-hCa" secondAttribute="height" multiplier="16:9" id="9Nd-R9-LP9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Instream SDK v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCY-Iy-tRd">
+                                <rect key="frame" x="8" y="644.5" width="359" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginBumper" translatesAutoresizingMaskIntoConstraints="NO" id="7aY-K3-KmS" userLabel="beginBumperImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endBumper" translatesAutoresizingMaskIntoConstraints="NO" id="THs-9V-6jg" userLabel="endBumperImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hzi-VU-hCa" secondAttribute="bottom" id="9dg-k5-f23"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="width" secondItem="hzi-VU-hCa" secondAttribute="width" id="AKz-FE-jQh"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="height" secondItem="7aY-K3-KmS" secondAttribute="height" id="HVC-kg-XEC"/>
+                            <constraint firstItem="7aY-K3-KmS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I4j-jT-GXJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jCY-Iy-tRd" secondAttribute="bottom" constant="8" id="Lrp-eO-z3i"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="width" secondItem="7aY-K3-KmS" secondAttribute="width" id="PZr-pq-suA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jCY-Iy-tRd" secondAttribute="trailing" constant="8" id="TQN-PE-6FU"/>
+                            <constraint firstItem="jCY-Iy-tRd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="U4U-Z2-qAB"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="leading" secondItem="hzi-VU-hCa" secondAttribute="leading" id="V7E-51-lJA"/>
+                            <constraint firstItem="7aY-K3-KmS" firstAttribute="leading" secondItem="hzi-VU-hCa" secondAttribute="leading" id="bgY-mD-A6h"/>
+                            <constraint firstItem="hzi-VU-hCa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kAS-Mm-422"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="height" secondItem="hzi-VU-hCa" secondAttribute="height" id="mhN-BC-eFG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzi-VU-hCa" secondAttribute="trailing" id="nEJ-xf-Zxt"/>
+                            <constraint firstItem="hzi-VU-hCa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w7C-RB-tTI"/>
+                            <constraint firstItem="THs-9V-6jg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zJx-jp-PnQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ec5-RV-2Qp"/>
+                    <connections>
+                        <outlet property="beginBumperImageView" destination="7aY-K3-KmS" id="fhN-O6-5ne"/>
+                        <outlet property="endBumperImageView" destination="THs-9V-6jg" id="XHZ-gi-EhJ"/>
+                        <outlet property="topConstraint" destination="w7C-RB-tTI" id="dc7-pi-FRV"/>
+                        <outlet property="versionLabel" destination="jCY-Iy-tRd" id="fYr-t5-3Ba"/>
+                        <outlet property="videoContainerView" destination="hzi-VU-hCa" id="FWb-Ep-taH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="192.95352323838082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beginBumper" width="426.66665649414062" height="240"/>
+        <image name="endBumper" width="426.66665649414062" height="240"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

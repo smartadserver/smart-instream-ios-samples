@@ -54,6 +54,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)startWithPlayHead:(id <SVSContentPlayerPlayHead>)playHead adContainerView:(UIView *)adContainerView;
 
 /**
+ * Will start the waiting ad break, if any. To use only if you have disable the adbreak autoplay.
+ * Warnings: if you do not call this method, the ad break will never start and the SDK will be paused waiting for this method call.
+ * More information in the official documentation.
+ */
+- (void)startAdBreak;
+
+/**
  Stops the ad manager. 
  Use this method only if your content is stopped by an user action such as clicking on a STOP button on your content player UI.
  Calling this method can trigger a PostRoll advertisement if defined in your AdRules.

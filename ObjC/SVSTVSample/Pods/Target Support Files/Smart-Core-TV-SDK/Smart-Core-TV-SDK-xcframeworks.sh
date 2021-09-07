@@ -149,5 +149,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Smart-Core-TV-SDK/SCSCoreKitTV.xcframework" "SCSCoreKitTV" "framework" "tvos-arm64_x86_64-simulator" "tvos-arm64"
+install_xcframework "${PODS_ROOT}/Smart-Core-TV-SDK/SCSCoreKitTV.xcframework" "SCSCoreKitTV" "framework" "tvos-arm64" "tvos-arm64_x86_64-simulator"
 

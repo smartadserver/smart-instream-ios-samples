@@ -87,6 +87,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL replayAds;
 
 /**
+ YES if ad breaks should be played automatically.
+ 
+ Default: YES
+ */
+@property (nonatomic, assign) BOOL enableAdBreakAutoplay;
+
+/**
  YES if you prefer to use Server-Side Ad-Rules for number of Ad Instances during each Ad Break.
 
  Default: NO
@@ -104,6 +111,20 @@ NS_ASSUME_NONNULL_BEGIN
  Default: NO
 */
 @property (nonatomic, assign) BOOL enableUniversalAdIdControlPolicy;
+
+/**
+ When NO, the whole ad player layer view is clickable. When YES, a clickthrough button will be displayed above the video layer.
+
+ Default: NO
+*/
+@property (nonatomic, assign) BOOL enableClickThroughButton;
+
+/**
+ YES to enable VPAID ads, NO to disable them.
+
+ Default: YES
+*/
+@property (nonatomic, assign) BOOL enableVPAID;
 
 @end
 

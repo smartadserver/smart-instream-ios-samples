@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SVSAdPlayerConfigurationDisplayOptions, SVSAdPlayerConfigurationPublisherOptions, SVSAdPlayerConfigurationRTBOptions;
+@class SVSAdPlayerConfigurationDisplayOptions, SVSAdPlayerConfigurationPublisherOptions, SVSAdPlayerConfigurationRTBOptions, SVSAdPlayerConfigurationVPAIDOptions;
 
 /**
  Configuration of the ad player.
@@ -60,6 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// RTB options.
 @property (nonatomic, readonly) SVSAdPlayerConfigurationRTBOptions *RTBOptions;
+
+/// VPAID ads options.
+@property (nonatomic, strong) SVSAdPlayerConfigurationVPAIDOptions *VPAIDOptions;
 
 @end
 

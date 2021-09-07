@@ -22,11 +22,19 @@
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+		hjB1YzGYp12hiPF1PI0XxNVGCfk=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
 		YI4bFJge51qOFZTliGxayzLOqsI=
+		</data>
+		<key>DeployGitRepository.sh</key>
+		<data>
+		vvqFYl83j8mjSjA7d0w02EDKIt8=
+		</data>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<data>
+		//E3K8L5gpHigtiuAbvsmagGbQY=
 		</data>
 		<key>Headers/SCSAdRequestErrors.h</key>
 		<data>
@@ -506,7 +514,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EWHXfIiloOuYS3L/TwSvMkMzCLQ=
+		ajMk5raaXxn4XgU+Sd8FeZr+XHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -571,11 +579,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7FSG9Ku+Hx16J3rhp+n7iZmHE/A=
+			hjB1YzGYp12hiPF1PI0XxNVGCfk=
 			</data>
 			<key>hash2</key>
 			<data>
-			NHq00sKBKtMqVnY2y1P/1+CoyGByOWDQTNcLBxvQWb4=
+			KWB0ZKkeaL+6BgHswxrzoN/xIUznRBeFx9yY+leXFHU=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -587,6 +595,28 @@
 			<key>hash2</key>
 			<data>
 			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
+			</data>
+		</dict>
+		<key>DeployGitRepository.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vvqFYl83j8mjSjA7d0w02EDKIt8=
+			</data>
+			<key>hash2</key>
+			<data>
+			qKMTa6bMdfS6BaAM/VDDWAzPgW46SqiVikB3jHEP5xQ=
+			</data>
+		</dict>
+		<key>DeploySDKSnapshotInSamples.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			//E3K8L5gpHigtiuAbvsmagGbQY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8EPGV0Swx8wRCOg/XLjUjtlaoEh5fVu6vL9dt183/c0=
 			</data>
 		</dict>
 		<key>Headers/SCSAdRequestErrors.h</key>

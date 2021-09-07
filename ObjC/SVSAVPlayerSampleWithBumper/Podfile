@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SVSAVPlayerSampleWithBumper' do
+
+  use_frameworks!
+  platform :ios, '9.0'
+
+  pod 'Smart-Instream-SDK', '7.13.0'
+
+end

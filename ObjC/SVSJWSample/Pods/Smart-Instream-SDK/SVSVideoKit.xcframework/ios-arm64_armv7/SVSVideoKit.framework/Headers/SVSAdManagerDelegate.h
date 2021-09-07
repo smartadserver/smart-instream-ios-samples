@@ -129,6 +129,23 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIViewController *)adManagerDidRequestPostClickPresentationViewController:(SVSAdManager *)adManager;
 
+#pragma mark - Optional
+
+@optional
+
+/**
+ Called when the ad break is ready to start.
+ 
+ This method will be called only if the 'enableAdBreakAutoplay' option is disabled. Added to let you start the adBreak when you want,
+ more information in the official documentation.
+ 
+ Warning: Do not forget to call [SVSAdManager startAdBreak] when this delegate method is called!
+ 
+ @param adManager The SVSAdManager instance ready to start the ad break.
+ @param adBreakType The ad break type (overlay, preroll, midroll, postroll). 
+ */
+- (void)adManager:(SVSAdManager *)adManager isReadyToStartAdBreak:(SVSAdBreakType)adBreakType;
+
 @end
 
 NS_ASSUME_NONNULL_END

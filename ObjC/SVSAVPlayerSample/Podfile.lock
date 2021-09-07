@@ -1,10 +1,10 @@
 PODS:
-  - Smart-Core-SDK (7.11.0)
-  - Smart-Instream-SDK (7.11.0):
-    - Smart-Core-SDK (~> 7.11)
+  - Smart-Core-SDK (7.13.0)
+  - Smart-Instream-SDK (7.13.0):
+    - Smart-Core-SDK (~> 7.13)
 
 DEPENDENCIES:
-  - Smart-Instream-SDK (= 7.11.0)
+  - Smart-Instream-SDK (= 7.13.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - Smart-Instream-SDK
 
 SPEC CHECKSUMS:
-  Smart-Core-SDK: 71d1c27d7a177432bd61db1b30426917bf1c9c21
-  Smart-Instream-SDK: 08e21ccd5d79ec890696408d7389b48fd6a68086
+  Smart-Core-SDK: 0bd330393d703e7105a7f03c2149666edeee4ff3
+  Smart-Instream-SDK: a93eaaca2d149106f1141445b5fc967b67e9cfd1
 
-PODFILE CHECKSUM: e7e79abacce209bf874d7540e4343fd8110c299c
+PODFILE CHECKSUM: 1df654ee90dbb4465a9b9959af46759c4bbc472f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0

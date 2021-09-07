@@ -35,6 +35,7 @@
 #import <SVSVideoKitTV/SVSAdPlayerConfigurationDisplayOptions.h>
 #import <SVSVideoKitTV/SVSAdPlayerConfigurationPublisherOptions.h>
 #import <SVSVideoKitTV/SVSAdPlayerConfigurationRTBOptions.h>
+#import <SVSVideoKitTV/SVSAdPlayerConfigurationVPAIDOptions.h>
 
 // Content Datas
 #import <SVSVideoKitTV/SVSContentData.h>
