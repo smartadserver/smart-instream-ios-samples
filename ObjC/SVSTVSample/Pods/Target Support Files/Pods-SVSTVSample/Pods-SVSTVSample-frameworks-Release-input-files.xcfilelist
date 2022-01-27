@@ -1,3 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKitTV/SCSCoreKitTV.framework/SCSCoreKitTV
-${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKitTV/SVSVideoKitTV.framework/SVSVideoKitTV
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Core-TV-SDK/SCSCoreKitTV.framework/SCSCoreKitTV
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Instream-TV-SDK/SVSVideoKitTV.framework/SVSVideoKitTV

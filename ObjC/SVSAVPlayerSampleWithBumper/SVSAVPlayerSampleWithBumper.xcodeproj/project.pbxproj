@@ -227,8 +227,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SVSAVPlayerSampleWithBumper/Pods-SVSAVPlayerSampleWithBumper-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SCSCoreKit/SCSCoreKit.framework/SCSCoreKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/SVSVideoKit/SVSVideoKit.framework/SVSVideoKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Core-SDK/SCSCoreKit.framework/SCSCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Instream-SDK/SVSVideoKit.framework/SVSVideoKit",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

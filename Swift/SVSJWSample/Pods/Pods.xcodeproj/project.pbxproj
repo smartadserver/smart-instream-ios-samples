@@ -40,26 +40,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		08466953B0610F194DB001A3BBE900BB /* Pods-SVSJWSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0E59E5F422876AD6B1B1AB9ACD88B8 /* Pods-SVSJWSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		514C222271DB737FC7C9F103D4B9D9CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EE3F9265592862F34394AEA739E73D81 /* Pods-SVSJWSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABB10FAFE02F1ADF178C4A8657B90 /* Pods-SVSJWSample-dummy.m */; };
+		30445602B29E07B0C6DA0EA5791478D4 /* Pods-SVSJWSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABB10FAFE02F1ADF178C4A8657B90 /* Pods-SVSJWSample-dummy.m */; };
+		A022ED8B6C77805BD2553241C6089006 /* Pods-SVSJWSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0E59E5F422876AD6B1B1AB9ACD88B8 /* Pods-SVSJWSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F084A4A7593C31F81AD2B3AA8A27B230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25409A4E4E13BBF1F933F35951CA2318 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24A80F80D862D66FDB7A271BB46C6FB5;
-			remoteInfo = "JWPlayer-SDK";
-		};
-		2E4ABAA1FACCAB96538B372E84A04C06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83420444455CC590599000F4CD728D9D;
-			remoteInfo = "Smart-Instream-SDK";
-		};
 		5FE7E5C3A49418359EF1446CD2DBC3C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -67,12 +53,26 @@
 			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
 			remoteInfo = "Smart-Core-SDK";
 		};
-		B2E9F076AE76E60FF2ED1A1767BBE987 /* PBXContainerItemProxy */ = {
+		658F4F983676D4831B93D6D213DE2D6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
 			remoteInfo = "Smart-Core-SDK";
+		};
+		D612A9DA2A9F0C0D8FC3063C9D318A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83420444455CC590599000F4CD728D9D;
+			remoteInfo = "Smart-Instream-SDK";
+		};
+		F2F13B594A93D6006103FECDDBBA7403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24A80F80D862D66FDB7A271BB46C6FB5;
+			remoteInfo = "JWPlayer-SDK";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -91,7 +91,7 @@
 		8ACFB7DED8B4C445BE442B2F49B59B20 /* SCSCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SCSCoreKit.xcframework; sourceTree = "<group>"; };
 		9348A1A0ABBDF979C7FF1098FEB6AC9C /* JWPlayer_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWPlayer_iOS_SDK.framework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods_SVSJWSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SVSJWSample.framework; path = "Pods-SVSJWSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods-SVSJWSample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SVSJWSample"; path = Pods_SVSJWSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A716DB2951285347E242461EB0CD1684 /* Smart-Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		AE2ABCF3815BDF46AC6BBBCA5A11646F /* SVSVideoKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SVSVideoKit.xcframework; sourceTree = "<group>"; };
 		BB678C46415BF9BBAAE6266DA80619CD /* Smart-Instream-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,17 +103,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B643EDFD49E922B543581B6B9F044A9 /* Frameworks */ = {
+		4DDCB7083AE954EEB85A3EB382D5BCAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514C222271DB737FC7C9F103D4B9D9CB /* Foundation.framework in Frameworks */,
+				F084A4A7593C31F81AD2B3AA8A27B230 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01E73415B15579B57333AC77B03A33A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods-SVSJWSample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		05C810193A284D837048C8A6A510B86A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +239,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				05C810193A284D837048C8A6A510B86A /* Pods */,
-				E5F25010CC9519F2A07EA3CB6D76DC73 /* Products */,
+				01E73415B15579B57333AC77B03A33A5 /* Products */,
 				56089DADED7B541CA78A5711C67C8B31 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -262,22 +270,14 @@
 			path = "Smart-Core-SDK";
 			sourceTree = "<group>";
 		};
-		E5F25010CC9519F2A07EA3CB6D76DC73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods_SVSJWSample.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A3CE95B7DC6C6C77B2DA8B6AD187E7E /* Headers */ = {
+		F43FE06BA592BA7EA8D37B9D63153264 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08466953B0610F194DB001A3BBE900BB /* Pods-SVSJWSample-umbrella.h in Headers */,
+				A022ED8B6C77805BD2553241C6089006 /* Pods-SVSJWSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,23 +286,23 @@
 /* Begin PBXNativeTarget section */
 		239F2BBC72F6D8DD13340937A59C9B3A /* Pods-SVSJWSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28EDCF46FFCD83B3D3E08B57394EA838 /* Build configuration list for PBXNativeTarget "Pods-SVSJWSample" */;
+			buildConfigurationList = DA972915464006E515BA14C17695343C /* Build configuration list for PBXNativeTarget "Pods-SVSJWSample" */;
 			buildPhases = (
-				1A3CE95B7DC6C6C77B2DA8B6AD187E7E /* Headers */,
-				56DC066EB647DCDE1D817CA316A1AC03 /* Sources */,
-				8B643EDFD49E922B543581B6B9F044A9 /* Frameworks */,
-				E99F1C4E940DE5068DCD0BA6993A27E8 /* Resources */,
+				F43FE06BA592BA7EA8D37B9D63153264 /* Headers */,
+				914A3B19D1B45DC421410D69F6F1DB93 /* Sources */,
+				4DDCB7083AE954EEB85A3EB382D5BCAF /* Frameworks */,
+				B0F86C11DB959D4CBDFA16AF0E1FFCFA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F7374AA19A974158B91E28E7D330530F /* PBXTargetDependency */,
-				DAD17678004984C73AFCEF2B3106B4EB /* PBXTargetDependency */,
-				C2A3B5F10B5726A3A5F13885CC123CD2 /* PBXTargetDependency */,
+				8CA37FF051AF364F1D6E9F42CA1713D8 /* PBXTargetDependency */,
+				A045F58F103938A095491B58CC93A8C4 /* PBXTargetDependency */,
+				F669CB81823E508A8F3A2A77032B30A2 /* PBXTargetDependency */,
 			);
 			name = "Pods-SVSJWSample";
-			productName = "Pods-SVSJWSample";
-			productReference = A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods_SVSJWSample.framework */;
+			productName = Pods_SVSJWSample;
+			productReference = A15FD0F4070A3BB373F2458EBE0AB6FB /* Pods-SVSJWSample */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -311,19 +311,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E5F25010CC9519F2A07EA3CB6D76DC73 /* Products */;
+			productRefGroup = 01E73415B15579B57333AC77B03A33A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -336,7 +336,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E99F1C4E940DE5068DCD0BA6993A27E8 /* Resources */ = {
+		B0F86C11DB959D4CBDFA16AF0E1FFCFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,11 +383,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		56DC066EB647DCDE1D817CA316A1AC03 /* Sources */ = {
+		914A3B19D1B45DC421410D69F6F1DB93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3F9265592862F34394AEA739E73D81 /* Pods-SVSJWSample-dummy.m in Sources */,
+				30445602B29E07B0C6DA0EA5791478D4 /* Pods-SVSJWSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,45 +400,28 @@
 			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
 			targetProxy = 5FE7E5C3A49418359EF1446CD2DBC3C2 /* PBXContainerItemProxy */;
 		};
-		C2A3B5F10B5726A3A5F13885CC123CD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Instream-SDK";
-			target = 83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */;
-			targetProxy = 2E4ABAA1FACCAB96538B372E84A04C06 /* PBXContainerItemProxy */;
-		};
-		DAD17678004984C73AFCEF2B3106B4EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = B2E9F076AE76E60FF2ED1A1767BBE987 /* PBXContainerItemProxy */;
-		};
-		F7374AA19A974158B91E28E7D330530F /* PBXTargetDependency */ = {
+		8CA37FF051AF364F1D6E9F42CA1713D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "JWPlayer-SDK";
 			target = 24A80F80D862D66FDB7A271BB46C6FB5 /* JWPlayer-SDK */;
-			targetProxy = 25409A4E4E13BBF1F933F35951CA2318 /* PBXContainerItemProxy */;
+			targetProxy = F2F13B594A93D6006103FECDDBBA7403 /* PBXContainerItemProxy */;
+		};
+		A045F58F103938A095491B58CC93A8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Smart-Core-SDK";
+			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
+			targetProxy = 658F4F983676D4831B93D6D213DE2D6F /* PBXContainerItemProxy */;
+		};
+		F669CB81823E508A8F3A2A77032B30A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Smart-Instream-SDK";
+			target = 83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */;
+			targetProxy = D612A9DA2A9F0C0D8FC3063C9D318A73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C7B35486668E758203E4E48131620FA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F85E2B59BEB92883CCA6A6D0BE1088 /* JWPlayer-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		19CE851E9FFF23B0038A80CCECF612EA /* Debug */ = {
+		073A93A35AA718350DFF502B8AB782C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 024C5D1457AB2B597CA97480C382325A /* Pods-SVSJWSample.debug.xcconfig */;
 			buildSettings = {
@@ -474,6 +457,61 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		0C675A03E46AE6DC57139F66DF21BBAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A23E40E4138808B1B684BCD5CF122F8 /* Pods-SVSJWSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVSJWSample/Pods-SVSJWSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVSJWSample/Pods-SVSJWSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C7B35486668E758203E4E48131620FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85E2B59BEB92883CCA6A6D0BE1088 /* JWPlayer-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		474CA635A2E75815125AAA67463A9FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -669,44 +707,6 @@
 			};
 			name = Debug;
 		};
-		F2E7224DA8C834C5ACEE3A0401234879 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A23E40E4138808B1B684BCD5CF122F8 /* Pods-SVSJWSample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SVSJWSample/Pods-SVSJWSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SVSJWSample/Pods-SVSJWSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FC3EEE2227E19EA01ED114CA60D51448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E8CD90D06831F19E659952EBE831EEB /* Smart-Instream-SDK.debug.xcconfig */;
@@ -744,15 +744,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28EDCF46FFCD83B3D3E08B57394EA838 /* Build configuration list for PBXNativeTarget "Pods-SVSJWSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19CE851E9FFF23B0038A80CCECF612EA /* Debug */,
-				F2E7224DA8C834C5ACEE3A0401234879 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -767,6 +758,15 @@
 			buildConfigurations = (
 				84DCB5E1B8F427F74FA865E52602FDBA /* Debug */,
 				7113CD12DA25E461BFC3F24C9C36DBD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA972915464006E515BA14C17695343C /* Build configuration list for PBXNativeTarget "Pods-SVSJWSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073A93A35AA718350DFF502B8AB782C5 /* Debug */,
+				0C675A03E46AE6DC57139F66DF21BBAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

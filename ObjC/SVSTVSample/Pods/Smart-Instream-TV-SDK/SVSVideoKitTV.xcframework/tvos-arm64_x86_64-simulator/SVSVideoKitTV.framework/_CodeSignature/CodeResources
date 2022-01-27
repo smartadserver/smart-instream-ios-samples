@@ -72,13 +72,17 @@
 		<data>
 		cZI9qvJk1MEflgClZHieBxao6Bc=
 		</data>
+		<key>Headers/SVSFrameworkInfo.h</key>
+		<data>
+		VcX2sLvCp0SBKWww4qSK+lmZFdM=
+		</data>
 		<key>Headers/SVSVideoKitTV.h</key>
 		<data>
-		dxGHvaThOfRFuFRFT+/xkKtVVh8=
+		/ZTVBpcu2mAv865QmduKQnNk2sw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Eq9ffLT6m5vIWvSbw//fyr+g3ZY=
+		235Lb1UoKMI+AjWlB+E4nJXCsXA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -412,15 +416,26 @@
 			ZmpOZFdBZYoJ2Tgf/vj2PEoQm/pUMH3sQuUIIg4qKS8=
 			</data>
 		</dict>
+		<key>Headers/SVSFrameworkInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VcX2sLvCp0SBKWww4qSK+lmZFdM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4VN5Jhucxnxl7CQQkO1rCHnFAwa/0CYdyOr0OtlNlCA=
+			</data>
+		</dict>
 		<key>Headers/SVSVideoKitTV.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dxGHvaThOfRFuFRFT+/xkKtVVh8=
+			/ZTVBpcu2mAv865QmduKQnNk2sw=
 			</data>
 			<key>hash2</key>
 			<data>
-			LqTgNXSSKDBwUt3xRTDmNM7nkqKqX3sMBeHUGzExxiU=
+			Ke58b6apwPyKJsJ4UYLGM/Ti+mUkEVfszRHAV39cKvY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

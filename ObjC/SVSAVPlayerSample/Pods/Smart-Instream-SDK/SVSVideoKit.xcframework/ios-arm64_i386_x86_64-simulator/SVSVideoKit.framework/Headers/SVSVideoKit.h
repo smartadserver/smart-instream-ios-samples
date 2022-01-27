@@ -38,6 +38,9 @@
 // Content Datas
 #import <SVSVideoKit/SVSContentData.h>
 
+// System
+#import <SVSVideoKit/SVSFrameworkInfo.h>
+
 //! Project version number for SVSVideoKit.
 FOUNDATION_EXPORT double SVSVideoKitVersionNumber;
 

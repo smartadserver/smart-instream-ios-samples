@@ -1,6 +1,16 @@
 framework module SCSCoreKitTV {
-  umbrella header "SCSCoreKitTV.h"
+    umbrella header "SCSCoreKitTV.h"
 
-  export *
-  module * { export * }
+    export *
+    module * { export * }
+
+    explicit module Private {
+      header "SCSPrivateUtils.h"
+      export *
+    }
+}
+
+module SCSCoreKitTV.Swift {
+    header "SCSCoreKitTV-Swift.h"
+    requires objc
 }

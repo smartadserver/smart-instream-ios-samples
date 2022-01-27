@@ -34,7 +34,11 @@
 		</data>
 		<key>Headers/SCSConfiguration.h</key>
 		<data>
-		MX9cLwi59upS40JvfZZzZQ2XpsU=
+		X1iulEjDg5WNBvVXl6ANWXi3L44=
+		</data>
+		<key>Headers/SCSCoreKitTV-Swift.h</key>
+		<data>
+		/1mslCjZC9BvneoExefP5WB2ghs=
 		</data>
 		<key>Headers/SCSCoreKitTV.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Headers/SCSFrameworkInfo.h</key>
 		<data>
-		O9cODPQgZB+CM3kaZBPdebANT2s=
+		CSnIM4zoLTBaFX7bmnRZwTPtf94=
 		</data>
 		<key>Headers/SCSFuture.h</key>
 		<data>
@@ -70,11 +74,11 @@
 		</data>
 		<key>Headers/SCSIdentity.h</key>
 		<data>
-		bNLjpUt29jzX6nZdgi2VQFxyLGs=
+		+J2ijS2mLoKuB2JopVmjhQ1BgSg=
 		</data>
 		<key>Headers/SCSIdentityProviderProtocol.h</key>
 		<data>
-		TBEMqzUAEGqVLil0IwHqgnZbSok=
+		AtyTmNtvRNaJz/xVHSyLlmYi6hs=
 		</data>
 		<key>Headers/SCSLocation.h</key>
 		<data>
@@ -162,7 +166,7 @@
 		</data>
 		<key>Headers/SCSRandom.h</key>
 		<data>
-		NnRYJIEI6Og7KwC2EQx04YO6I38=
+		jzZjND02OES9/Wn1FlDyzXKRuAI=
 		</data>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<data>
@@ -202,7 +206,7 @@
 		</data>
 		<key>Headers/SCSTimeUtils.h</key>
 		<data>
-		GaRjmGzpTdLYfYtN1SfYN/XHBek=
+		Ts7+g/idakoCRMGkuRMw9E0yAkk=
 		</data>
 		<key>Headers/SCSTimer.h</key>
 		<data>
@@ -230,7 +234,7 @@
 		</data>
 		<key>Headers/SCSTrackingEventManager.h</key>
 		<data>
-		/xFhrnVE6/dDpYs28zd8yUdQBGo=
+		PWeGIS4kJjRdSwUn2WAnRK2PU6E=
 		</data>
 		<key>Headers/SCSTrackingEventManagerDelegate.h</key>
 		<data>
@@ -262,7 +266,7 @@
 		</data>
 		<key>Headers/SCSURLUtils.h</key>
 		<data>
-		1SKKkjjF1TNj3HlS+5o1JHV/dXc=
+		0AkeyaC5GKx4dkpAsNiiu9azzzg=
 		</data>
 		<key>Headers/SCSUtils.h</key>
 		<data>
@@ -342,15 +346,15 @@
 		</data>
 		<key>Headers/SCSVASTManager.h</key>
 		<data>
-		2zSQADzmMtdjKcGDmWmoXClEuZI=
+		Vnv4ZDtSuvZTeq1h1ndmIHOQlpU=
 		</data>
 		<key>Headers/SCSVASTManagerConfig.h</key>
 		<data>
-		0++wjVBgXz5RA0Fndp8FRr1KTsk=
+		yyOg4zA+69MxSSK4Uq3091WTjYQ=
 		</data>
 		<key>Headers/SCSVASTManagerDelegate.h</key>
 		<data>
-		q3xK5xfNqy5OIlDZAuj8yYlcbxA=
+		hm9sY13xdExFCv8ZQBhKkAn8Mms=
 		</data>
 		<key>Headers/SCSVASTManagerProtocol.h</key>
 		<data>
@@ -438,11 +442,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W5OHC5mNblbgvVqyXIFBjc6yU9o=
+		07HUgnFa44RtO8sSvRi1ZkCDLpI=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
+		<data>
+		cX4XOKZ379VARrUPCA/AAYXcEkM=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		cX4XOKZ379VARrUPCA/AAYXcEkM=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
+		<data>
+		L5aAT+6Wmmw4G6BYIgCoD2HW6Y0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<data>
+		L5aAT+6Wmmw4G6BYIgCoD2HW6Y0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
+		<data>
+		24yiyeWHv0gEvWWSA+Ln+++/4+0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
+		<data>
+		ZHrQT3JlWAQsdNQ/vj2gRqAMpI4=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
+		<data>
+		MBBEqEOEKHfKBRg8G9Z9NF5634I=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		24yiyeWHv0gEvWWSA+Ln+++/4+0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		ZHrQT3JlWAQsdNQ/vj2gRqAMpI4=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		MBBEqEOEKHfKBRg8G9Z9NF5634I=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
+		<data>
+		MGQ9rJEUgK82vnDx6iYmNYOvR7k=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
+		<data>
+		Gl7e4cxufJyQ88lVoVzVLjgDTx0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
+		<data>
+		lyKSaIpD9d82NdKgmKo7QRtNcdY=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftdoc</key>
+		<data>
+		MGQ9rJEUgK82vnDx6iYmNYOvR7k=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		Gl7e4cxufJyQ88lVoVzVLjgDTx0=
+		</data>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftmodule</key>
+		<data>
+		lyKSaIpD9d82NdKgmKo7QRtNcdY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ExqutCTsQ8YyTgRCcb4qBS+raO4=
+		StpCyXXLHCjQCbTfvaX0NNFDATM=
+		</data>
+		<key>PrivateHeaders/SCSPrivateUtils.h</key>
+		<data>
+		dkDJyzF1FhC2f1moYvD0omilRHk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -528,11 +600,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MX9cLwi59upS40JvfZZzZQ2XpsU=
+			X1iulEjDg5WNBvVXl6ANWXi3L44=
 			</data>
 			<key>hash2</key>
 			<data>
-			W8mgBM7nDAhPzduw65QlTro9GW7gtDJzbIUPg/C8WfI=
+			1iarN8x+HWlgsKJtEkSs6aLEi1ZKVbJTjABZRa5psXc=
+			</data>
+		</dict>
+		<key>Headers/SCSCoreKitTV-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/1mslCjZC9BvneoExefP5WB2ghs=
+			</data>
+			<key>hash2</key>
+			<data>
+			hNNda3NpTf+l8YrK8MQlU0SNziOPbkdfWJwNTt/F+X8=
 			</data>
 		</dict>
 		<key>Headers/SCSCoreKitTV.h</key>
@@ -583,11 +666,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O9cODPQgZB+CM3kaZBPdebANT2s=
+			CSnIM4zoLTBaFX7bmnRZwTPtf94=
 			</data>
 			<key>hash2</key>
 			<data>
-			fCu57GJqCFtQdrcul/2h52bTsF0KU/PnxAd3mrp75Y4=
+			EbPOlTSE47uHzTWGZvFEipHqgMvffRRs/CTv/M41Ox4=
 			</data>
 		</dict>
 		<key>Headers/SCSFuture.h</key>
@@ -627,22 +710,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bNLjpUt29jzX6nZdgi2VQFxyLGs=
+			+J2ijS2mLoKuB2JopVmjhQ1BgSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			RXlKvWK6mNT52JH99jnD/FOW2X43B9olgwFhk/keDa8=
+			N+dbhxB/zEHoWGAxtk/PgE4aabXil3/RVuiulFePY+0=
 			</data>
 		</dict>
 		<key>Headers/SCSIdentityProviderProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TBEMqzUAEGqVLil0IwHqgnZbSok=
+			AtyTmNtvRNaJz/xVHSyLlmYi6hs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kyfCQtXQMAUZc8lm0euXb/q8r6qGjeBbqesn/zdYBgc=
+			LtJf8dBSq7PV6F3KA1aX8J2FOVcNHAmMGTGtFJM404Y=
 			</data>
 		</dict>
 		<key>Headers/SCSLocation.h</key>
@@ -880,11 +963,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NnRYJIEI6Og7KwC2EQx04YO6I38=
+			jzZjND02OES9/Wn1FlDyzXKRuAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LwOj2y3Mp61QzTgtZZQRUa+z9XeYMLhL871LWqEl6Xk=
+			iTb5r2veALToDigiEl4Rl8e+QOk+EHh0+SRXFOC79xc=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteConfigManager.h</key>
@@ -990,11 +1073,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GaRjmGzpTdLYfYtN1SfYN/XHBek=
+			Ts7+g/idakoCRMGkuRMw9E0yAkk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1eRekSxVQ5pHTZ1aysCr2AABWEqHzuQke/8jQ2HFjio=
+			vZXWbkdjVJuqDe7FxrAHhHDSInDzTGkAw0EyEg7dcaQ=
 			</data>
 		</dict>
 		<key>Headers/SCSTimer.h</key>
@@ -1067,11 +1150,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/xFhrnVE6/dDpYs28zd8yUdQBGo=
+			PWeGIS4kJjRdSwUn2WAnRK2PU6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jltj4PlRn853ywM6s0d9GQJe/1fcHwfBzfKQK6HF6pI=
+			xGH5lrZKGWF/w3Jc3T3c3oH1a1Pga8q9g08jGlv4iaY=
 			</data>
 		</dict>
 		<key>Headers/SCSTrackingEventManagerDelegate.h</key>
@@ -1155,11 +1238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1SKKkjjF1TNj3HlS+5o1JHV/dXc=
+			0AkeyaC5GKx4dkpAsNiiu9azzzg=
 			</data>
 			<key>hash2</key>
 			<data>
-			noZUveNcTmsVGGFDBr0GBOu31xY1xFD4dh4dMz30aUs=
+			u+QEbVjDwTKz2rH120WJopOsohHRQUki7/XTIjv9EJk=
 			</data>
 		</dict>
 		<key>Headers/SCSUtils.h</key>
@@ -1375,33 +1458,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2zSQADzmMtdjKcGDmWmoXClEuZI=
+			Vnv4ZDtSuvZTeq1h1ndmIHOQlpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			nKijiCjtwGd0rZSl9ynRMioTRICyuALDKuUP30H93/U=
+			/M62tBnkIZjEIL4BRLSNRg6Ow299+dzEunJELoONPn0=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTManagerConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0++wjVBgXz5RA0Fndp8FRr1KTsk=
+			yyOg4zA+69MxSSK4Uq3091WTjYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			gun7ItW77dDQgtDGOYqz4SRvtuswqhTljaxD7Bvg+Qs=
+			oIgmCztOx1NvrPtwMzfgCZbKgJbpcw5l1CWWBZOeGt0=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTManagerDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q3xK5xfNqy5OIlDZAuj8yYlcbxA=
+			hm9sY13xdExFCv8ZQBhKkAn8Mms=
 			</data>
 			<key>hash2</key>
 			<data>
-			KNOE/eu17V8aTpEnHmnd8R2TppCrH3wY/weDpz1/l34=
+			ktE425RNxTFKbgLJRn9kJh+DfqxdZmJuqx4LWE8F2ms=
 			</data>
 		</dict>
 		<key>Headers/SCSVASTManagerProtocol.h</key>
@@ -1635,15 +1718,202 @@
 			DRAx7kMYjGDllRgYRcsWwMI3Uuhk7rSgD+V7Q9eYLxw=
 			</data>
 		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cX4XOKZ379VARrUPCA/AAYXcEkM=
+			</data>
+			<key>hash2</key>
+			<data>
+			DLrFIbaBQqbeMxkNffvei62vDHdjSBPS84tLuk2tQM4=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cX4XOKZ379VARrUPCA/AAYXcEkM=
+			</data>
+			<key>hash2</key>
+			<data>
+			DLrFIbaBQqbeMxkNffvei62vDHdjSBPS84tLuk2tQM4=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L5aAT+6Wmmw4G6BYIgCoD2HW6Y0=
+			</data>
+			<key>hash2</key>
+			<data>
+			k1RXUkGYe5sm1Sg8+SwL2GltLCViMr0HNTQ0GhDDnyI=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L5aAT+6Wmmw4G6BYIgCoD2HW6Y0=
+			</data>
+			<key>hash2</key>
+			<data>
+			k1RXUkGYe5sm1Sg8+SwL2GltLCViMr0HNTQ0GhDDnyI=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			24yiyeWHv0gEvWWSA+Ln+++/4+0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ErvSckAi3QjmKn3ckxDDCav/4011BmZs5U3rtBmTgCI=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZHrQT3JlWAQsdNQ/vj2gRqAMpI4=
+			</data>
+			<key>hash2</key>
+			<data>
+			sywXUX4TiGiEVb9/tVStebXBbLoaEaj/dbTFLSwheRU=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MBBEqEOEKHfKBRg8G9Z9NF5634I=
+			</data>
+			<key>hash2</key>
+			<data>
+			bOZ8kt9ur7U5pUNbcW41y3OV4yX7WNI5X60eNxBahhw=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			24yiyeWHv0gEvWWSA+Ln+++/4+0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ErvSckAi3QjmKn3ckxDDCav/4011BmZs5U3rtBmTgCI=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZHrQT3JlWAQsdNQ/vj2gRqAMpI4=
+			</data>
+			<key>hash2</key>
+			<data>
+			sywXUX4TiGiEVb9/tVStebXBbLoaEaj/dbTFLSwheRU=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MBBEqEOEKHfKBRg8G9Z9NF5634I=
+			</data>
+			<key>hash2</key>
+			<data>
+			bOZ8kt9ur7U5pUNbcW41y3OV4yX7WNI5X60eNxBahhw=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MGQ9rJEUgK82vnDx6iYmNYOvR7k=
+			</data>
+			<key>hash2</key>
+			<data>
+			mPdIr2/exHwDFKdyKEqo1SYSNsIhb7P9UNgwvKamAj4=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gl7e4cxufJyQ88lVoVzVLjgDTx0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1vyAP+a6zg79O3hUTeHyjQinDPhz6/Rb9KxUnTglz54=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lyKSaIpD9d82NdKgmKo7QRtNcdY=
+			</data>
+			<key>hash2</key>
+			<data>
+			6ScH1gwF0RsXYZoJ9nEcCfbXI7wGQOjUzmYJ2W4jHJ0=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MGQ9rJEUgK82vnDx6iYmNYOvR7k=
+			</data>
+			<key>hash2</key>
+			<data>
+			mPdIr2/exHwDFKdyKEqo1SYSNsIhb7P9UNgwvKamAj4=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gl7e4cxufJyQ88lVoVzVLjgDTx0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1vyAP+a6zg79O3hUTeHyjQinDPhz6/Rb9KxUnTglz54=
+			</data>
+		</dict>
+		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lyKSaIpD9d82NdKgmKo7QRtNcdY=
+			</data>
+			<key>hash2</key>
+			<data>
+			6ScH1gwF0RsXYZoJ9nEcCfbXI7wGQOjUzmYJ2W4jHJ0=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ExqutCTsQ8YyTgRCcb4qBS+raO4=
+			StpCyXXLHCjQCbTfvaX0NNFDATM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2BKJ01b4yl/HqUc9lNwCZHul2aBnOQAMEJw9lRtAUhA=
+			viev/Y+FLW2lIapwjF11eXCpbnPF4eUZDcjlYDYrWuc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SCSPrivateUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dkDJyzF1FhC2f1moYvD0omilRHk=
+			</data>
+			<key>hash2</key>
+			<data>
+			PTHXZIDrjPDUw/ihtA+Ervj8PDdBY9kfixIKJaKnYm0=
 			</data>
 		</dict>
 	</dict>
