@@ -14,15 +14,15 @@
 		</data>
 		<key>BuildSonar.sh</key>
 		<data>
-		Wb5vzlsUEwPNyPID/NjCjdRiVS4=
+		8ZPotKUZr0C4DkUYb1iMkex9gLE=
 		</data>
 		<key>BuildUniversal.sh</key>
 		<data>
-		oIYlOKQ9Evsg3+yovL4iIEr3qdQ=
+		zwoEuvuSx6E0eCxqHFuGmOcLmEA=
 		</data>
 		<key>BuildUtils.sh</key>
 		<data>
-		hjB1YzGYp12hiPF1PI0XxNVGCfk=
+		r6GfkLJ7Fm5h62h9AkUKrDtBP3w=
 		</data>
 		<key>DeployCocoapodsTrunk.sh</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>DeploySDKSnapshotInSamples.sh</key>
 		<data>
-		//E3K8L5gpHigtiuAbvsmagGbQY=
+		GRzwDHkEy+K5GAKWmcllknBdZo4=
 		</data>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NLUCxIf8M3aQmV3JvOqMmhZkIFE=
+		gSyVWEaw0XBWx3+Y84cn/1W1lRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -287,33 +287,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wb5vzlsUEwPNyPID/NjCjdRiVS4=
+			8ZPotKUZr0C4DkUYb1iMkex9gLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0iEWFTHO9qKepStaQmSUP8OKxoDQPswYahCSrvTuqco=
+			E/JSfiyKDvnlAjtd9i3HV5cIos5X4zhzFrCye7SfJzw=
 			</data>
 		</dict>
 		<key>BuildUniversal.sh</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oIYlOKQ9Evsg3+yovL4iIEr3qdQ=
+			zwoEuvuSx6E0eCxqHFuGmOcLmEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			CKQLByKDkg1w4AWj4pooJIAFKLQqu9+UlSdV3nFm3sM=
+			zc53PwAJn0NvXxHKvkR+ZV9v2U8M4521+QfKL4P2uZk=
 			</data>
 		</dict>
 		<key>BuildUtils.sh</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hjB1YzGYp12hiPF1PI0XxNVGCfk=
+			r6GfkLJ7Fm5h62h9AkUKrDtBP3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			KWB0ZKkeaL+6BgHswxrzoN/xIUznRBeFx9yY+leXFHU=
+			obFQG73kWUbOXMjl90EhyZXAXlwQuMfzaKHJniE/rzA=
 			</data>
 		</dict>
 		<key>DeployCocoapodsTrunk.sh</key>
@@ -342,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			//E3K8L5gpHigtiuAbvsmagGbQY=
+			GRzwDHkEy+K5GAKWmcllknBdZo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8EPGV0Swx8wRCOg/XLjUjtlaoEh5fVu6vL9dt183/c0=
+			9U0NXODIWGj3bQbj2YmYbrIqcoNwi/19r371h7IH0rg=
 			</data>
 		</dict>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>

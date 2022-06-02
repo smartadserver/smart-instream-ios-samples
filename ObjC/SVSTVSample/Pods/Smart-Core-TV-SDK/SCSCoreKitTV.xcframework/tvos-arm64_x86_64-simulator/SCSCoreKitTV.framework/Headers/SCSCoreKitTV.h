@@ -52,27 +52,35 @@
 #import <SCSCoreKitTV/SCSTrackingEvent.h>
 #import <SCSCoreKitTV/SCSTrackingEventFactory.h>
 #import <SCSCoreKitTV/SCSTrackingEventDefaultFactory.h>
+#import <SCSCoreKitTV/SCSTrackingEventManagerProtocol.h>
 #import <SCSCoreKitTV/SCSTrackingEventManager.h>
 #import <SCSCoreKitTV/SCSTrackingEventManagerDelegate.h>
 #import <SCSCoreKitTV/SCSVideoTrackingEvent.h>
+#import <SCSCoreKitTV/SCSVideoTrackingEventManagerProtocol.h>
 #import <SCSCoreKitTV/SCSVideoTrackingEventManager.h>
 #import <SCSCoreKitTV/SCSViewabilityTrackingEvent.h>
+#import <SCSCoreKitTV/SCSViewabilityTrackingEventManagerProtocol.h>
 #import <SCSCoreKitTV/SCSViewabilityTrackingEventManager.h>
 
+#import <SCSCoreKitTV/SCSViewabilityManagerProtocol.h>
 #import <SCSCoreKitTV/SCSViewabilityManagerDelegate.h>
 #import <SCSCoreKitTV/SCSViewabilityManager.h>
+#import <SCSCoreKitTV/SCSViewabilityStatus.h>
 
 // System
 #import <SCSCoreKitTV/SCSAppInfo.h>
+#import <SCSCoreKitTV/SCSAppInfoProtocol.h>
 
 #import <SCSCoreKitTV/SCSIdentity.h>
 #import <SCSCoreKitTV/SCSIdentityProviderProtocol.h>
 #import <SCSCoreKitTV/SCSTransientID.h>
 
 #import <SCSCoreKitTV/SCSDeviceInfo.h>
+#import <SCSCoreKitTV/SCSAppInfoProtocol.h>
 #import <SCSCoreKitTV/SCSDeviceInfoProviderProtocol.h>
 
 #import <SCSCoreKitTV/SCSFrameworkInfo.h>
+#import <SCSCoreKitTV/SCSFrameworkInfoProtocol.h>
 
 #import <SCSCoreKitTV/SCSLocation.h>
 #import <SCSCoreKitTV/SCSLocationManager.h>
@@ -111,11 +119,13 @@
 #import <SCSCoreKitTV/SCSAdRequestErrors.h>
 
 #import <SCSCoreKitTV/SCSNetworkInfo.h>
+#import <SCSCoreKitTV/SCSNetworkInfoProtocol.h>
 
 #import <SCSCoreKitTV/SCSScriptDownloader.h>
 #import <SCSCoreKitTV/SCSScriptDownloaderDelegate.h>
 
 #import <SCSCoreKitTV/SCSPixel.h>
+#import <SCSCoreKitTV/SCSPixelManagerProtocol.h>
 #import <SCSCoreKitTV/SCSPixelManager.h>
 #import <SCSCoreKitTV/SCSPixelStore.h>
 #import <SCSCoreKitTV/SCSPixelStoreProviderProtocol.h>
