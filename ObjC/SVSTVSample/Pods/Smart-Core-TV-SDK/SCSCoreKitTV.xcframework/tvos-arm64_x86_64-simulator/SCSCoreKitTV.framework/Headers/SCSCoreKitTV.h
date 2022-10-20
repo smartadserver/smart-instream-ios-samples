@@ -96,6 +96,7 @@
 // Config Manager
 #import <SCSCoreKitTV/SCSRemoteConfigManager.h>
 #import <SCSCoreKitTV/SCSRemoteConfigManagerDelegate.h>
+#import <SCSCoreKitTV/SCSPropertyCacheManager.h>
 
 // Model
 #import <SCSCoreKitTV/SCSConfiguration.h>
@@ -107,6 +108,7 @@
 #import <SCSCoreKitTV/SCSLogSDKNode.h>
 #import <SCSCoreKitTV/SCSLogMeasureNode.h>
 #import <SCSCoreKitTV/SCSLogErrorNode.h>
+#import <SCSCoreKitTV/SCSRemoteLoggerProtocol.h>
 #import <SCSCoreKitTV/SCSRemoteLogger.h>
 #import <SCSCoreKitTV/SCSRemoteLog.h>
 #import <SCSCoreKitTV/SCSRemoteLogUtils.h>
@@ -139,6 +141,7 @@
 #import <SCSCoreKitTV/SCSUtils.h>
 #import <SCSCoreKitTV/SCSUIUtils.h>
 #import <SCSCoreKitTV/SCSURLUtils.h>
+#import <SCSCoreKitTV/SCSStringUtils.h>
 #import <SCSCoreKitTV/SCSHTMLUtils.h>
 #import <SCSCoreKitTV/SCSTimeUtils.h>
 #import <SCSCoreKitTV/SCSHash.h>

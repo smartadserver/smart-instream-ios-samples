@@ -9,8 +9,3 @@ framework module SCSCoreKitTV {
       export *
     }
 }
-
-module SCSCoreKitTV.Swift {
-    header "SCSCoreKitTV-Swift.h"
-    requires objc
-}

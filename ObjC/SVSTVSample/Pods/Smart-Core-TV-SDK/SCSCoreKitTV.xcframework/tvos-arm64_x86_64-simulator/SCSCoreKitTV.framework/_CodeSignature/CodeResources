@@ -40,13 +40,9 @@
 		<data>
 		X1iulEjDg5WNBvVXl6ANWXi3L44=
 		</data>
-		<key>Headers/SCSCoreKitTV-Swift.h</key>
-		<data>
-		kqr8ngp9Yvt2TC3mJii/kWZkqL8=
-		</data>
 		<key>Headers/SCSCoreKitTV.h</key>
 		<data>
-		RAKZkRLSf1z7xqKvEzYDQ0aetpw=
+		QlYs9Mw/VJf/22pCB3MZf0YXKQA=
 		</data>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<data>
@@ -122,7 +118,7 @@
 		</data>
 		<key>Headers/SCSLogErrorNode.h</key>
 		<data>
-		gLouoinsWDgo0I+n6iDBGudr2Is=
+		Rm5gx888CDc1P7TwKKo2MUhYxhc=
 		</data>
 		<key>Headers/SCSLogMeasureNode.h</key>
 		<data>
@@ -142,7 +138,7 @@
 		</data>
 		<key>Headers/SCSLogSDKNode.h</key>
 		<data>
-		FFOO4pQg/UNtTCTVCNasI7I7GcU=
+		vqcoF6WTClNE4BZI6Kgfebm/ZNM=
 		</data>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
 		<data>
@@ -180,6 +176,10 @@
 		<data>
 		oTwR8/xwlpK4B3YklOSlLwtUdXo=
 		</data>
+		<key>Headers/SCSPropertyCacheManager.h</key>
+		<data>
+		9dXIgUJ4N0Ogc3FDf4RNJRFPoI8=
+		</data>
 		<key>Headers/SCSQuaternion.h</key>
 		<data>
 		KoP0BM0hvUqYvEtbDl/CtvgZUrE=
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<data>
-		9qcKoB3NJ7KShhMyACkEPbvrdRc=
+		h+J6SExBVNJQIkcpMsvQsHNoOX8=
 		</data>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
 		<data>
@@ -210,7 +210,11 @@
 		</data>
 		<key>Headers/SCSRemoteLogger.h</key>
 		<data>
-		fEn1fhF8kgR8DU50S3nD4OapyKo=
+		7OM99s8KparOK/Gq1g8dVLiNSfc=
+		</data>
+		<key>Headers/SCSRemoteLoggerProtocol.h</key>
+		<data>
+		exPczgloIiErV+u8xy7XtPdo+vk=
 		</data>
 		<key>Headers/SCSScriptDownloader.h</key>
 		<data>
@@ -219,6 +223,10 @@
 		<key>Headers/SCSScriptDownloaderDelegate.h</key>
 		<data>
 		SWuIW32sgAHYUEplX6Szh/z9png=
+		</data>
+		<key>Headers/SCSStringUtils.h</key>
+		<data>
+		JPvs3XY/6kERSTmTgcV/uTiY5hE=
 		</data>
 		<key>Headers/SCSTCFString.h</key>
 		<data>
@@ -466,7 +474,7 @@
 		</data>
 		<key>Headers/SCSViewabilityStatus.h</key>
 		<data>
-		BavD2O9/BzgOaLrATI0U+yquY68=
+		oXkFj/CvA3KOHptqmCPH69X8blc=
 		</data>
 		<key>Headers/SCSViewabilityTrackingEvent.h</key>
 		<data>
@@ -482,43 +490,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wndeHogv2/e1evPXYhC5YWODwRc=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
-		<data>
-		OyMn5MGajrBItYCz/WcDUMgQ94I=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
-		<data>
-		Frk5t/ZILEI9ir50why3p5p5+PE=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
-		<data>
-		Hvht8xpwrV8/ERWKAhIO+56lyYk=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
-		<data>
-		Xg4y9DVb+x/DTWaJjFSJA010ub4=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
-		<data>
-		Q3eviVri8L2+kn6x8VDDwOD+hyA=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
-		<data>
-		3stF1SAusfzl/H2ToGf6CCv9TRY=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
-		<data>
-		Sr2OnTWMHcPOtM9jXg/YGYBrFwU=
-		</data>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
-		<data>
-		AdDLSPN/2E5ViqUkZFquXt33PLs=
+		dB7mGCfJkNlfnllOmbJdy5mVtu4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		StpCyXXLHCjQCbTfvaX0NNFDATM=
+		nah9r67BIOMiuuIPwXHZ8/qzLj0=
 		</data>
 		<key>PrivateHeaders/SCSPrivateUtils.h</key>
 		<data>
@@ -529,10 +505,6 @@
 	<dict>
 		<key>Headers/SCSAdRequestErrors.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dOF2fmvnEz4gGVUgtx3oX63eJm4=
-			</data>
 			<key>hash2</key>
 			<data>
 			RLB5h+GUf+HWgnAguqxFED4eGHIvbiO6NmLovxNerOQ=
@@ -540,10 +512,6 @@
 		</dict>
 		<key>Headers/SCSAdRequestManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mRilKV64eTeHKCyqBHwPk3XPZOw=
-			</data>
 			<key>hash2</key>
 			<data>
 			YtoRVPb2mnuKq9qI3g2h0K6KkW19Opyxq3QoWFBSkDs=
@@ -551,10 +519,6 @@
 		</dict>
 		<key>Headers/SCSAdRequestValidatorProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RoXihSqO90J948sQ6F5pMebUVyM=
-			</data>
 			<key>hash2</key>
 			<data>
 			P6vQAhMDAblk/XXmd9YfISGm+2xUPg6AhzSBt9+nmiM=
@@ -562,10 +526,6 @@
 		</dict>
 		<key>Headers/SCSAngleUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6AVtXwPjp0X22fOgKjrprbSaihA=
-			</data>
 			<key>hash2</key>
 			<data>
 			mgYOoQgIw2Oflx8WNyrRbodRBVgixuTp9IVJpM6FOp8=
@@ -573,10 +533,6 @@
 		</dict>
 		<key>Headers/SCSAppInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			v7YvdxJWOvA2qSemOru8yCDJWEQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			ufBOOV5aSB/5yHfIUYsJu7WBiZWK33oUr/XWT4eXpAc=
@@ -584,10 +540,6 @@
 		</dict>
 		<key>Headers/SCSAppInfoProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MGU2K3hu9YhSrJvXW7uCx2ieKBU=
-			</data>
 			<key>hash2</key>
 			<data>
 			7RXHD8YQXWzayAsfoVVVDicbEvYIU+qlPx34AYHqhKM=
@@ -595,10 +547,6 @@
 		</dict>
 		<key>Headers/SCSAxis3.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lVB/0cU0s2s68uvNww7RIILRKoA=
-			</data>
 			<key>hash2</key>
 			<data>
 			yY4gheXW85sGgInJ4cpU/rqV3i6JF7lgFE8gCbpOqCc=
@@ -606,10 +554,6 @@
 		</dict>
 		<key>Headers/SCSCCPAString.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CEhf75TaWpdeoRqRon2issL2jIs=
-			</data>
 			<key>hash2</key>
 			<data>
 			LIX22/+vX/gs7OxqrOfjwuEEGAb5axvFIo2rhzOCAaY=
@@ -617,43 +561,20 @@
 		</dict>
 		<key>Headers/SCSConfiguration.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			X1iulEjDg5WNBvVXl6ANWXi3L44=
-			</data>
 			<key>hash2</key>
 			<data>
 			1iarN8x+HWlgsKJtEkSs6aLEi1ZKVbJTjABZRa5psXc=
 			</data>
 		</dict>
-		<key>Headers/SCSCoreKitTV-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kqr8ngp9Yvt2TC3mJii/kWZkqL8=
-			</data>
-			<key>hash2</key>
-			<data>
-			6jrgZEB06BFjfqA65U/rq6iNhtwvhAfkLKUGL6U8Jq0=
-			</data>
-		</dict>
 		<key>Headers/SCSCoreKitTV.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RAKZkRLSf1z7xqKvEzYDQ0aetpw=
-			</data>
 			<key>hash2</key>
 			<data>
-			8L20+2OprPx8qFdrpwQa1YVxySwFFlUnk0pk+SvGAl8=
+			v4nRUx/M7Nf7Og/urw/K/agZOFmCjogSWIBuAOYMJds=
 			</data>
 		</dict>
 		<key>Headers/SCSDeviceInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DJnZRtegel0ZccNozZ+Gt+DsSHw=
-			</data>
 			<key>hash2</key>
 			<data>
 			kTEinpXaN+1hJaoB6k+wqB4s7C/4lfmKi79aL/PcAW0=
@@ -661,10 +582,6 @@
 		</dict>
 		<key>Headers/SCSDeviceInfoProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Tiln+Ad9MMbldu+2po4ayuIbBPI=
-			</data>
 			<key>hash2</key>
 			<data>
 			XkfzDwfUjb4i2X9ea/CK1PJTdGP8gbtz+/gm1g/dAuM=
@@ -672,10 +589,6 @@
 		</dict>
 		<key>Headers/SCSDeviceInfoProviderProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9s5YG394q8/FXqJcO09GcN2V4D8=
-			</data>
 			<key>hash2</key>
 			<data>
 			qW1eQZZOTJPqwnSnEBbqFZuJLjfQxDNnZHiWjdjJp+g=
@@ -683,10 +596,6 @@
 		</dict>
 		<key>Headers/SCSEnums.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2mL9ok4adGVr+l+J8d35xQNpdCA=
-			</data>
 			<key>hash2</key>
 			<data>
 			QcOVSmtBs0orVve1fk4PlFJUwwfW0tcgF9RFfxAkKvk=
@@ -694,10 +603,6 @@
 		</dict>
 		<key>Headers/SCSFrameworkInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c2ruzBHszwSX9AscWqrSGwjc0hY=
-			</data>
 			<key>hash2</key>
 			<data>
 			uC4luOaOAmDf6ModWJ7nKkPrsHGYM5oiTz5tiYaIVdg=
@@ -705,10 +610,6 @@
 		</dict>
 		<key>Headers/SCSFrameworkInfoProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1jDF5ipZI3JzH+2GOcME7js7J0s=
-			</data>
 			<key>hash2</key>
 			<data>
 			QpefsVNr9+Mj/XlVgt8hSbKK7EL6ptD2FtY9ofwJyBQ=
@@ -716,10 +617,6 @@
 		</dict>
 		<key>Headers/SCSFuture.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5M6HeWsdLbS1PEhKa4mM/FA893I=
-			</data>
 			<key>hash2</key>
 			<data>
 			U567joT64AF3gbLROTYr+OuHZdees66cXlr53HXH828=
@@ -727,10 +624,6 @@
 		</dict>
 		<key>Headers/SCSHTMLUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J59RJHf2w5g10zgeSlp+DZcXeg0=
-			</data>
 			<key>hash2</key>
 			<data>
 			on7AG+YpEms1PNQkoFHszQV8tlpnLlW+xfQGrdVuLz0=
@@ -738,10 +631,6 @@
 		</dict>
 		<key>Headers/SCSHash.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lhXPOW0w1vDiPDIyVIi7GRuCEFE=
-			</data>
 			<key>hash2</key>
 			<data>
 			2gBdv13kt1G7Mpb+0krwW9tI22+uCOIBrTIPRW7g/uM=
@@ -749,10 +638,6 @@
 		</dict>
 		<key>Headers/SCSIdentity.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+J2ijS2mLoKuB2JopVmjhQ1BgSg=
-			</data>
 			<key>hash2</key>
 			<data>
 			N+dbhxB/zEHoWGAxtk/PgE4aabXil3/RVuiulFePY+0=
@@ -760,10 +645,6 @@
 		</dict>
 		<key>Headers/SCSIdentityProviderProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AtyTmNtvRNaJz/xVHSyLlmYi6hs=
-			</data>
 			<key>hash2</key>
 			<data>
 			LtJf8dBSq7PV6F3KA1aX8J2FOVcNHAmMGTGtFJM404Y=
@@ -771,10 +652,6 @@
 		</dict>
 		<key>Headers/SCSLocation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			diQVv1low0yfi5Bj+Dha1DJfk6w=
-			</data>
 			<key>hash2</key>
 			<data>
 			bj9o222PN0Z5ZLHXtcjUy1e4IZ7SWNmQRcREw+3zCE4=
@@ -782,10 +659,6 @@
 		</dict>
 		<key>Headers/SCSLocationManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MZjKDQdEvRq1XT5PgY6ece8PhDY=
-			</data>
 			<key>hash2</key>
 			<data>
 			UivmrZLD2a3epAbIg9Pug9bkpzNzZPnIavfe3OeSuUE=
@@ -793,10 +666,6 @@
 		</dict>
 		<key>Headers/SCSLocationManagerDataSource.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rTDshFd/rJaxl8RdoFoIn/X0zvY=
-			</data>
 			<key>hash2</key>
 			<data>
 			VLTz1PET624ZUPCNKNQrELeLM8pu/puKojd4kRZLvsA=
@@ -804,10 +673,6 @@
 		</dict>
 		<key>Headers/SCSLocationProviderDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qxsDpvHA4g9+Dk97GoAxP1EKE+U=
-			</data>
 			<key>hash2</key>
 			<data>
 			UHXDcknlwai4NKJQfiPRWieXNybFV+TP+0w9z1EC1FQ=
@@ -815,10 +680,6 @@
 		</dict>
 		<key>Headers/SCSLocationProviderProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0sLhOh7xDWlZG7NiR79aeC5hpDM=
-			</data>
 			<key>hash2</key>
 			<data>
 			hTRSjtmnzje6h7ASp3EYa2sf92Oh+Waw6V8Fmzk1AUU=
@@ -826,10 +687,6 @@
 		</dict>
 		<key>Headers/SCSLog.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6YO9iFSCZwnP2Lap19EnRCFjyuU=
-			</data>
 			<key>hash2</key>
 			<data>
 			exsPcFexL+Nwwkor7qJYvHSpHAku7JYfyTk82dZyEEM=
@@ -837,10 +694,6 @@
 		</dict>
 		<key>Headers/SCSLogDataSource.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Eaa/4fzs6/91VZ7Y3+lMnClBAuc=
-			</data>
 			<key>hash2</key>
 			<data>
 			+wT5/IcGVFBEyW2j/fwD31Cvy5ZRlwEjAiKOIeQE9j8=
@@ -848,21 +701,13 @@
 		</dict>
 		<key>Headers/SCSLogErrorNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gLouoinsWDgo0I+n6iDBGudr2Is=
-			</data>
 			<key>hash2</key>
 			<data>
-			8NxNrwULPM04+hY1jhlZ/Z519SjT/oAU/Nj340kGpZk=
+			N3zNoRrNbiSkVOQbZCYEvqIA30bUwO0pGNTbHNnnheQ=
 			</data>
 		</dict>
 		<key>Headers/SCSLogMeasureNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PDmaAHI+n4X/WSlfoJ8bu5OiiE8=
-			</data>
 			<key>hash2</key>
 			<data>
 			rxfFisJFbB9IWrGwVCNnzj+bNsW0lEPyVgQVvy2Gzgs=
@@ -870,10 +715,6 @@
 		</dict>
 		<key>Headers/SCSLogNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KmlnE0vzDYf8DYGjPWbUPSIm/4I=
-			</data>
 			<key>hash2</key>
 			<data>
 			xYXmA89yUQLdwtN5kQQmBumH8N59kPX+8inRM8y0364=
@@ -881,10 +722,6 @@
 		</dict>
 		<key>Headers/SCSLogOpenMeasurementNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NpRU3Mw3gNWY+jjmQCp1cgT8DxU=
-			</data>
 			<key>hash2</key>
 			<data>
 			VhsJu0Zd+Ie2YEs8Y62/gsCh9M87g5cnn2NeBJbUc0k=
@@ -892,10 +729,6 @@
 		</dict>
 		<key>Headers/SCSLogOutput.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KttAkhKjiXqN2QJbWpukdz5TEjc=
-			</data>
 			<key>hash2</key>
 			<data>
 			OM/kHcYsTRtPDBBUr5z2KFCdS4DkNbk3LLPoLOBxvO0=
@@ -903,21 +736,13 @@
 		</dict>
 		<key>Headers/SCSLogSDKNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FFOO4pQg/UNtTCTVCNasI7I7GcU=
-			</data>
 			<key>hash2</key>
 			<data>
-			0cbQve8cRkkYPFcj92ub0BzDyU2iv0bhTDCBTrOSpHQ=
+			r9fdjHnuLxzd86CNv0wYkgLb7C4/zJTzTGzQPFjTcSk=
 			</data>
 		</dict>
 		<key>Headers/SCSLogVASTErrorNode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aNYdWvM9r9g4AVBVRpJC9GaEF+0=
-			</data>
 			<key>hash2</key>
 			<data>
 			OmyihwkeSYXA7rkqvDem4yVjBOWjhOMBfPgCjRX8064=
@@ -925,10 +750,6 @@
 		</dict>
 		<key>Headers/SCSNetworkInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jhyxb/HI21IVfGqZ5yzrT86i+9w=
-			</data>
 			<key>hash2</key>
 			<data>
 			DTa0PB9pgh1K/fh7h8lmyQuGTUCjBofBoEJQz5nf48o=
@@ -936,10 +757,6 @@
 		</dict>
 		<key>Headers/SCSNetworkInfoProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mrg/dDSIS27n0jHdD0VWPyPK1Nk=
-			</data>
 			<key>hash2</key>
 			<data>
 			/xnVPoBYSOfvT4vaBEBVNDqhxBnz4x8vNPaliezdbE8=
@@ -947,10 +764,6 @@
 		</dict>
 		<key>Headers/SCSPixel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			upr75aMGhaMxi01MP/nrsBHnTvY=
-			</data>
 			<key>hash2</key>
 			<data>
 			g8v+q0mqvd4vZTIUvMVkJ+PB1zMA+wo2AI/GGMnf5NI=
@@ -958,10 +771,6 @@
 		</dict>
 		<key>Headers/SCSPixelManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P+YIZPDDxcB2aqRcjBspSRRw5Kw=
-			</data>
 			<key>hash2</key>
 			<data>
 			BPXxr4is94DoUx7P5jUooOl2ryq3+t3+wi6cgYTn4z0=
@@ -969,10 +778,6 @@
 		</dict>
 		<key>Headers/SCSPixelManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aoqKnGusf5RrWiCbL8wLiku3sHM=
-			</data>
 			<key>hash2</key>
 			<data>
 			zKgNcGzqCUmXDaNVqMzQwV5kjXXhUbGht2Jp1Mb99dw=
@@ -980,10 +785,6 @@
 		</dict>
 		<key>Headers/SCSPixelStore.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zn/K1mChnj/Rju/I1x3AGIHSfHk=
-			</data>
 			<key>hash2</key>
 			<data>
 			OaeWCA8cSQAYH53Uow3XSbG9AlMEcaAErBqOCGWdx7k=
@@ -991,10 +792,6 @@
 		</dict>
 		<key>Headers/SCSPixelStoreProviderProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S/Qf1s16W+Q9zzSXDIW99QGfOuE=
-			</data>
 			<key>hash2</key>
 			<data>
 			cYYrGlsDbWvbcw2OvcVHOtVR+3hM0oJm1xfBvvyMj10=
@@ -1002,21 +799,20 @@
 		</dict>
 		<key>Headers/SCSProdURL.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oTwR8/xwlpK4B3YklOSlLwtUdXo=
-			</data>
 			<key>hash2</key>
 			<data>
 			grVNWTCYzlFOWwtaplBAord3vdjBouO9ygzFaBm4inY=
 			</data>
 		</dict>
+		<key>Headers/SCSPropertyCacheManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EPYp4wO765xZ8aKC9LCvrSD5+8CL8oceA2jVDGv8Weg=
+			</data>
+		</dict>
 		<key>Headers/SCSQuaternion.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KoP0BM0hvUqYvEtbDl/CtvgZUrE=
-			</data>
 			<key>hash2</key>
 			<data>
 			nJ5r/yB7ODEMG2DoKWZXrhW+6A+BIuwPHUSBobaUDr0=
@@ -1024,10 +820,6 @@
 		</dict>
 		<key>Headers/SCSRandom.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jzZjND02OES9/Wn1FlDyzXKRuAI=
-			</data>
 			<key>hash2</key>
 			<data>
 			iTb5r2veALToDigiEl4Rl8e+QOk+EHh0+SRXFOC79xc=
@@ -1035,21 +827,13 @@
 		</dict>
 		<key>Headers/SCSRemoteConfigManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9qcKoB3NJ7KShhMyACkEPbvrdRc=
-			</data>
 			<key>hash2</key>
 			<data>
-			BhYKZNOyyy9mjMzdlTSmIvE2CgcjoYOyS64szyBNRCM=
+			TAn4kxO4nCDO24ug/msleoZumcndAcmApdzztp9ekyA=
 			</data>
 		</dict>
 		<key>Headers/SCSRemoteConfigManagerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Da/Kv0zzgGveCghLhDKPjjuRD64=
-			</data>
 			<key>hash2</key>
 			<data>
 			eN+rxlcsd73Nvorca5t97rjY56OVBDfYCQJBa77A9ZM=
@@ -1057,10 +841,6 @@
 		</dict>
 		<key>Headers/SCSRemoteConfigurationErrorRemoteLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gpiAuHL/XvazeIYyI/WtFlLKiYY=
-			</data>
 			<key>hash2</key>
 			<data>
 			5OjHtUSv31uMFxmsgTD9evaGEPt63ycwsxZQPOEy/UA=
@@ -1068,10 +848,6 @@
 		</dict>
 		<key>Headers/SCSRemoteLog.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qjW03/CF05e8vSP3nC8LNgO9KwY=
-			</data>
 			<key>hash2</key>
 			<data>
 			2VL7oup/MJEyFFwyh9tqIR5p2hM5RWSWSVXCL2UVLrs=
@@ -1079,10 +855,6 @@
 		</dict>
 		<key>Headers/SCSRemoteLogUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fJ5VhGdWfQqi/Ac1Xj/Mm1z5PuQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			TdT2gbKSwqSESCxQh5OZeWMU5OcG/cvY3fDyakU65H0=
@@ -1090,21 +862,20 @@
 		</dict>
 		<key>Headers/SCSRemoteLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fEn1fhF8kgR8DU50S3nD4OapyKo=
-			</data>
 			<key>hash2</key>
 			<data>
-			SOGVCLx6hpsBDs0tkhs617zOaBrdYrjng22NtOUbbQw=
+			2I8KJPZkJRJkHO64u8tjofOJkmht0xX5ZbwPbxpfHLQ=
+			</data>
+		</dict>
+		<key>Headers/SCSRemoteLoggerProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GInv/u9th7Ef8MLoCxy6qdrTWW/bsmYkFD5tzGWzCh0=
 			</data>
 		</dict>
 		<key>Headers/SCSScriptDownloader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ppwK3TOjJzR1wXkoUaHQafMkChc=
-			</data>
 			<key>hash2</key>
 			<data>
 			y5uYo8BJ4gjbJVUWFhl5h2TZ7+FWMLzqtwleo2OeA/M=
@@ -1112,21 +883,20 @@
 		</dict>
 		<key>Headers/SCSScriptDownloaderDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SWuIW32sgAHYUEplX6Szh/z9png=
-			</data>
 			<key>hash2</key>
 			<data>
 			i9x+1NDSCRV4HYGD7RWzgntRdQZL2s1FmVruk7cN+kw=
 			</data>
 		</dict>
+		<key>Headers/SCSStringUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DC6KeSOt/D/CkBmCLtkZnzEb3aZSbP4xFoN+mUrAp6o=
+			</data>
+		</dict>
 		<key>Headers/SCSTCFString.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fNBQybL+EesohRS4Zcu3syFmoaA=
-			</data>
 			<key>hash2</key>
 			<data>
 			CAKhDx36ydvFQJCHCtDSYYJPzBAUr7gIpWUzKZoss1k=
@@ -1134,10 +904,6 @@
 		</dict>
 		<key>Headers/SCSTimeUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ts7+g/idakoCRMGkuRMw9E0yAkk=
-			</data>
 			<key>hash2</key>
 			<data>
 			vZXWbkdjVJuqDe7FxrAHhHDSInDzTGkAw0EyEg7dcaQ=
@@ -1145,10 +911,6 @@
 		</dict>
 		<key>Headers/SCSTimer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iSZ3tasZdTuDlmuOaEJlxFbPs7I=
-			</data>
 			<key>hash2</key>
 			<data>
 			5sCb6MpGMs7/9YXRZTM401sdZPwmQna16se+vPm5axc=
@@ -1156,10 +918,6 @@
 		</dict>
 		<key>Headers/SCSTimerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lmdaekcLwH0YTYlCHFvFGivdbTM=
-			</data>
 			<key>hash2</key>
 			<data>
 			N8XDIjGdlpkA1BUpfSarDUs75lYdxrBFkikZzqnAwx0=
@@ -1167,10 +925,6 @@
 		</dict>
 		<key>Headers/SCSTimerInterval.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iF5T+vhpPfycK8VAZM5IffOm0tY=
-			</data>
 			<key>hash2</key>
 			<data>
 			D09+oWFeUk4VDXNWQYbqeeIBFOBrkF4mSOYw6PSpLc4=
@@ -1178,10 +932,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4M9BPO+3jc7x2Zr9QgT3PVUdSvI=
-			</data>
 			<key>hash2</key>
 			<data>
 			1GS5LcWj0Kka7NryYdVfuOLS8Iwo+HS19RhcHG0KZdE=
@@ -1189,10 +939,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEventDefaultFactory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a8eL5O0GDQ8LcC76RZieiiG9sZk=
-			</data>
 			<key>hash2</key>
 			<data>
 			oxBtO3+6IcHofBOCsdArhifrmeU3PcKPWplK63QUfkI=
@@ -1200,10 +946,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEventFactory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ce2v/2VG5oQcITNw9IBR3AygnFM=
-			</data>
 			<key>hash2</key>
 			<data>
 			kWvBGOlPi9sZpC9hi9rgic4NmNZZLwVyAoqXsnpv+TU=
@@ -1211,10 +953,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEventManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EQrxX3wkPIBCpHUnu51tmBZWAVY=
-			</data>
 			<key>hash2</key>
 			<data>
 			wiXOajeIJYRXw1nr9xJl1EriEn+64rmQ/hgFycGEwKY=
@@ -1222,10 +960,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEventManagerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DOyv/i1xJBqa2cHNERQboa8COTg=
-			</data>
 			<key>hash2</key>
 			<data>
 			474HxE/XTxtXIkrhFtN8RV8IyfoPP2m3URsqqIwLL6U=
@@ -1233,10 +967,6 @@
 		</dict>
 		<key>Headers/SCSTrackingEventManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rF9oi2qLtRvOLyJMpYh99chDjK4=
-			</data>
 			<key>hash2</key>
 			<data>
 			dBp59xVErZUNLDiSCHql+CUipRO3NZQzXRMbVsY3TzM=
@@ -1244,10 +974,6 @@
 		</dict>
 		<key>Headers/SCSTransientID.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nJXmf4fJaq5CkzCsk3DiVeGbbnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			srst/53ZnrNw3mSemZL6f5+8cthn8t0sUl/yPzMDnM4=
@@ -1255,10 +981,6 @@
 		</dict>
 		<key>Headers/SCSUIUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G9D4OX73+bGkY/RtpF6VUCfjC/A=
-			</data>
 			<key>hash2</key>
 			<data>
 			x+FwkdZx2tPGWbwly+kJIKid2M/6mUPKlE2J0I3w8JA=
@@ -1266,10 +988,6 @@
 		</dict>
 		<key>Headers/SCSURLSession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			By4J2l3fxwhmi0mKYZVnIrO5TYc=
-			</data>
 			<key>hash2</key>
 			<data>
 			tU9FSMPDW+srnIyu8fsr2ydCUI+RqKkmYpgTylNuUv0=
@@ -1277,10 +995,6 @@
 		</dict>
 		<key>Headers/SCSURLSessionProviderProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iDnVXbJYEwmJbkKkXGM266f1xcs=
-			</data>
 			<key>hash2</key>
 			<data>
 			bLkhdrY/ZdOHCrF+d2p3va47DfZM01v0tg7r4WbEutM=
@@ -1288,10 +1002,6 @@
 		</dict>
 		<key>Headers/SCSURLSessionResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lWFltBuTFBcHcKotTNFB6ypGIMw=
-			</data>
 			<key>hash2</key>
 			<data>
 			40xLyw40qF1UPE8y2Hx6dD5m4EM56QwTD4DSsTfl1rc=
@@ -1299,10 +1009,6 @@
 		</dict>
 		<key>Headers/SCSURLSessionTask.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5Isk1/sUPhKDqBrgm9ypDP1SRdI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Fw4QaVSBAYv0HRc5JcBXDSTIXId2L6DlOvhCtIcwYlg=
@@ -1310,10 +1016,6 @@
 		</dict>
 		<key>Headers/SCSURLUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0AkeyaC5GKx4dkpAsNiiu9azzzg=
-			</data>
 			<key>hash2</key>
 			<data>
 			u+QEbVjDwTKz2rH120WJopOsohHRQUki7/XTIjv9EJk=
@@ -1321,10 +1023,6 @@
 		</dict>
 		<key>Headers/SCSUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TF9hVsBSad39Y9j99NSVDFeXtH4=
-			</data>
 			<key>hash2</key>
 			<data>
 			L3Q+q2R99CgQlc8JwfeJ8K2crl1rUMfU8tOOL94PcqE=
@@ -1332,10 +1030,6 @@
 		</dict>
 		<key>Headers/SCSVASTAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lyRZ14PS9xbsUeNXoTGMLseRUeU=
-			</data>
 			<key>hash2</key>
 			<data>
 			tUaLPb02j+Gdow3HPZWJlRHSBFhT0/W69IiGgQYnWvo=
@@ -1343,10 +1037,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdAdapterProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			24he/A9xLUWk8R3/6inxgHcP09A=
-			</data>
 			<key>hash2</key>
 			<data>
 			1ax/8kWUysovHPgr809jpXXHeppFukvIY1ETPGzWmbg=
@@ -1354,10 +1044,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YYxUUX0VrSAxxVnsTJsDtyDOEN4=
-			</data>
 			<key>hash2</key>
 			<data>
 			V8epMbpLQWMi1IhVBT2QaBKFYRw084Ek9p+pJkAX9Ig=
@@ -1365,10 +1051,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdExtensionAdVerification.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			71p1WdVaET5JUpMhdYRwaOSuyCY=
-			</data>
 			<key>hash2</key>
 			<data>
 			P9yPh8QtMQhWHdumRwWnd2b2ilKjtuykwf2UCPHSOxs=
@@ -1376,10 +1058,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdInline.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BVN7Lx+Sjsx32BZJ3nCh7irP3W0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Pe4ICe7bO5VhwN+lm/gdYb62dcJvS9ydNjvkENKIEM8=
@@ -1387,10 +1065,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdVerification.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k3GRPMGgoKbQOSk9vPsWPX6iusg=
-			</data>
 			<key>hash2</key>
 			<data>
 			HPlKxb32Hcr4KJ+3MJ+1l1plifmvOwTEE7Webv5K3hA=
@@ -1398,10 +1072,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdVerificationEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fxt/eyEs5HG0s0HppK5ZI9tmv/0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Z3aSrZyOkaCHGv0xR3fTfJP4UJlFb63/cSYrZZQSkqc=
@@ -1409,10 +1079,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdVerificationResource.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JnU/V+oVnPMY+9+mSAw27tmS4WU=
-			</data>
 			<key>hash2</key>
 			<data>
 			a/ziWFz4iiXEoZlCEg4UrBuFwZTHzwbw75dOlE/4ttA=
@@ -1420,10 +1086,6 @@
 		</dict>
 		<key>Headers/SCSVASTAdWrapper.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S1XJ26NQoKToSrLW9e4ZxxZYMCw=
-			</data>
 			<key>hash2</key>
 			<data>
 			0sA4ykIVLRYAqjHqCPvPmnAY+InIRA9WWc6gTUh1jmU=
@@ -1431,10 +1093,6 @@
 		</dict>
 		<key>Headers/SCSVASTClickEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aJwoGVJ6rbbjrl1TYUMWe5a6u38=
-			</data>
 			<key>hash2</key>
 			<data>
 			sU5cmEVEomwbJQ6KaHNHZYpjNmvPcWFwr2Rwdyr1OmU=
@@ -1442,10 +1100,6 @@
 		</dict>
 		<key>Headers/SCSVASTCreative.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AlPmn3TgSo/CeR0FH/9bWRdUz18=
-			</data>
 			<key>hash2</key>
 			<data>
 			lhO29egvPtU0GPcFvsL1MjHDkDoBhhNmbr7w83qARlM=
@@ -1453,10 +1107,6 @@
 		</dict>
 		<key>Headers/SCSVASTCreativeCompanion.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8ElWYLl6RPU/VReVRC+UnRoQ3d4=
-			</data>
 			<key>hash2</key>
 			<data>
 			m1g247FY9HRmD2295Tgv78pRB+i0LV+x5U+HD7eIZj0=
@@ -1464,10 +1114,6 @@
 		</dict>
 		<key>Headers/SCSVASTCreativeIcon.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JTn41Gk9toB1EtiEyLtleSl36tk=
-			</data>
 			<key>hash2</key>
 			<data>
 			1tB9/st0D3GSjrmBlk746zebj5der4GBIjfMDzZIeAA=
@@ -1475,10 +1121,6 @@
 		</dict>
 		<key>Headers/SCSVASTCreativeLinear.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PSpOlNxKsjDPt/LGp2C63RHpBbg=
-			</data>
 			<key>hash2</key>
 			<data>
 			bJbqnSRwSMGu9f7fhmhgx7uOAB9PmTg9FK/53jt76tA=
@@ -1486,10 +1128,6 @@
 		</dict>
 		<key>Headers/SCSVASTCreativeNonLinear.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2c1XtHRCw/Qjir5+ruLcwmVavq8=
-			</data>
 			<key>hash2</key>
 			<data>
 			UEAiu18S0lMJWMwEiCgKKOBeDUU6f24EiqwKUPUGv+s=
@@ -1497,10 +1135,6 @@
 		</dict>
 		<key>Headers/SCSVASTError.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KjMpWEOqyewiRwo8ig0g1UceIYk=
-			</data>
 			<key>hash2</key>
 			<data>
 			fKQ0sXkgNTXz9xu+DIb1T9bCpdY8qQEb9dm7MMhypco=
@@ -1508,10 +1142,6 @@
 		</dict>
 		<key>Headers/SCSVASTErrorRemoteLoggerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VAzlJGJPC9eBSMgk8XHIvb76c7Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			82C/T0QpFsMwHu74Ve5pQgBlimt95XT+rbWA05iJ+G0=
@@ -1519,10 +1149,6 @@
 		</dict>
 		<key>Headers/SCSVASTErrors.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			44htoiHRniOJfNraYFtc1Gd8xDc=
-			</data>
 			<key>hash2</key>
 			<data>
 			0XFBNJSmQnV6ZJvXuDn045rP+QrHjQ5vhaiM0ILr5Po=
@@ -1530,10 +1156,6 @@
 		</dict>
 		<key>Headers/SCSVASTManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Vnv4ZDtSuvZTeq1h1ndmIHOQlpU=
-			</data>
 			<key>hash2</key>
 			<data>
 			/M62tBnkIZjEIL4BRLSNRg6Ow299+dzEunJELoONPn0=
@@ -1541,10 +1163,6 @@
 		</dict>
 		<key>Headers/SCSVASTManagerConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0++wjVBgXz5RA0Fndp8FRr1KTsk=
-			</data>
 			<key>hash2</key>
 			<data>
 			gun7ItW77dDQgtDGOYqz4SRvtuswqhTljaxD7Bvg+Qs=
@@ -1552,10 +1170,6 @@
 		</dict>
 		<key>Headers/SCSVASTManagerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hm9sY13xdExFCv8ZQBhKkAn8Mms=
-			</data>
 			<key>hash2</key>
 			<data>
 			ktE425RNxTFKbgLJRn9kJh+DfqxdZmJuqx4LWE8F2ms=
@@ -1563,10 +1177,6 @@
 		</dict>
 		<key>Headers/SCSVASTManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mqnF2GTD2OwafgDgd69YmV2pvX8=
-			</data>
 			<key>hash2</key>
 			<data>
 			bHXMaK8axs0ZVwZjT7jVyrPcWXp8nkis4Ju85CvyGi4=
@@ -1574,10 +1184,6 @@
 		</dict>
 		<key>Headers/SCSVASTManagerResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2461ICzXuUfOH+5tkzNHvEiaYtU=
-			</data>
 			<key>hash2</key>
 			<data>
 			SnOuCXIrrkSLmZW3ztaZICoKZiICKMFug54ompQphPY=
@@ -1585,10 +1191,6 @@
 		</dict>
 		<key>Headers/SCSVASTMediaFile.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YqE6lNibcM3KZPPT+gdXFAO6G38=
-			</data>
 			<key>hash2</key>
 			<data>
 			fEn/0YJRwvkFiEbXV9T/+Xob0vy7a9fRS/CTtBEzv/w=
@@ -1596,10 +1198,6 @@
 		</dict>
 		<key>Headers/SCSVASTMediaFileSelector.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tBad5Js9LqsXPcCzuaD9lo9Uyto=
-			</data>
 			<key>hash2</key>
 			<data>
 			Z1qpMaDk+n1gA5+aZQbl3uFteJmzYVN9aILZebEhNQU=
@@ -1607,10 +1205,6 @@
 		</dict>
 		<key>Headers/SCSVASTModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XqH1Rm6tuCDuV5fYAD0NDsnFwNU=
-			</data>
 			<key>hash2</key>
 			<data>
 			60PHXWZo7hkE2RliccR8d2COcWiaR9UZczpGiRV/9VI=
@@ -1618,10 +1212,6 @@
 		</dict>
 		<key>Headers/SCSVASTModelGenerator.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			68IxBNm2/VlucExqJw/Wg/qt8Wo=
-			</data>
 			<key>hash2</key>
 			<data>
 			XKhna1V5bY7+CNW5erA8TpwneZLHcDxsDcfY3Fgw+lA=
@@ -1629,10 +1219,6 @@
 		</dict>
 		<key>Headers/SCSVASTParser.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xRglV11x0NiiKXWNFWY/nmXKRTA=
-			</data>
 			<key>hash2</key>
 			<data>
 			KbBK1bKBrMmWSGWv1rm4rtrW+lnM6LeYGZmtvTJf8bA=
@@ -1640,10 +1226,6 @@
 		</dict>
 		<key>Headers/SCSVASTParserResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UsGSJO3AfG4GZ2fZpXjQE6bGBjM=
-			</data>
 			<key>hash2</key>
 			<data>
 			E2iWMt298DVGNnxzDqP0jX3KJ6HGZbzwAYX4cJVAH/w=
@@ -1651,10 +1233,6 @@
 		</dict>
 		<key>Headers/SCSVASTPixelManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ASF1rfNgoAx7J6pjW75hIn+4eQU=
-			</data>
 			<key>hash2</key>
 			<data>
 			adF6mv3pDzqJtgP9+AYsw5zOgfpVaMvcPyLJXHdJ5L0=
@@ -1662,10 +1240,6 @@
 		</dict>
 		<key>Headers/SCSVASTTrackingEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wexmwrIzcjy79kMJgJyZKaDY2Nw=
-			</data>
 			<key>hash2</key>
 			<data>
 			HEWZySS8JzeRek3hWL8jtkw2WBdQfDJL0VDo/tobwSY=
@@ -1673,10 +1247,6 @@
 		</dict>
 		<key>Headers/SCSVASTTrackingEventFactory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/P09mgy2xZe+G4e1/vbsr3D501I=
-			</data>
 			<key>hash2</key>
 			<data>
 			oahxNP7zjLbxe74p/wdzPIw02p5Flz3d/LeqLCI6KiE=
@@ -1684,10 +1254,6 @@
 		</dict>
 		<key>Headers/SCSVASTURL.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2J19Pu47/bDJ3vnEtV7wHZymf+E=
-			</data>
 			<key>hash2</key>
 			<data>
 			Z0AdCRs+lKpmjbZ0WHKDXthuJI90m+NOg/+EXhfqW3w=
@@ -1695,10 +1261,6 @@
 		</dict>
 		<key>Headers/SCSVASTUniversalAdId.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nXjz49bYGHFt5RF8fQFCcnY5rek=
-			</data>
 			<key>hash2</key>
 			<data>
 			FzHl9eOQ9WjUoc5hKTyovuao5QuDFBuRUUWHzEpwYKA=
@@ -1706,10 +1268,6 @@
 		</dict>
 		<key>Headers/SCSVASTViewabilityEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			exMG18W6sTMIocx0g4SLpHTYsrg=
-			</data>
 			<key>hash2</key>
 			<data>
 			2/w+VPRh1pIaKRgJwB2lNF9v+voeSp5EHC4EnKnAnTo=
@@ -1717,10 +1275,6 @@
 		</dict>
 		<key>Headers/SCSVideoAdProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u6/gYJzMjUETETErTwQN6iu5FbM=
-			</data>
 			<key>hash2</key>
 			<data>
 			fe5O42otYFAbNpXqml0b7YTHABIOeM03bnuwLH3+4U8=
@@ -1728,10 +1282,6 @@
 		</dict>
 		<key>Headers/SCSVideoTrackingEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oBqdBYeBxwU5e2Seb2fZhVrm07o=
-			</data>
 			<key>hash2</key>
 			<data>
 			LZBbraBXyhW++Rwi0AuZBDAc3oSFL76tLeXB3nLxUtQ=
@@ -1739,10 +1289,6 @@
 		</dict>
 		<key>Headers/SCSVideoTrackingEventManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZetKuYGkW1XHEDjTikolgNwPWQA=
-			</data>
 			<key>hash2</key>
 			<data>
 			QIVPNMLzFLcu/tyU8VRS8r4YFUNUfI6S1ONDKO30sGo=
@@ -1750,10 +1296,6 @@
 		</dict>
 		<key>Headers/SCSVideoTrackingEventManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BUdEZn66wjWDaw2qk/SW0MzjWuA=
-			</data>
 			<key>hash2</key>
 			<data>
 			e8uhp/KU7VmuG+re715g5Z4w6FD0QmCAxR9fQ0yZ4L8=
@@ -1761,10 +1303,6 @@
 		</dict>
 		<key>Headers/SCSViewabilityManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			R7DUo99lCzUpbAGMWPpEEEoKcso=
-			</data>
 			<key>hash2</key>
 			<data>
 			QomloeV1QpB1z50/WSgosvT0VlBFaEvCfiWYya3HpUA=
@@ -1772,10 +1310,6 @@
 		</dict>
 		<key>Headers/SCSViewabilityManagerDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZaVS46RHjg6lwDJWrNZg5krw3Wg=
-			</data>
 			<key>hash2</key>
 			<data>
 			8vpVDqdQLDySUAIxATzKNJnZ4dIdMp1CbPG19aw0n1E=
@@ -1783,10 +1317,6 @@
 		</dict>
 		<key>Headers/SCSViewabilityManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BMkEWzhA2br9kXkOg6x8eVG/trA=
-			</data>
 			<key>hash2</key>
 			<data>
 			kHCxmTgAa97eFw2zJJQrlT9EcHit6SeLt+nMP772k9I=
@@ -1794,21 +1324,13 @@
 		</dict>
 		<key>Headers/SCSViewabilityStatus.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BavD2O9/BzgOaLrATI0U+yquY68=
-			</data>
 			<key>hash2</key>
 			<data>
-			D/dju/1IBJi/khRZbJpDZK+qeOLzzmm0g/RS+mZQvgo=
+			rC10zyuTRgnwSTlawdHFEESyFDA55VHMRQSOMMoHA9Q=
 			</data>
 		</dict>
 		<key>Headers/SCSViewabilityTrackingEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SK6iVTpgEC/3QvbydPtp8VP3DGg=
-			</data>
 			<key>hash2</key>
 			<data>
 			YySapR7NIIEs5rG3Q5RJx1xxROeh7zbCqs3OdFvc9uY=
@@ -1816,10 +1338,6 @@
 		</dict>
 		<key>Headers/SCSViewabilityTrackingEventManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IFjyajRhWGdzW5m1kWAVZikmD+4=
-			</data>
 			<key>hash2</key>
 			<data>
 			eSFJZu+0u6QjzgA1Wyb14kivDJVJsFmUpKcngdl83Uo=
@@ -1827,120 +1345,20 @@
 		</dict>
 		<key>Headers/SCSViewabilityTrackingEventManagerProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DyUxAJsTuKvz89qY6XkMyf1+BdI=
-			</data>
 			<key>hash2</key>
 			<data>
 			icYFylqpLxSdmbxdjzt9aFJbTpz3J3638UP8nF7tJbQ=
 			</data>
 		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OyMn5MGajrBItYCz/WcDUMgQ94I=
-			</data>
-			<key>hash2</key>
-			<data>
-			E0fw4OMgk4oDw/IQABB4MH9m3+YRtQYh1bsnoL6AuAY=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Frk5t/ZILEI9ir50why3p5p5+PE=
-			</data>
-			<key>hash2</key>
-			<data>
-			M2Oe0/YVAg/5L1xYFhGv8MrQRpXR60+GUHZVLzTse2w=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Hvht8xpwrV8/ERWKAhIO+56lyYk=
-			</data>
-			<key>hash2</key>
-			<data>
-			akIsaX8/8j0e3ic2CfnnH6W7lu8iYm+Psx+NIQ9EYcc=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Xg4y9DVb+x/DTWaJjFSJA010ub4=
-			</data>
-			<key>hash2</key>
-			<data>
-			gFJLgTHAytDhnj7TkhwzNVHb3uRKVvj10a2DlwS+lMc=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Q3eviVri8L2+kn6x8VDDwOD+hyA=
-			</data>
-			<key>hash2</key>
-			<data>
-			3qjGEZuOdJsohGm/fQ8YjVBV4W9qtiUKzPccb9iNi5c=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3stF1SAusfzl/H2ToGf6CCv9TRY=
-			</data>
-			<key>hash2</key>
-			<data>
-			2bWYHBeNdDX82xv+aEE1C1SH8V0Wmof+VDPwCdsKMdk=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Sr2OnTWMHcPOtM9jXg/YGYBrFwU=
-			</data>
-			<key>hash2</key>
-			<data>
-			FpDo9BlJLCH6r9bXCDyQ/3y6B0bwv66/sTnQLzfLGjY=
-			</data>
-		</dict>
-		<key>Modules/SCSCoreKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AdDLSPN/2E5ViqUkZFquXt33PLs=
-			</data>
-			<key>hash2</key>
-			<data>
-			ktEeMruUBE/phxsyxTeIWOPeA6xvg10WuQYOfWLwQ7k=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			StpCyXXLHCjQCbTfvaX0NNFDATM=
-			</data>
 			<key>hash2</key>
 			<data>
-			viev/Y+FLW2lIapwjF11eXCpbnPF4eUZDcjlYDYrWuc=
+			A5y+CXXQTUlEVlVM3Q9N5opB4H9YzWfgmrRODVszpJ0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SCSPrivateUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dkDJyzF1FhC2f1moYvD0omilRHk=
-			</data>
 			<key>hash2</key>
 			<data>
 			PTHXZIDrjPDUw/ihtA+Ervj8PDdBY9kfixIKJaKnYm0=

@@ -365,7 +365,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AB9B07B11F5D024E867F1D86F13C341 /* Debug */ = {
+		0C71B1937553FC9B9377BB88D264A311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E73A469D8A75D948FFE6FA4DC46315 /* Smart-Instream-TV-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		11F094C5A432BACE663D4D8D2366A785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A3F03EFC12F615EFF8626CAFF70306 /* Smart-Instream-TV-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4122DA58DE83B351A9A2AF7BF58DE824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C235D1B1E524C0772D3D7B9176E8DA /* Smart-Core-TV-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		7991AE9DE3CED47570CCAA8710BB813E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -427,28 +476,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
-		21BC586CBD17ACE48A6D4C3CB974435C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0A3F03EFC12F615EFF8626CAFF70306 /* Smart-Instream-TV-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		378F85C3333E1300561ABDB6ACB898AC /* Release */ = {
+		A9B29EE673A51E145878A6CDAA3B4999 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -506,27 +538,11 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
-		4C0A40FE1F3782CA34D6DE5F1EA269D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98E73A469D8A75D948FFE6FA4DC46315 /* Smart-Instream-TV-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		CFC4A0686345F42E643D5A8BF8CE226A /* Release */ = {
+		BD9D677577D4C5E9C171DFB24F565E51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAEAA0C3F8703FE29C423868B86F956D /* Smart-Core-TV-SDK.release.xcconfig */;
 			buildSettings = {
@@ -538,65 +554,12 @@
 				);
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D4F1456BEB021B70D2DCF7D917941F68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A25DC8F7C799B572393D9C981A8C847 /* Pods-SVSTVSample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E74686F783EAF166146F81693D72577C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39C235D1B1E524C0772D3D7B9176E8DA /* Smart-Core-TV-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		FE19C932353D9F4C7A6065F499DE0400 /* Debug */ = {
+		C3EDA7777DA2A4D16F76140DADB38D5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98EF2B289230BECC44DBD7F5FB2B07C9 /* Pods-SVSTVSample.debug.xcconfig */;
 			buildSettings = {
@@ -626,11 +589,48 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		E8B981AAFC396A5CCF8D14B6EE64821E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A25DC8F7C799B572393D9C981A8C847 /* Pods-SVSTVSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -638,8 +638,8 @@
 		09D6CF20146D791C0CE8D8DF3BA4459C /* Build configuration list for PBXNativeTarget "Pods-SVSTVSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE19C932353D9F4C7A6065F499DE0400 /* Debug */,
-				D4F1456BEB021B70D2DCF7D917941F68 /* Release */,
+				C3EDA7777DA2A4D16F76140DADB38D5A /* Debug */,
+				E8B981AAFC396A5CCF8D14B6EE64821E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -647,8 +647,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AB9B07B11F5D024E867F1D86F13C341 /* Debug */,
-				378F85C3333E1300561ABDB6ACB898AC /* Release */,
+				7991AE9DE3CED47570CCAA8710BB813E /* Debug */,
+				A9B29EE673A51E145878A6CDAA3B4999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -656,8 +656,8 @@
 		57340B85EB5C6E80D0AE7B2CD9B437B8 /* Build configuration list for PBXAggregateTarget "Smart-Instream-TV-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C0A40FE1F3782CA34D6DE5F1EA269D5 /* Debug */,
-				21BC586CBD17ACE48A6D4C3CB974435C /* Release */,
+				0C71B1937553FC9B9377BB88D264A311 /* Debug */,
+				11F094C5A432BACE663D4D8D2366A785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -665,8 +665,8 @@
 		74325CE7296E21104F96304E6F91D3E1 /* Build configuration list for PBXAggregateTarget "Smart-Core-TV-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E74686F783EAF166146F81693D72577C /* Debug */,
-				CFC4A0686345F42E643D5A8BF8CE226A /* Release */,
+				4122DA58DE83B351A9A2AF7BF58DE824 /* Debug */,
+				BD9D677577D4C5E9C171DFB24F565E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,6 @@ target 'SVSJWSample' do
   platform :ios, '11.0'
 
   pod 'JWPlayer-SDK', '3.19.1'
-  pod 'Smart-Instream-SDK', '~> 7.16.0'
+  pod 'Smart-Instream-SDK', '~> 7.19.1'
 
 end

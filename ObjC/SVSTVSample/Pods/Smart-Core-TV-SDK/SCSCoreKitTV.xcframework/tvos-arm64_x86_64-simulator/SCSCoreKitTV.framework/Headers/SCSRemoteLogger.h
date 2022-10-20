@@ -12,11 +12,13 @@
 #import <SCSCoreKit/SCSLogNode.h>
 #import <SCSCoreKit/SCSLocation.h>
 #import <SCSCoreKit/SCSIdentity.h>
+#import <SCSCoreKit/SCSRemoteLoggerProtocol.h>
 #elif TARGET_OS_TV
 #import <SCSCoreKitTV/SCSRemoteLog.h>
 #import <SCSCoreKitTV/SCSLogNode.h>
 #import <SCSCoreKitTV/SCSLocation.h>
 #import <SCSCoreKitTV/SCSIdentity.h>
+#import <SCSCoreKitTV/SCSRemoteLoggerProtocol.h>
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -31,7 +33,7 @@ typedef NS_ENUM(NSInteger, SCSRemoteLogSDKImplementationType) {
 /**
  This class is used to log specific informations such as KPIs or errors.
  */
-@interface SCSRemoteLogger : NSObject
+@interface SCSRemoteLogger : NSObject <SCSRemoteLoggerProtocol>
 
 #pragma mark - Readonly properties
 
@@ -101,57 +103,6 @@ typedef NS_ENUM(NSInteger, SCSRemoteLogSDKImplementationType) {
 - (void)log:(SCSRemoteLog *)log enrichedWithDictionaries:(nullable NSArray<NSDictionary *> *)dictionaries __deprecated;
 
 #pragma mark - SCSRemoteLog generation
-
-/**
- Convenient method to initialize a SCSRemoteLog object with no type nor metric.
- If no SCSRemoteLog object is returned, it means the validation criteria to post the log (such as sampling level) were not met.
- 
- @param message The message to be associated with the Log.
- @param level The level of the Log.
- 
- @return An Initialized instance of a SCSRemoteLog object.
- */
-- (nullable SCSRemoteLog *)generateLogWithMessage:(nullable NSString *)message level:(SCSRemoteLogLevel)level;
-
-/**
- Convenient method to initialize a SCSRemoteLog object with no metric.
- If no SCSRemoteLog object is returned, it means the validation criteria to post the log (such as sampling level) were not met.
- 
- @param message The message to be associated with the Log.
- @param level The level of the Log.
- @param type The type of the Log.
- 
- @return An Initialized instance of a SCSRemoteLog object.
- */
-- (nullable SCSRemoteLog *)generateLogWithMessage:(nullable NSString *)message level:(SCSRemoteLogLevel)level type:(nullable NSString *)type;
-
-/**
- Convenient method to initialize a SCSRemoteLog object.
- If no SCSRemoteLog object is returned, it means the validation criteria to post the log (such as sampling level) were not met.
- 
- @param message The message to be associated with the Log.
- @param level The level of the Log.
- @param type The type of the Log.
- @param metricType The metricType associated with the Log.
- @param metricValue The metricValue associated with the Log.
- 
- @return An Initialized instance of a SCSRemoteLog object.
- */
-- (nullable SCSRemoteLog *)generateLogWithMessage:(nullable NSString *)message level:(SCSRemoteLogLevel)level type:(nullable NSString *)type metricType:(nullable NSString *)metricType metricValue:(nullable NSString *)metricValue __deprecated;
-
-/**
- Convenient method to initialize a SCSRemoteLog object.
- If no SCSRemoteLog object is returned, it means the validation criteria to post the log (such as sampling level) were not met.
- 
- @param message The message to be associated with the Log.
- @param level The level of the Log.
- @param type The type of the Log.
- @param baseURLString The current baseURL.
- @param nodes The nodes of the log.
-
- @return An Initialized instance of a SCSRemoteLog object.
- */
-- (nullable SCSRemoteLog *)generateLogWithMessage:(nullable NSString *)message level:(SCSRemoteLogLevel)level type:(nullable NSString *)type baseURLString:(nullable NSString *)baseURLString nodes:(nullable NSArray<SCSLogNode *> *)nodes;
 
 - (instancetype)init NS_UNAVAILABLE;
 

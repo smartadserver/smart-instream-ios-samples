@@ -523,6 +523,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		07E8F7E85FA2467A3EEB4BC778C14139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AE850F49A9EF5F743A521C041CBEBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC981D010F32808F4551B4537FDD1ECF /* Smart-Instream-SDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		439413AEEA6E34BE21686DF9C3ED40BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */;
@@ -537,35 +567,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		43DE76ADCF6392D57A76BA3A864D1802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5C98AA87C8009F61BC61CECF32AF5045 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16740176C95F53B7A84BCDA35F4AD945 /* Smart-Instream-SDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		713B304CB06F7AB5F6CF56B47B36B3DD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -599,6 +600,22 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BC86C027E8A3FFCDE7D8924793F58CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A01A9BCF8255D16383CE35768F8EAC /* Smart-Core-SDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -796,14 +813,15 @@
 			};
 			name = Debug;
 		};
-		F3272DA5F35E272A9FA282F70876EEF1 /* Release */ = {
+		DC645EC890E34F91695A1A3CE90B7F8F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A01A9BCF8255D16383CE35768F8EAC /* Smart-Core-SDK.release.xcconfig */;
+			baseConfigurationReference = 16740176C95F53B7A84BCDA35F4AD945 /* Smart-Instream-SDK.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -827,28 +845,14 @@
 			};
 			name = Release;
 		};
-		FEBABE5050B55D5CEAB4E9F9956A2B9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC981D010F32808F4551B4537FDD1ECF /* Smart-Instream-SDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		0FC0F330146B4402670FF5526A1F9693 /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43DE76ADCF6392D57A76BA3A864D1802 /* Debug */,
-				F3272DA5F35E272A9FA282F70876EEF1 /* Release */,
+				07E8F7E85FA2467A3EEB4BC778C14139 /* Debug */,
+				8BC86C027E8A3FFCDE7D8924793F58CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -874,8 +878,8 @@
 		5ED5F5A02316EDFB5A2B373F35C53F7D /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FEBABE5050B55D5CEAB4E9F9956A2B9F /* Debug */,
-				5C98AA87C8009F61BC61CECF32AF5045 /* Release */,
+				1AE850F49A9EF5F743A521C041CBEBA3 /* Debug */,
+				DC645EC890E34F91695A1A3CE90B7F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

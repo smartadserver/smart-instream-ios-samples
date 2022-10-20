@@ -7,6 +7,6 @@ target 'SVSBrightcoveSample' do
   platform :ios, '11.0'
 
   pod 'Brightcove-Player-Core/XCFramework', '6.10.2'
-  pod 'Smart-Instream-SDK', '~> 7.16.0'
+  pod 'Smart-Instream-SDK', '~> 7.19.1'
 
 end
