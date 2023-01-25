@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "Constants.h"
 #import <CoreLocation/CoreLocation.h>
-#import <SVSVideoKitTV/SVSVideoKitTV.h>
+#import <SVSVideoKit/SVSVideoKit.h>
 
 @interface AppDelegate () <CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;

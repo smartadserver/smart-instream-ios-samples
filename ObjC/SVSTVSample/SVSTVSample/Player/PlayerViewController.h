@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVKit/AVKit.h>
 #import <Foundation/Foundation.h>
-#import <SVSVideoKitTV/SVSVideoKitTV.h>
+#import <SVSVideoKit/SVSVideoKit.h>
 
 @interface PlayerViewController : AVPlayerViewController 
 @end

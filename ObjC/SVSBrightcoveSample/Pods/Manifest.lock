@@ -1,12 +1,12 @@
 PODS:
   - Brightcove-Player-Core/XCFramework (6.10.2)
-  - Smart-Core-SDK (7.19.1)
-  - Smart-Instream-SDK (7.19.1):
-    - Smart-Core-SDK (~> 7.19)
+  - Smart-Core-SDK (7.20.0)
+  - Smart-Instream-SDK (7.20.0):
+    - Smart-Core-SDK (~> 7.20)
 
 DEPENDENCIES:
   - Brightcove-Player-Core/XCFramework (= 6.10.2)
-  - Smart-Instream-SDK (~> 7.19.1)
+  - Smart-Instream-SDK (~> 7.20.0)
 
 SPEC REPOS:
   https://github.com/brightcove/BrightcoveSpecs.git:
@@ -17,9 +17,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Brightcove-Player-Core: 207189ebef308f851425fda360a149f632accf53
-  Smart-Core-SDK: 1bc28021af278ccb2a9d105ccb067ba844d1457e
-  Smart-Instream-SDK: 23e6e1796aa9c02e56a338c7db7b79184a55914f
+  Smart-Core-SDK: fffd60b4e87bd3cf2c2f106b512a06ff8feacd3b
+  Smart-Instream-SDK: da10b2175f0ea41178953229a9ada34e298f6b6f
 
-PODFILE CHECKSUM: 2f9ebfa60f7266f3c7bef76dae12df65ea9f810a
+PODFILE CHECKSUM: 19585d40b5d136c1e0608b18ba50f74de870f116
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.11.3

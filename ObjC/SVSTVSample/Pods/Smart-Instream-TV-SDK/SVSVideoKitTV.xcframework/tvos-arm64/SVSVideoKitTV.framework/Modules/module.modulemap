@@ -1,6 +1,0 @@
-framework module SVSVideoKitTV {
-  umbrella header "SVSVideoKitTV.h"
-
-  export *
-  module * { export * }
-}

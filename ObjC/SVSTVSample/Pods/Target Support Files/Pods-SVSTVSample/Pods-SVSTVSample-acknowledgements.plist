@@ -18,7 +18,7 @@
 			<key>License</key>
 			<string>COMMERCIAL</string>
 			<key>Title</key>
-			<string>Smart-Core-TV-SDK</string>
+			<string>Smart-Core-SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -28,7 +28,7 @@
 			<key>License</key>
 			<string>COMMERCIAL</string>
 			<key>Title</key>
-			<string>Smart-Instream-TV-SDK</string>
+			<string>Smart-Instream-SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

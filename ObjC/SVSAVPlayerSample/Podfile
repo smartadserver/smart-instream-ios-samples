@@ -7,6 +7,6 @@ target 'SVSAVPlayerSample' do
 
   project 'SVSAVPlayerSample.xcodeproj'
 
-  pod 'Smart-Instream-SDK', '~> 7.19.1'
+  pod 'Smart-Instream-SDK', '~> 7.20.0'
 
 end
