@@ -3,7 +3,7 @@
 //  SVSAVPlayerSample
 //
 //  Created by Loïc GIRON DIT METAZ on 28/08/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Copyright © 2019 Equativ. All rights reserved.
 //
 
 import Foundation

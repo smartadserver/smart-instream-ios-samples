@@ -1,6 +1,0 @@
-framework module SVSVideoKit {
-  umbrella header "SVSVideoKit.h"
-
-  export *
-  module * { export * }
-}

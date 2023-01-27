@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		11379D23F6869ABA8D39BEDF /* Pods_SVSAVPlayerSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC7619EA893B5AAE97F939 /* Pods_SVSAVPlayerSample.framework */; };
 		7E85EA06231683C3000AA298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA05231683C3000AA298 /* AppDelegate.swift */; };
-		7E85EA0A231683C3000AA298 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA09231683C3000AA298 /* ViewController.swift */; };
 		7E85EA0D231683C3000AA298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA0B231683C3000AA298 /* Main.storyboard */; };
 		7E85EA0F231683C4000AA298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA0E231683C4000AA298 /* Assets.xcassets */; };
 		7E85EA12231683C4000AA298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA10231683C4000AA298 /* LaunchScreen.storyboard */; };
 		7E85EA1A23168558000AA298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA1923168558000AA298 /* Constants.swift */; };
-		7E85EA252316B5E1000AA298 /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA242316B5E1000AA298 /* VideoContainerView.swift */; };
-		7E85EA272316D7D2000AA298 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA262316D7D2000AA298 /* PlayerManager.swift */; };
+		F96E4947296F0AF500A1689C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E4946296F0AF500A1689C /* PlayerViewController.swift */; };
+		F96E4949297042CD00A1689C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E4948297042CD00A1689C /* ViewController.swift */; };
+		F97432402978453B0070D74C /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974323F2978453B0070D74C /* VideoContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,15 +23,15 @@
 		6FBC302EBD0DB5EC190A95D8 /* Pods-SVSAVPlayerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSAVPlayerSample.debug.xcconfig"; path = "Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7E85EA02231683C3000AA298 /* SVSAVPlayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVSAVPlayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E85EA05231683C3000AA298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E85EA09231683C3000AA298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E85EA0C231683C3000AA298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E85EA0E231683C4000AA298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E85EA11231683C4000AA298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E85EA13231683C4000AA298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E85EA1923168558000AA298 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7E85EA242316B5E1000AA298 /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
-		7E85EA262316D7D2000AA298 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		C9EC7619EA893B5AAE97F939 /* Pods_SVSAVPlayerSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVSAVPlayerSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96E4946296F0AF500A1689C /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		F96E4948297042CD00A1689C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F974323F2978453B0070D74C /* VideoContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,24 +68,15 @@
 			isa = PBXGroup;
 			children = (
 				7E85EA05231683C3000AA298 /* AppDelegate.swift */,
-				7E85EA09231683C3000AA298 /* ViewController.swift */,
+				F96E4948297042CD00A1689C /* ViewController.swift */,
 				7E85EA1923168558000AA298 /* Constants.swift */,
-				7E85EA232316B5D1000AA298 /* Player */,
+				F9743241297845490070D74C /* Player */,
 				7E85EA0B231683C3000AA298 /* Main.storyboard */,
 				7E85EA0E231683C4000AA298 /* Assets.xcassets */,
 				7E85EA10231683C4000AA298 /* LaunchScreen.storyboard */,
 				7E85EA13231683C4000AA298 /* Info.plist */,
 			);
 			path = SVSAVPlayerSample;
-			sourceTree = "<group>";
-		};
-		7E85EA232316B5D1000AA298 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				7E85EA262316D7D2000AA298 /* PlayerManager.swift */,
-				7E85EA242316B5E1000AA298 /* VideoContainerView.swift */,
-			);
-			path = Player;
 			sourceTree = "<group>";
 		};
 		860EC93ABDFCB0693C9C67AB /* Frameworks */ = {
@@ -103,6 +94,15 @@
 				48CC2734E46CAB76AAB5D703 /* Pods-SVSAVPlayerSample.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9743241297845490070D74C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F96E4946296F0AF500A1689C /* PlayerViewController.swift */,
+				F974323F2978453B0070D74C /* VideoContainerView.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Smart AdServer";
 				TargetAttributes = {
 					7E85EA01231683C3000AA298 = {
@@ -220,10 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E85EA272316D7D2000AA298 /* PlayerManager.swift in Sources */,
-				7E85EA252316B5E1000AA298 /* VideoContainerView.swift in Sources */,
-				7E85EA0A231683C3000AA298 /* ViewController.swift in Sources */,
+				F96E4947296F0AF500A1689C /* PlayerViewController.swift in Sources */,
 				7E85EA06231683C3000AA298 /* AppDelegate.swift in Sources */,
+				F97432402978453B0070D74C /* VideoContainerView.swift in Sources */,
+				F96E4949297042CD00A1689C /* ViewController.swift in Sources */,
 				7E85EA1A23168558000AA298 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +276,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -336,6 +337,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -372,7 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54572X2VB;
 				INFOPLIST_FILE = SVSAVPlayerSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q54572X2VB;
 				INFOPLIST_FILE = SVSAVPlayerSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -14,6 +14,4 @@ This repository contains some samples demonstrating how to integrate the _Smart 
 
 For installation and getting started, please check [the complete documentation](https://documentation.smartadserver.com/instreamSDK/).
 
-### ObjC & Swift SVSJWSample
 
-First, you need a JW Player user account. Once it's done, do not forget to set your _JWPlayerKey_ in the _Info.plist_ file of the sample project.

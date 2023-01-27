@@ -2,42 +2,50 @@
 //  ViewController.swift
 //  SVSAVPlayerSample
 //
-//  Created by Loïc GIRON DIT METAZ on 28/08/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Created by Julien Gomez on 12/01/2023.
+//  Copyright © 2023 Equativ. All rights reserved.
 //
 
 import UIKit
-import SVSVideoKit
-import AVFoundation
 import AppTrackingTransparency
+import AVFoundation
+import SVSVideoKit
 
-class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDelegate {
+/////////////////////////////////////////////////////////////////////////////////////////////
+// The ViewController is the class where you will find how to integrate Equativ Instream SDK, and especially the SVSAdManager instance.
+/////////////////////////////////////////////////////////////////////////////////////////////
 
-    @IBOutlet weak var videoContainerView: VideoContainerView!
-    @IBOutlet weak var versionLabel: UILabel!
-    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControllerDelegate {
     
+
+    @IBOutlet weak var playerContainerView: UIView!
+    @IBOutlet weak var versionLabel: UILabel!
+  
+    private var playerViewController: PlayerViewController!
     private var adManager: SVSAdManager?
     private var playheadAdapter: SVSContentPlayerPlayHead?
+
     
-    private var playerManager: PlayerManager?
+    private var fullscreenState:Bool = false
     
+    private var collapsedSizeConstraint: NSLayoutConstraint!
+    private var expandedSizeConstraint: NSLayoutConstraint!
+    private var collapsedTopConstraint: NSLayoutConstraint!
+    private var expandedTopConstraint: NSLayoutConstraint!
+
     // MARK: - Object lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Setup version label - not relevant for integration
-        versionLabel.text = "Smart - Instream SDK v\(SVSConfiguration.shared.version)"
+        versionLabel.text = "Equativ - Instream SDK v\(SVSConfiguration.shared.version)"
         
-        // Status bar
-        setNeedsStatusBarAppearanceUpdate()
+        // Create constraints for both inline / fullscreen modes of the player
+        setupUIConstraints();
         
         // Create the ad manager
         createAdManager()
-        
-        // Create the content player
-        createPlayerManager()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,6 +57,8 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
         // 'didBecomeActiveNotification' notification.
         requestTrackingAuthorization()
     }
+    
+    // MARK: - ATT
     
     func requestTrackingAuthorization() {
         // Starting with iOS 14, you must ask the user for consent before being able to track it.
@@ -83,38 +93,47 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
                         // SASConfiguration.shared.transientIDEnabled = false
                     }
                 })
-                
             }
         }
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
+    // MARK: - Inline / Fullscreen constraints & View Controller supported orientations
+    
+    func setupUIConstraints() {
+        NSLayoutConstraint.activate([
+            playerContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            playerContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+
+        ])
+
+        collapsedSizeConstraint = playerContainerView.heightAnchor.constraint(equalTo: playerContainerView.widthAnchor, multiplier: 9/16)
+        expandedSizeConstraint = playerContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+
+        let guide = view.safeAreaLayoutGuide
+
+        collapsedTopConstraint = playerContainerView.topAnchor.constraint(equalTo: guide.topAnchor)
+        expandedTopConstraint = playerContainerView.topAnchor.constraint(equalTo: view.topAnchor)
         
-        if UI_USER_INTERFACE_IDIOM() == .phone {
-            // It is called here only on iPhone, because the orientation do not affect fullscreen on iPad.
-            // If we are in landscape on iPhone, we are in fullscreen. So we hide navigationBar
-            let fullscreen = size.height < size.width
-            adManager?.contentPlayerIsFullscreen(fullscreen)
-            updateFullscreen(fullscreen: fullscreen, forceOrientation: false)
-        }
-        
-        coordinator.animate(alongsideTransition: { [unowned self] (context) in
-            self.updateTopConstraintsIfNeeded()
-            self.playerManager?.updateControlsFrames()
-        }) { (context) in
-            // nothing to do
-        }
+        collapsedSizeConstraint.isActive = !fullscreenState
+        expandedSizeConstraint.isActive = fullscreenState
     }
     
-    // MARK: - Create Content Player
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return fullscreenState ? .allButUpsideDown : .portrait
+    }
     
-    func createPlayerManager() {
-        playerManager = PlayerManager(videoContainerView: videoContainerView, rootView: view, delegate: self)
+    func updatePlayerConstraints(fullscreenState:Bool) {
+        self.fullscreenState = fullscreenState
+        collapsedSizeConstraint?.isActive = !fullscreenState
+        collapsedTopConstraint?.isActive = !fullscreenState
+        expandedSizeConstraint?.isActive = fullscreenState
+        expandedTopConstraint?.isActive = fullscreenState
+        view.layoutIfNeeded()
+        ViewController.attemptRotationToDeviceOrientation()
     }
     
     // MARK: - Ad Manager instantiation
-    
+
     func createAdManager() {
         /////////////////////////////////////////////////////////////////////////////////////////////
         // The SVSAdManager is the class responsible for performing ad calls and displaying ads.
@@ -151,7 +170,7 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
     }
     
     func startAdManager() {
-        guard let player = playerManager?.player,
+        guard let player = playerViewController?.player,
             let adManager = adManager else { return }
         
         // Create the playhead adapter - mandatory to monitor the content and trigger AdBreaks.
@@ -162,7 +181,7 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
         // Note that we pass the newly created playhead and the container view.
         // For AVPlayer, we pass the videoContainerView which already contains the player view.
         ///////////////////////////////////////////////////////////////////////////////////////
-        adManager.start(with: playheadAdapter!, adContainerView: videoContainerView)
+        adManager.start(with: playheadAdapter!, adContainerView: playerViewController.adContainerView)
     }
     
     func instantiatePlayheadAdapter(player: AVPlayer) -> SVSContentPlayerPlayHead {
@@ -263,49 +282,49 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
                               videoCMSID: "externalContentID")
     }
     
+    
     // MARK: - Ad Manager Delegate
     
     func adManager(_ adManager: SVSAdManager, didFailToStartWithError error: Error) {
         // Called when the SVSAdManager failed to start for some reason.
         // Most of the time it will be because your playheadAdapter is not ready…
         // See error description for more info.
-        
-        // You should start your content player because no ad will be played
-        playerManager?.play()
     }
     
     func adManager(_ adManager: SVSAdManager, didFailToStart adBreakType: SVSAdBreakType, error: Error) {
         // Called when the SVSAdManager failed to start for some reason.
         // Most of the time it will be because your playheadAdapter is not ready…
         // See error description for more info.
-        
-        // You should start your content player because no ad will be played
-        playerManager?.play()
     }
     
     func adManager(_ adManager: SVSAdManager, didStart adBreakType: SVSAdBreakType) {
         // Called when an AdBreak starts.
         
         // Here we hide the player controls to make sure they are not displayed over the ad.
-        playerManager?.showControl(false)
+        playerViewController?.showControls(false)
+        
+        // Show the ad container view
+        playerViewController?.adContainerView.isHidden = false
     }
     
     func adManager(_ adManager: SVSAdManager, didFinish adBreakType: SVSAdBreakType, numberOfAds numberOfAdsPlayed: Int, duration: TimeInterval, error: Error?) {
         // Called when an AdBreak finishes.
         
         // Here we do not hide the players controls anymore.
-        playerManager?.showControl(true)
+        playerViewController?.showControls(true)
+        
+        // Hide the ad container view
+        playerViewController?.adContainerView.isHidden = true
     }
     
     func adManagerDidRequest(toPauseContentPlayer adManager: SVSAdManager, for adBreakType: SVSAdBreakType) {
-        // Called when the SVSAdManager wants you to pause the content player. You should obey!
-        playerManager?.pause()
+        // Called when the SVSAdManager wants you to pause the content player.
+        playerViewController?.pause()
     }
     
     func adManagerDidRequest(toResumeContentPlayer adManager: SVSAdManager, after adBreakType: SVSAdBreakType) {
-        // Called when the SVSAdManager wants you tu play the content player. You should obey!
-        playerManager?.autoHideControls(hide: false)
-        playerManager?.play()
+        // Called when the SVSAdManager wants you to play the content player.
+        playerViewController?.play()
     }
     
     func adManager(_ adManager: SVSAdManager, didProgressToTime currentTime: TimeInterval, totalTime: TimeInterval) {
@@ -316,7 +335,8 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
     func adManagerDidRequest(toEnterFullscreen adManager: SVSAdManager) {
         // Called when the enter fullscreen button of an Ad is clicked by the user.
         // Adapt your UI to properly react to this user action: you should resize your container view so it fits the whole screen.
-        updateFullscreen(fullscreen: true, forceOrientation: true)
+        playerViewController.setFullscreen(true)
+        updatePlayerConstraints(fullscreenState: true)
         
         /*
          //////////////////////////////////////////////////
@@ -334,7 +354,8 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
     func adManagerDidRequest(toExitFullscreen adManager: SVSAdManager) {
         // Called when the exit fullscreen button of an Ad is clicked by the user.
         // Adapt your UI to properly react to this user action: you should resize your container view so it goes back to its original size.
-        updateFullscreen(fullscreen: false, forceOrientation: true)
+        playerViewController.setFullscreen(false)
+        updatePlayerConstraints(fullscreenState: false)
     }
     
     func adManagerDidRequestPostClickPresentationViewController(_ adManager: SVSAdManager) -> UIViewController {
@@ -346,85 +367,67 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerManagerDeleg
         // You can use this delegate method to display the ad break position in your content player UI…
     }
     
-    // MARK: - PlayerManager delegate
     
-    func playerManager(playerManager: PlayerManager, didUpdateFullscreenStatus isFullscreen: Bool) {
-        //////////////////////////////////////////////////////////////////////////////////////////////
-        // When the AVPlayer change its fullscreen status, we must let the SVSAdManager know about it
-        // so it can adjust the UI of the AdPlayer view.
-        //////////////////////////////////////////////////////////////////////////////////////////////
-        updateFullscreen(fullscreen: isFullscreen, forceOrientation: true)
-    }
-    
-    func playerManagerIsReadyToPlay(playerManager: PlayerManager) {
+    // MARK: - Player View Controller Delegate
+
+    func playerViewControllerIsReadyToPlay(videoPlayerViewController: PlayerViewController) {
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // The player is ready to play and will play the content video soon.
         // We should bypass the normal process here and start the SVSAdManager instead.
         // It will try to play an ad, and then ask us to start the playback through <SVSAdManagerDelegate> callbacks.
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if let adManager = adManager, !adManager.isStarted() {
-            playerManager.pause()
+            videoPlayerViewController.player.pause()
             startAdManager()
         }
     }
     
-    func playerManagerDidReset(playerManager: PlayerManager) {
+    func playerViewControllerDidRequest(toEnterFullscreen videoPlayerViewController: PlayerViewController) {
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        // When the AVPlayer change its fullscreen status, we must let the SVSAdManager know about it
+        // so it can adjust the UI of the AdPlayer view.
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        adManager?.contentPlayerIsFullscreen(true)
+        // And update our constraints as well
+        updatePlayerConstraints(fullscreenState: true)
+    }
+    
+    
+    func playerViewControllerDidRequest(toExitFullscreen videoPlayerViewController: PlayerViewController) {
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        // When the AVPlayer change its fullscreen status, we must let the SVSAdManager know about it
+        // so it can adjust the UI of the AdPlayer view.
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        adManager?.contentPlayerIsFullscreen(false)
+        // And update our constraints as well
+        updatePlayerConstraints(fullscreenState: false)
+
+    }
+    
+    func playerViewControllerDidRestart(videoPlayerViewController: PlayerViewController) {
         /////////////////////////////////////////////////////////////////////////////////////////////////
-        // The user clicked on the reset button and the player will play its content from the beginning.
+        // The user clicked on the restart button and the player will play its content from the beginning.
         // We should bypass the normal process here and called the replay method from the SVSAdManager
         // to display again all the ads.
         /////////////////////////////////////////////////////////////////////////////////////////////////
-        playerManager.pause()
         adManager?.replay()
     }
     
-    func playerManagerDidStop(playerManager: PlayerManager) {
+    func playerViewControllerDidStop(videoPlayerViewController: PlayerViewController) {
         ////////////////////////////////////////////////////////////////////////////
         // The user clicked on the stop button. We have to notify the SVSAdManager.
         ////////////////////////////////////////////////////////////////////////////
         adManager?.stopAndTriggerPostrollIfAny(false)
     }
     
-    // MARK: - Fullscreen
     
-    private var fullscreen: Bool = false
-    
-    func updateFullscreen(fullscreen: Bool, forceOrientation: Bool) {
-        ////////////////////////////////////////////////////////////////////
-        // Handle all modification needed for the fullscreen status update.
-        ////////////////////////////////////////////////////////////////////
-        self.fullscreen = fullscreen
-        view.backgroundColor = fullscreen ? UIColor.black : UIColor.white
-        
-        // Not all the fullscreen status updates come from the AVPlayerWrapper. So to make sure that
-        // the AVPlayerWrapper update its own UI, we must notify it about the fullscreen status update.
-        playerManager?.updateFullscreenStatus(isFullscreen: fullscreen)
+    // MARK: - Navigation
 
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
-            // On iPhone, the fullscreen status and the device orientation are linked.
-
-            // If the player goes to fullscreen and device are in portrait, we set the orientation to landscape.
-            if fullscreen && forceOrientation {
-                UIDevice.current.setValue(NSNumber(value: UIInterfaceOrientation.landscapeRight.rawValue), forKey: "orientation")
-            } else if !fullscreen {
-                // Then the player exit fullscreen we set the orientation to portrait.
-                UIDevice.current.setValue(NSNumber(value: UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
-            }
-        } else {
-            // It is called here if this is an iPad. For the iPhone, it is called in viewWillTransitionToSize delegate method.
-            adManager?.contentPlayerIsFullscreen(fullscreen)
-
-            updateTopConstraintsIfNeeded()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "player") {
+            // Recover player view controller
+            playerViewController = (segue.destination as! PlayerViewController)
+            playerViewController.delegate = self
         }
     }
-    
-    private func updateTopConstraintsIfNeeded() {
-        guard UI_USER_INTERFACE_IDIOM() == .pad else { return }
-        
-        let calculatedVideoViewHeight: CGFloat = view.frame.size.width * 9 / 16
-        
-        // If we are on fullscreen, the videoView must be centered.
-        topConstraint.constant = fullscreen ? view.frame.size.height / 2 - calculatedVideoViewHeight / 2 : 0
-    }
-
 }
