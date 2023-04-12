@@ -523,6 +523,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00FECB4B0D0799BB192B0FF2C0D6FA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
+				IBSC_MODULE = Brightcove_Player_Core;
+				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = BCOVPUIResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		07E8F7E85FA2467A3EEB4BC778C14139 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */;
@@ -552,6 +569,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		2A27CB357A6F28D37858CA68C6578AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
+				IBSC_MODULE = Brightcove_Player_Core;
+				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = BCOVPUIResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		439413AEEA6E34BE21686DF9C3ED40BB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -619,22 +653,6 @@
 			};
 			name = Release;
 		};
-		8FC37F9320E93FE1D1640E108B25BB09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
-				IBSC_MODULE = Brightcove_Player_Core;
-				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = BCOVPUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,22 +712,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		9A878DA99B72DA321D2E2B45D65953F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
-				IBSC_MODULE = Brightcove_Player_Core;
-				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = BCOVPUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -860,8 +862,8 @@
 		1331EA9A33361CED558B170ABBCF98B4 /* Build configuration list for PBXNativeTarget "Brightcove-Player-Core-BCOVPUIResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FC37F9320E93FE1D1640E108B25BB09 /* Debug */,
-				9A878DA99B72DA321D2E2B45D65953F9 /* Release */,
+				00FECB4B0D0799BB192B0FF2C0D6FA76 /* Debug */,
+				2A27CB357A6F28D37858CA68C6578AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
