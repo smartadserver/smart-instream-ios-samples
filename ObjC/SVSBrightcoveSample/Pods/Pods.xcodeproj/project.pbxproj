@@ -3,20 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 0FC0F330146B4402670FF5526A1F9693 /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */;
-			buildPhases = (
-				44C5E4B76A1BFE875BCCB45C90D99F00 /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = "Smart-Core-SDK";
-		};
 		7BA1A99CE0950041E0C351B1212CFBA5 /* Brightcove-Player-Core */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = D0429B0F04E52CDFCF3187BC5A0E2708 /* Build configuration list for PBXAggregateTarget "Brightcove-Player-Core" */;
@@ -24,60 +14,47 @@
 				E6D14E4E661954A544341F984080D93A /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				9373FAB97FAAE88B1BD401C48B4105C0 /* PBXTargetDependency */,
+				C5FDBA000CD27ED2D20D2706F6080C8A /* PBXTargetDependency */,
 			);
 			name = "Brightcove-Player-Core";
+			productName = "Brightcove-Player-Core";
 		};
 		83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5ED5F5A02316EDFB5A2B373F35C53F7D /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */;
+			buildConfigurationList = A217021110EB2FA7D322CD97F013CD9C /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */;
 			buildPhases = (
-				B160D1D62CF3FB495A7FDC197B11FA8F /* [CP] Copy XCFrameworks */,
+				B2DE6CA4D5C6BBEBD46B2AA843196C73 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				F87E27AD6C6B230B9DD3EF885DDC04EC /* PBXTargetDependency */,
 			);
 			name = "Smart-Instream-SDK";
+			productName = "Smart-Instream-SDK";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1A84CA5445503208F499E327F8C86442 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2602EE242CD82CC6551EC785681ED3CA /* bcovpuiiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEFCC3218D61318266FFB0FAB71F4F98 /* bcovpuiiconfont.ttf */; };
-		78A27ADD545649C9AEB3315000E84FBD /* Pods-SVSBrightcoveSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36865DDB2444F0130A73DF4E4B73E6B5 /* Pods-SVSBrightcoveSample-dummy.m */; };
-		8585F017E2ECD49B84A7ABC31614A5FA /* Pods-SVSBrightcoveSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FB4BE683FD5F1480D4408DB69D908B /* Pods-SVSBrightcoveSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E4376F3188F572336FDA1D95AFDA08D /* Pods-SVSBrightcoveSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FB4BE683FD5F1480D4408DB69D908B /* Pods-SVSBrightcoveSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA954E88A02C9853A4CCDDEEF4709F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DD671F59F27BFFB2413F70599F0CCD53 /* Pods-SVSBrightcoveSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36865DDB2444F0130A73DF4E4B73E6B5 /* Pods-SVSBrightcoveSample-dummy.m */; };
+		ED135577B344A6F4763B1EF7980F21D2 /* bcovpuiiconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BED3B2F96C6A8ABCD7AB73D61F84CF86 /* bcovpuiiconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		44BD83F9B3144262789D8E84DFB12BDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83E9FDA6902CAE5C85F027FFA209CF29;
-			remoteInfo = "Brightcove-Player-Core-BCOVPUIResources";
-		};
-		6E1D85E46F3D324609E09592D5F8459E /* PBXContainerItemProxy */ = {
+		71567C874490E46BF6D8149B6CB58A16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7BA1A99CE0950041E0C351B1212CFBA5;
 			remoteInfo = "Brightcove-Player-Core";
 		};
-		75692392A3F74BC35037ABC414AA47F3 /* PBXContainerItemProxy */ = {
+		EE57EBC2D4C6C2D66F6EFD53367F2E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
+			remoteGlobalIDString = 83E9FDA6902CAE5C85F027FFA209CF29;
+			remoteInfo = "Brightcove-Player-Core-BCOVPUIResources";
 		};
-		8DCE153B6DA5EBA79EB5E9DA9A7E9DD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
-		};
-		BF1F2533960E61A8061EE9F233FA64BF /* PBXContainerItemProxy */ = {
+		FD39DBF3C6A2F64A394BE4ED6DAF0E10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -87,49 +64,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Brightcove-Player-Core.release.xcconfig"; sourceTree = "<group>"; };
 		072B71071795318A44B146C16829F1E2 /* Pods-SVSBrightcoveSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSBrightcoveSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F0B690C53F9DED24A25C57CF305F2B4 /* Brightcove-Player-Core-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Brightcove-Player-Core-xcframeworks.sh"; sourceTree = "<group>"; };
-		159962D0EF0EA58665E3AA9E06BED50E /* Smart-Instream-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Instream-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		16740176C95F53B7A84BCDA35F4AD945 /* Smart-Instream-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.release.xcconfig"; sourceTree = "<group>"; };
-		296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Brightcove-Player-Core.debug.xcconfig"; sourceTree = "<group>"; };
-		34AEBAB4FBDD065CBCE2A046F511051E /* SCSCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SCSCoreKit.xcframework; sourceTree = "<group>"; };
+		12C8721DF1DCFA7EDC4662EBF2BB9B6B /* Brightcove-Player-Core-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Brightcove-Player-Core-xcframeworks.sh"; sourceTree = "<group>"; };
+		2CFFACA7E557C105F2CDF5487369D866 /* ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist"; sourceTree = "<group>"; };
+		316B389C7754ABDED4F3072D764137CA /* Brightcove-Player-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Brightcove-Player-Core.debug.xcconfig"; sourceTree = "<group>"; };
+		35BF69F43644822624E53107F1DB9D29 /* BrightcovePlayerSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = BrightcovePlayerSDK.xcframework; path = ios/dynamic/BrightcovePlayerSDK.xcframework; sourceTree = "<group>"; };
 		36865DDB2444F0130A73DF4E4B73E6B5 /* Pods-SVSBrightcoveSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVSBrightcoveSample-dummy.m"; sourceTree = "<group>"; };
 		38F5BEE5B6FC06865140EA618A23E3AE /* Pods-SVSBrightcoveSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVSBrightcoveSample-resources.sh"; sourceTree = "<group>"; };
-		3954250E98BD9EC3BEABDBE2A5A98304 /* BrightcovePlayerSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = BrightcovePlayerSDK.xcframework; path = ios/dynamic/BrightcovePlayerSDK.xcframework; sourceTree = "<group>"; };
-		4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4C839DDE45ECC70740EB328D532ED430 /* SVSVideoKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = SVSVideoKit.xcframework; sourceTree = "<group>"; };
 		645609E245A16D9600529924699DBFC2 /* Pods-SVSBrightcoveSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSBrightcoveSample.release.xcconfig"; sourceTree = "<group>"; };
-		6F4382B6F8DDC26A4C4C9CC52D94E7EC /* Brightcove-Player-Core-BCOVPUIResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Brightcove-Player-Core-BCOVPUIResources"; path = BCOVPUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4382B6F8DDC26A4C4C9CC52D94E7EC /* BCOVPUIResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCOVPUIResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		78BA015290BC5D81B7DD4DBAF9FA6881 /* Smart-Core-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Core-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		7B41E839FFFB7FF27BDF46A462D39133 /* Smart-Instream-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		7EBF6B7BD4E134AE0860E69E49F11A5A /* Pods-SVSBrightcoveSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVSBrightcoveSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		86A01A9BCF8255D16383CE35768F8EAC /* Smart-Core-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		88FB4BE683FD5F1480D4408DB69D908B /* Pods-SVSBrightcoveSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVSBrightcoveSample-umbrella.h"; sourceTree = "<group>"; };
 		91DA92BBC6C0CC8B89B988966E8CF684 /* Pods-SVSBrightcoveSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVSBrightcoveSample-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC981D010F32808F4551B4537FDD1ECF /* Smart-Instream-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		AEFCC3218D61318266FFB0FAB71F4F98 /* bcovpuiiconfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = bcovpuiiconfont.ttf; path = "ios/dynamic/BrightcovePlayerSDK.xcframework/ios-arm64/BrightcovePlayerSDK.framework/bcovpuiiconfont.ttf"; sourceTree = "<group>"; };
+		97D29C467EAF98A59E8BEF18B5E5B429 /* Smart-Instream-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B1B5BFDAA340F0E9CDA5B73A707D2A49 /* Pods-SVSBrightcoveSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSBrightcoveSample-Info.plist"; sourceTree = "<group>"; };
+		BED3B2F96C6A8ABCD7AB73D61F84CF86 /* bcovpuiiconfont.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = bcovpuiiconfont.ttf; path = "ios/dynamic/BrightcovePlayerSDK.xcframework/ios-arm64/BrightcovePlayerSDK.framework/bcovpuiiconfont.ttf"; sourceTree = "<group>"; };
 		BFC48558BB7BE2EE0E7DBDDF7BB83C95 /* Pods-SVSBrightcoveSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSBrightcoveSample.debug.xcconfig"; sourceTree = "<group>"; };
 		C9056E428EE6ABACC37826322E410EC2 /* Pods-SVSBrightcoveSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SVSBrightcoveSample.modulemap"; sourceTree = "<group>"; };
-		D507339735D724906240D76D5C90E3CF /* SVSVideoKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SVSVideoKit.xcframework; sourceTree = "<group>"; };
-		D897AFF1688A89179211AE1159AEFD5F /* ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist"; sourceTree = "<group>"; };
-		F62A7F57E7428F38C79301B3F4FB3507 /* Pods-SVSBrightcoveSample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SVSBrightcoveSample"; path = Pods_SVSBrightcoveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0940B5910B731D5128943B4FA6D8687 /* Smart-Instream-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Instream-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		F3286E9E27B387D118A5AED7C2C465AE /* Brightcove-Player-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Brightcove-Player-Core.release.xcconfig"; sourceTree = "<group>"; };
+		F62A7F57E7428F38C79301B3F4FB3507 /* Pods_SVSBrightcoveSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVSBrightcoveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8156BD8D556B0BF8E56FC34DCB3C2456 /* Frameworks */ = {
+		245052169AFED091EDF6645D348FE871 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A84CA5445503208F499E327F8C86442 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B01E23F962F2B5E68E9CED2D2AD48184 /* Frameworks */ = {
+		87361D2F0120743B0A371953CDD36A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA954E88A02C9853A4CCDDEEF4709F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,10 +112,36 @@
 		0324482D6C37699C66DDE3C458F5CBB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F4382B6F8DDC26A4C4C9CC52D94E7EC /* Brightcove-Player-Core-BCOVPUIResources */,
-				F62A7F57E7428F38C79301B3F4FB3507 /* Pods-SVSBrightcoveSample */,
+				6F4382B6F8DDC26A4C4C9CC52D94E7EC /* BCOVPUIResources.bundle */,
+				F62A7F57E7428F38C79301B3F4FB3507 /* Pods_SVSBrightcoveSample.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		07D48902EEFF22482F2BB48C2FF63A61 /* XCFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D65A6F324809697B9572564768A1C89D /* Frameworks */,
+				107A3F0BCC655F88F770E96F04FFC5D9 /* Resources */,
+			);
+			name = XCFramework;
+			sourceTree = "<group>";
+		};
+		107A3F0BCC655F88F770E96F04FFC5D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED3B2F96C6A8ABCD7AB73D61F84CF86 /* bcovpuiiconfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1C35BBD4C7AC0BD806EEEA5604B5D1AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70F14DB1937D3B3D47F4B729074BB6CE /* Brightcove-Player-Core */,
+				2A47D8B4A82759C5500CA391226AD63C /* Smart-Instream-SDK */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		205A0F3797DEE10D3A0D0FBA56011CC4 /* Targets Support Files */ = {
@@ -153,57 +152,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		38A0A49237BEADC754129D855CA90EE9 /* Smart-Core-SDK */ = {
+		2A47D8B4A82759C5500CA391226AD63C /* Smart-Instream-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				79507E4EA45970A384F33F8094B773E4 /* Frameworks */,
-				D8F572DE23C3116F8DE9C25C84F465CC /* Support Files */,
+				96B09F2F67ECAF9BCA36EF9C55EDA2D9 /* Frameworks */,
+				58E89DEE251DC5AC58E737DC97D02984 /* Support Files */,
 			);
-			name = "Smart-Core-SDK";
-			path = "Smart-Core-SDK";
-			sourceTree = "<group>";
-		};
-		415C1D3B07FE21DEE626A259542FAD17 /* XCFramework */ = {
-			isa = PBXGroup;
-			children = (
-				4B47CDDA9A8AEF8994FDE0CFE8BC4AA7 /* Frameworks */,
-				485749D17699DD960ED1F439A3F65A3C /* Resources */,
-			);
-			name = XCFramework;
-			sourceTree = "<group>";
-		};
-		485749D17699DD960ED1F439A3F65A3C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AEFCC3218D61318266FFB0FAB71F4F98 /* bcovpuiiconfont.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4B47CDDA9A8AEF8994FDE0CFE8BC4AA7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3954250E98BD9EC3BEABDBE2A5A98304 /* BrightcovePlayerSDK.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D767747CE81F3D9DC67842AD1EFA5AA /* Smart-Instream-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				52591311CC4BAB5B9265E6FD627C8783 /* Frameworks */,
-				C53CF9C054AC20F8B30BB251F4BEFA09 /* Support Files */,
-			);
-			name = "Smart-Instream-SDK";
 			path = "Smart-Instream-SDK";
-			sourceTree = "<group>";
-		};
-		52591311CC4BAB5B9265E6FD627C8783 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D507339735D724906240D76D5C90E3CF /* SVSVideoKit.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -214,35 +169,44 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		79507E4EA45970A384F33F8094B773E4 /* Frameworks */ = {
+		58E89DEE251DC5AC58E737DC97D02984 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				34AEBAB4FBDD065CBCE2A046F511051E /* SCSCoreKit.xcframework */,
+				F0940B5910B731D5128943B4FA6D8687 /* Smart-Instream-SDK-xcframeworks.sh */,
+				7B41E839FFFB7FF27BDF46A462D39133 /* Smart-Instream-SDK.debug.xcconfig */,
+				97D29C467EAF98A59E8BEF18B5E5B429 /* Smart-Instream-SDK.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Smart-Instream-SDK";
 			sourceTree = "<group>";
 		};
-		9E23A89F343008A75CD7AD1AF52C6266 /* Support Files */ = {
+		70F14DB1937D3B3D47F4B729074BB6CE /* Brightcove-Player-Core */ = {
 			isa = PBXGroup;
 			children = (
-				0F0B690C53F9DED24A25C57CF305F2B4 /* Brightcove-Player-Core-xcframeworks.sh */,
-				296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */,
-				007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */,
-				D897AFF1688A89179211AE1159AEFD5F /* ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist */,
+				8D559357A82A3011A6F732BD8015AE6E /* Support Files */,
+				07D48902EEFF22482F2BB48C2FF63A61 /* XCFramework */,
+			);
+			path = "Brightcove-Player-Core";
+			sourceTree = "<group>";
+		};
+		8D559357A82A3011A6F732BD8015AE6E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12C8721DF1DCFA7EDC4662EBF2BB9B6B /* Brightcove-Player-Core-xcframeworks.sh */,
+				316B389C7754ABDED4F3072D764137CA /* Brightcove-Player-Core.debug.xcconfig */,
+				F3286E9E27B387D118A5AED7C2C465AE /* Brightcove-Player-Core.release.xcconfig */,
+				2CFFACA7E557C105F2CDF5487369D866 /* ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Brightcove-Player-Core";
 			sourceTree = "<group>";
 		};
-		C53CF9C054AC20F8B30BB251F4BEFA09 /* Support Files */ = {
+		96B09F2F67ECAF9BCA36EF9C55EDA2D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				159962D0EF0EA58665E3AA9E06BED50E /* Smart-Instream-SDK-xcframeworks.sh */,
-				AC981D010F32808F4551B4537FDD1ECF /* Smart-Instream-SDK.debug.xcconfig */,
-				16740176C95F53B7A84BCDA35F4AD945 /* Smart-Instream-SDK.release.xcconfig */,
+				4C839DDE45ECC70740EB328D532ED430 /* SVSVideoKit.xcframework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Instream-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -250,7 +214,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D5855B9711941F27AD1C19FB76237FA4 /* Pods */,
+				1C35BBD4C7AC0BD806EEEA5604B5D1AF /* Pods */,
 				0324482D6C37699C66DDE3C458F5CBB1 /* Products */,
 				205A0F3797DEE10D3A0D0FBA56011CC4 /* Targets Support Files */,
 			);
@@ -264,35 +228,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D5855B9711941F27AD1C19FB76237FA4 /* Pods */ = {
+		D65A6F324809697B9572564768A1C89D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F06A7630FB5BC804F01E34E002AFEF77 /* Brightcove-Player-Core */,
-				38A0A49237BEADC754129D855CA90EE9 /* Smart-Core-SDK */,
-				4D767747CE81F3D9DC67842AD1EFA5AA /* Smart-Instream-SDK */,
+				35BF69F43644822624E53107F1DB9D29 /* BrightcovePlayerSDK.xcframework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D8F572DE23C3116F8DE9C25C84F465CC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78BA015290BC5D81B7DD4DBAF9FA6881 /* Smart-Core-SDK-xcframeworks.sh */,
-				4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */,
-				86A01A9BCF8255D16383CE35768F8EAC /* Smart-Core-SDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Core-SDK";
-			sourceTree = "<group>";
-		};
-		F06A7630FB5BC804F01E34E002AFEF77 /* Brightcove-Player-Core */ = {
-			isa = PBXGroup;
-			children = (
-				9E23A89F343008A75CD7AD1AF52C6266 /* Support Files */,
-				415C1D3B07FE21DEE626A259542FAD17 /* XCFramework */,
-			);
-			name = "Brightcove-Player-Core";
-			path = "Brightcove-Player-Core";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F17945E5E171B9EDEF4E5BFFA76CAADE /* Pods-SVSBrightcoveSample */ = {
@@ -316,11 +257,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E4153444877F78BAF37154E9A9F7CAE0 /* Headers */ = {
+		41CADAF499B07D3935CFCD9B02490154 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8585F017E2ECD49B84A7ABC31614A5FA /* Pods-SVSBrightcoveSample-umbrella.h in Headers */,
+				1E4376F3188F572336FDA1D95AFDA08D /* Pods-SVSBrightcoveSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,32 +270,31 @@
 /* Begin PBXNativeTarget section */
 		16D5E42184AA838555F977F1F59C36F8 /* Pods-SVSBrightcoveSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67A63FB5785160FEAC536653AE2E634B /* Build configuration list for PBXNativeTarget "Pods-SVSBrightcoveSample" */;
+			buildConfigurationList = EB3774D4A4DFF2506421ADFE449C3ABC /* Build configuration list for PBXNativeTarget "Pods-SVSBrightcoveSample" */;
 			buildPhases = (
-				E4153444877F78BAF37154E9A9F7CAE0 /* Headers */,
-				F121DC2065D66766AFD21CE0EBA9F859 /* Sources */,
-				8156BD8D556B0BF8E56FC34DCB3C2456 /* Frameworks */,
-				6B4BE0AA73E17B5C3AF7F704FC71F745 /* Resources */,
+				41CADAF499B07D3935CFCD9B02490154 /* Headers */,
+				FDFC42492269A04FBA5A0B6186C7F542 /* Sources */,
+				87361D2F0120743B0A371953CDD36A29 /* Frameworks */,
+				29D3B0FBEFD89C16048BE3A01CAB3FCC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5DF1406493BC0F1CBC3EFC36EABC2067 /* PBXTargetDependency */,
-				96564F960BBDE2F60F9A516B7AFA0D8E /* PBXTargetDependency */,
-				8FC2A73BD56762AF32A33DCD9F468BA3 /* PBXTargetDependency */,
+				F766E3230DF6CE2E8B75F127AED056A5 /* PBXTargetDependency */,
+				046B2FC048C3E220AA9362A07AED74CC /* PBXTargetDependency */,
 			);
 			name = "Pods-SVSBrightcoveSample";
 			productName = Pods_SVSBrightcoveSample;
-			productReference = F62A7F57E7428F38C79301B3F4FB3507 /* Pods-SVSBrightcoveSample */;
+			productReference = F62A7F57E7428F38C79301B3F4FB3507 /* Pods_SVSBrightcoveSample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		83E9FDA6902CAE5C85F027FFA209CF29 /* Brightcove-Player-Core-BCOVPUIResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1331EA9A33361CED558B170ABBCF98B4 /* Build configuration list for PBXNativeTarget "Brightcove-Player-Core-BCOVPUIResources" */;
+			buildConfigurationList = FD0CB883D71E7BB16C42699A0EBD3C5B /* Build configuration list for PBXNativeTarget "Brightcove-Player-Core-BCOVPUIResources" */;
 			buildPhases = (
-				6C0569F7728C03EF8D3D9C0E1A074F1D /* Sources */,
-				B01E23F962F2B5E68E9CED2D2AD48184 /* Frameworks */,
-				79D59E27800A4E1E3E9256E402250539 /* Resources */,
+				9479B0E189D56BA4DD00A364E0DFAA53 /* Sources */,
+				245052169AFED091EDF6645D348FE871 /* Frameworks */,
+				78CF46800250EBD325A3268C3BB6A2CE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -362,7 +302,7 @@
 			);
 			name = "Brightcove-Player-Core-BCOVPUIResources";
 			productName = BCOVPUIResources;
-			productReference = 6F4382B6F8DDC26A4C4C9CC52D94E7EC /* Brightcove-Player-Core-BCOVPUIResources */;
+			productReference = 6F4382B6F8DDC26A4C4C9CC52D94E7EC /* BCOVPUIResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -371,8 +311,9 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -390,50 +331,31 @@
 				7BA1A99CE0950041E0C351B1212CFBA5 /* Brightcove-Player-Core */,
 				83E9FDA6902CAE5C85F027FFA209CF29 /* Brightcove-Player-Core-BCOVPUIResources */,
 				16D5E42184AA838555F977F1F59C36F8 /* Pods-SVSBrightcoveSample */,
-				5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */,
 				83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6B4BE0AA73E17B5C3AF7F704FC71F745 /* Resources */ = {
+		29D3B0FBEFD89C16048BE3A01CAB3FCC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79D59E27800A4E1E3E9256E402250539 /* Resources */ = {
+		78CF46800250EBD325A3268C3BB6A2CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2602EE242CD82CC6551EC785681ED3CA /* bcovpuiiconfont.ttf in Resources */,
+				ED135577B344A6F4763B1EF7980F21D2 /* bcovpuiiconfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44C5E4B76A1BFE875BCCB45C90D99F00 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks.sh",
-				"${PODS_ROOT}/Smart-Core-SDK/SCSCoreKit.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Core-SDK/SCSCoreKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B160D1D62CF3FB495A7FDC197B11FA8F /* [CP] Copy XCFrameworks */ = {
+		B2DE6CA4D5C6BBEBD46B2AA843196C73 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,188 +394,46 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C0569F7728C03EF8D3D9C0E1A074F1D /* Sources */ = {
+		9479B0E189D56BA4DD00A364E0DFAA53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F121DC2065D66766AFD21CE0EBA9F859 /* Sources */ = {
+		FDFC42492269A04FBA5A0B6186C7F542 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78A27ADD545649C9AEB3315000E84FBD /* Pods-SVSBrightcoveSample-dummy.m in Sources */,
+				DD671F59F27BFFB2413F70599F0CCD53 /* Pods-SVSBrightcoveSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5DF1406493BC0F1CBC3EFC36EABC2067 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Brightcove-Player-Core";
-			target = 7BA1A99CE0950041E0C351B1212CFBA5 /* Brightcove-Player-Core */;
-			targetProxy = 6E1D85E46F3D324609E09592D5F8459E /* PBXContainerItemProxy */;
-		};
-		8FC2A73BD56762AF32A33DCD9F468BA3 /* PBXTargetDependency */ = {
+		046B2FC048C3E220AA9362A07AED74CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Smart-Instream-SDK";
 			target = 83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */;
-			targetProxy = BF1F2533960E61A8061EE9F233FA64BF /* PBXContainerItemProxy */;
+			targetProxy = FD39DBF3C6A2F64A394BE4ED6DAF0E10 /* PBXContainerItemProxy */;
 		};
-		9373FAB97FAAE88B1BD401C48B4105C0 /* PBXTargetDependency */ = {
+		C5FDBA000CD27ED2D20D2706F6080C8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Brightcove-Player-Core-BCOVPUIResources";
 			target = 83E9FDA6902CAE5C85F027FFA209CF29 /* Brightcove-Player-Core-BCOVPUIResources */;
-			targetProxy = 44BD83F9B3144262789D8E84DFB12BDA /* PBXContainerItemProxy */;
+			targetProxy = EE57EBC2D4C6C2D66F6EFD53367F2E8A /* PBXContainerItemProxy */;
 		};
-		96564F960BBDE2F60F9A516B7AFA0D8E /* PBXTargetDependency */ = {
+		F766E3230DF6CE2E8B75F127AED056A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = 8DCE153B6DA5EBA79EB5E9DA9A7E9DD7 /* PBXContainerItemProxy */;
-		};
-		F87E27AD6C6B230B9DD3EF885DDC04EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = 75692392A3F74BC35037ABC414AA47F3 /* PBXContainerItemProxy */;
+			name = "Brightcove-Player-Core";
+			target = 7BA1A99CE0950041E0C351B1212CFBA5 /* Brightcove-Player-Core */;
+			targetProxy = 71567C874490E46BF6D8149B6CB58A16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00FECB4B0D0799BB192B0FF2C0D6FA76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
-				IBSC_MODULE = Brightcove_Player_Core;
-				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = BCOVPUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		07E8F7E85FA2467A3EEB4BC778C14139 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E43CC06CF43249D9F51448F02EF52E5 /* Smart-Core-SDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1AE850F49A9EF5F743A521C041CBEBA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC981D010F32808F4551B4537FDD1ECF /* Smart-Instream-SDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2A27CB357A6F28D37858CA68C6578AC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
-				IBSC_MODULE = Brightcove_Player_Core;
-				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = BCOVPUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		439413AEEA6E34BE21686DF9C3ED40BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 296319FC9384BA3363785F9A17FA1BCE /* Brightcove-Player-Core.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		713B304CB06F7AB5F6CF56B47B36B3DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 645609E245A16D9600529924699DBFC2 /* Pods-SVSBrightcoveSample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8BC86C027E8A3FFCDE7D8924793F58CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A01A9BCF8255D16383CE35768F8EAC /* Smart-Core-SDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -688,68 +468,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -768,12 +487,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -781,27 +499,128 @@
 			};
 			name = Debug;
 		};
-		B5FD33006437173A2FC9E1F9E5842D1C /* Debug */ = {
+		439413AEEA6E34BE21686DF9C3ED40BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316B389C7754ABDED4F3072D764137CA /* Brightcove-Player-Core.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		68F5995B30FC11AF52D36032F7D725AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D29C467EAF98A59E8BEF18B5E5B429 /* Smart-Instream-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A941966A0AC3C1639A7FA039B2C8772 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFC48558BB7BE2EE0E7DBDDF7BB83C95 /* Pods-SVSBrightcoveSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -815,82 +634,131 @@
 			};
 			name = Debug;
 		};
-		DC645EC890E34F91695A1A3CE90B7F8F /* Release */ = {
+		BE10327CEE9B5DBB01769765FD651DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16740176C95F53B7A84BCDA35F4AD945 /* Smart-Instream-SDK.release.xcconfig */;
+			baseConfigurationReference = 316B389C7754ABDED4F3072D764137CA /* Brightcove-Player-Core.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
+				IBSC_MODULE = Brightcove_Player_Core;
+				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BCOVPUIResources;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CD32F7CE93520211353F7696F167CA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645609E245A16D9600529924699DBFC2 /* Pods-SVSBrightcoveSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D530AF3CF643451EB3C6DEBB6334BBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3286E9E27B387D118A5AED7C2C465AE /* Brightcove-Player-Core.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightcove-Player-Core";
+				IBSC_MODULE = Brightcove_Player_Core;
+				INFOPLIST_FILE = "Target Support Files/Brightcove-Player-Core/ResourceBundle-BCOVPUIResources-Brightcove-Player-Core-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BCOVPUIResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 		F38671AEC37CC76435291ED49F61DB16 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 007E7B3D8EB01CEC69F7A8D323798147 /* Brightcove-Player-Core.release.xcconfig */;
+			baseConfigurationReference = F3286E9E27B387D118A5AED7C2C465AE /* Brightcove-Player-Core.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		F9EDE2C6801659809C8F0C579171CB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B41E839FFFB7FF27BDF46A462D39133 /* Smart-Instream-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0FC0F330146B4402670FF5526A1F9693 /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07E8F7E85FA2467A3EEB4BC778C14139 /* Debug */,
-				8BC86C027E8A3FFCDE7D8924793F58CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1331EA9A33361CED558B170ABBCF98B4 /* Build configuration list for PBXNativeTarget "Brightcove-Player-Core-BCOVPUIResources" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00FECB4B0D0799BB192B0FF2C0D6FA76 /* Debug */,
-				2A27CB357A6F28D37858CA68C6578AC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ED5F5A02316EDFB5A2B373F35C53F7D /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */ = {
+		A217021110EB2FA7D322CD97F013CD9C /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AE850F49A9EF5F743A521C041CBEBA3 /* Debug */,
-				DC645EC890E34F91695A1A3CE90B7F8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67A63FB5785160FEAC536653AE2E634B /* Build configuration list for PBXNativeTarget "Pods-SVSBrightcoveSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5FD33006437173A2FC9E1F9E5842D1C /* Debug */,
-				713B304CB06F7AB5F6CF56B47B36B3DD /* Release */,
+				F9EDE2C6801659809C8F0C579171CB14 /* Debug */,
+				68F5995B30FC11AF52D36032F7D725AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -900,6 +768,24 @@
 			buildConfigurations = (
 				439413AEEA6E34BE21686DF9C3ED40BB /* Debug */,
 				F38671AEC37CC76435291ED49F61DB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3774D4A4DFF2506421ADFE449C3ABC /* Build configuration list for PBXNativeTarget "Pods-SVSBrightcoveSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A941966A0AC3C1639A7FA039B2C8772 /* Debug */,
+				CD32F7CE93520211353F7696F167CA23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD0CB883D71E7BB16C42699A0EBD3C5B /* Build configuration list for PBXNativeTarget "Brightcove-Player-Core-BCOVPUIResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE10327CEE9B5DBB01769765FD651DEA /* Debug */,
+				D530AF3CF643451EB3C6DEBB6334BBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

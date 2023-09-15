@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  Called when an ad manager instance did generate cue points. Can be useful to setup your player.
  
  @param adManager The SVSAdManager instance that finished an ad break.
- @param cuePoints A NSArray containing SVSCuePoint instances. Each SCSCuePoint instance represent the position of an adbreak.
+ @param cuePoints A NSArray containing SVSCuePoint instances. Each SCSVideoCuePoint instance represent the position of an adbreak.
  */
 - (void)adManager:(SVSAdManager *)adManager didGenerateCuePoints:(NSArray<SVSCuePoint *> *)cuePoints;
 

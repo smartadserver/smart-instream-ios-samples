@@ -188,10 +188,6 @@ n. <u>Changes to Fees and the Agreement</u>. With at least 30 days' prior notice
 Copyright Brightcove Inc. 2012 Version 3.45 (last updated July 9, 2012)
 
 
-## Smart-Core-SDK
-
-
-
 ## Smart-Instream-SDK
 
 

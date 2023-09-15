@@ -211,16 +211,6 @@ Copyright Brightcove Inc. 2012 Version 3.45 (last updated July 9, 2012)
 			<key>License</key>
 			<string>COMMERCIAL</string>
 			<key>Title</key>
-			<string>Smart-Core-SDK</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string></string>
-			<key>License</key>
-			<string>COMMERCIAL</string>
-			<key>Title</key>
 			<string>Smart-Instream-SDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

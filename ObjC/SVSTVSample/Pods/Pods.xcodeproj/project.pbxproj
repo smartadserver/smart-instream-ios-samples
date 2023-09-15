@@ -7,103 +7,71 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 916F372EFC24CC6D855112197E571E3A /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */;
-			buildPhases = (
-				2D49CA89255896893EF8120A603DAEDC /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = "Smart-Core-SDK";
-		};
 		83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0EEE41CB360CDF4523EE72E2C00DF654 /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */;
+			buildConfigurationList = 8B03B81A09D039CBEFA53C3A9705A470 /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */;
 			buildPhases = (
-				B95EA78A77FC242C4AE71F1F836F68B3 /* [CP] Copy XCFrameworks */,
+				331DB9412CBE71AC500FF6F1A8BA744F /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				3F0B97CCE9F7C36426A8683EFF3FA74B /* PBXTargetDependency */,
 			);
 			name = "Smart-Instream-SDK";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5646484FD7DB559BA4ED5B5E897D3C96 /* Pods-SVSTVSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BDB9F50D1CF1FC94A2BC692D80DAFA /* Pods-SVSTVSample-dummy.m */; };
-		5E29EEDCDECBDC2B409457A8B0E34266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
-		88215ADEA5E0AA4DDEC4D08BE65D1FD4 /* Pods-SVSTVSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DEF97AC950C1A1EA21ED8AF12D3C07 /* Pods-SVSTVSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ACED6D842B909607068613E4B31AF2A /* Pods-SVSTVSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BDB9F50D1CF1FC94A2BC692D80DAFA /* Pods-SVSTVSample-dummy.m */; };
+		F1632F02266C269FE6F6A5D9299B70DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */; };
+		F718564CC21E1E1912CC12E6E0E0A68A /* Pods-SVSTVSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DEF97AC950C1A1EA21ED8AF12D3C07 /* Pods-SVSTVSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F5F59ED7769AA915693C849E78D6437 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
-		};
-		59EF4F5824151AA80BD31689445E2640 /* PBXContainerItemProxy */ = {
+		9C9AB3B9DAE7D8E7E26A32D261E9A50D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 83420444455CC590599000F4CD728D9D;
 			remoteInfo = "Smart-Instream-SDK";
 		};
-		F6C1C72ED910458A7E2EC562F1714E47 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5229D3DCAB881F587206D01F4898841C;
-			remoteInfo = "Smart-Core-SDK";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EEBE0C6782F077C757119D5C60D177C /* Smart-Instream-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Instream-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		169CFAA332E3225E3169CEE1F55FA166 /* Pods-SVSTVSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SVSTVSample.modulemap"; sourceTree = "<group>"; };
 		28DEF97AC950C1A1EA21ED8AF12D3C07 /* Pods-SVSTVSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVSTVSample-umbrella.h"; sourceTree = "<group>"; };
 		2AE0DB0E54C86F558AD91C876C372855 /* Pods-SVSTVSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSTVSample-Info.plist"; sourceTree = "<group>"; };
 		3A25DC8F7C799B572393D9C981A8C847 /* Pods-SVSTVSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSTVSample.release.xcconfig"; sourceTree = "<group>"; };
 		4CBE36AE5E74F1AC9B1D46DB72E605DF /* Pods-SVSTVSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVSTVSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		53C2DD9710A9EA7FABDB2BBB634A15A9 /* Smart-Instream-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		56ED7429F47972D7917FEFAA2A49C275 /* Pods-SVSTVSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVSTVSample-frameworks.sh"; sourceTree = "<group>"; };
-		7011D84489A7022C57CC7ADBFAE509BD /* SVSVideoKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SVSVideoKit.xcframework; sourceTree = "<group>"; };
-		8552CB896381C0DE10F8D3DF9C3F3E34 /* Smart-Core-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Core-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		86926ABA39982BE6017B6E266EFF350B /* Smart-Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		5FDA74C963F5A9B1AD6513C654C8C519 /* Smart-Instream-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		9195D9243BEE9146CCA322C41991749F /* Pods-SVSTVSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVSTVSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		98EF2B289230BECC44DBD7F5FB2B07C9 /* Pods-SVSTVSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVSTVSample.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAC0ABFDACEB000CC1119A83787D5395 /* Smart-Core-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Core-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		A7BF0C1B20A447C3F1071345A9B6255C /* SVSVideoKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SVSVideoKit.xcframework; sourceTree = "<group>"; };
 		AE704B3F7EFE27740FC25A5CE60A6651 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B142920E19B5E5C1D58055599C9E97CD /* SCSCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = SCSCoreKit.xcframework; sourceTree = "<group>"; };
+		BD1A828D8849DCD2932FB3758800018A /* Smart-Instream-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		C4BDB9F50D1CF1FC94A2BC692D80DAFA /* Pods-SVSTVSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVSTVSample-dummy.m"; sourceTree = "<group>"; };
 		CB91C50E9F8AF8792C0AF9C30559BEF2 /* Pods-SVSTVSample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SVSTVSample"; path = Pods_SVSTVSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1BEA28A5D05682518DD41EC77A12C9 /* Smart-Instream-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Smart-Instream-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		E92E1E7019EFCEF5F55F1866F28DB5AF /* Smart-Instream-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Smart-Instream-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CF48599DB4848A11E3D0D2AD3A29645C /* Frameworks */ = {
+		7180D874F42924D2D77A841EDAF86959 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E29EEDCDECBDC2B409457A8B0E34266 /* Foundation.framework in Frameworks */,
+				F1632F02266C269FE6F6A5D9299B70DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065CB2CAD919C50D719E81093AA9FBDD /* Support Files */ = {
+		0ECB3F67D48104EBFFD716E7898EA18B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8552CB896381C0DE10F8D3DF9C3F3E34 /* Smart-Core-SDK-xcframeworks.sh */,
-				86926ABA39982BE6017B6E266EFF350B /* Smart-Core-SDK.debug.xcconfig */,
-				AAC0ABFDACEB000CC1119A83787D5395 /* Smart-Core-SDK.release.xcconfig */,
+				A7BF0C1B20A447C3F1071345A9B6255C /* SVSVideoKit.xcframework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Smart-Core-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1323F8A930EE4BF6C553D987EC3D263B /* Products */ = {
@@ -122,52 +90,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22459E23D55F743812E829D1E03E51B9 /* Smart-Core-SDK */ = {
+		5BB9759DDFE25AEA9BA855EC07BC03FC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EAF4D184093898C3108BF844F4F54446 /* Frameworks */,
-				065CB2CAD919C50D719E81093AA9FBDD /* Support Files */,
-			);
-			name = "Smart-Core-SDK";
-			path = "Smart-Core-SDK";
-			sourceTree = "<group>";
-		};
-		288EFE131CA7E6CCEDBB68D44BA4B3D0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7011D84489A7022C57CC7ADBFAE509BD /* SVSVideoKit.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		471E66F79E39019B230A302DD72E6FB5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				22459E23D55F743812E829D1E03E51B9 /* Smart-Core-SDK */,
-				AAB5B73F95955DB4FBFB9191A6F252F9 /* Smart-Instream-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6158203A53B2B4EB6B9761F1D97B540D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E92E1E7019EFCEF5F55F1866F28DB5AF /* Smart-Instream-SDK-xcframeworks.sh */,
-				DF1BEA28A5D05682518DD41EC77A12C9 /* Smart-Instream-SDK.debug.xcconfig */,
-				53C2DD9710A9EA7FABDB2BBB634A15A9 /* Smart-Instream-SDK.release.xcconfig */,
+				0EEBE0C6782F077C757119D5C60D177C /* Smart-Instream-SDK-xcframeworks.sh */,
+				BD1A828D8849DCD2932FB3758800018A /* Smart-Instream-SDK.debug.xcconfig */,
+				5FDA74C963F5A9B1AD6513C654C8C519 /* Smart-Instream-SDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Smart-Instream-SDK";
 			sourceTree = "<group>";
 		};
-		AAB5B73F95955DB4FBFB9191A6F252F9 /* Smart-Instream-SDK */ = {
+		B0D071FC13D4DC1380B0B3B3611581D7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				288EFE131CA7E6CCEDBB68D44BA4B3D0 /* Frameworks */,
-				6158203A53B2B4EB6B9761F1D97B540D /* Support Files */,
+				DBAB4474984EABB8D91B4977734B6511 /* Smart-Instream-SDK */,
 			);
-			name = "Smart-Instream-SDK";
-			path = "Smart-Instream-SDK";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -175,10 +114,20 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1F9FCB3618DC551B524D67B669081319 /* Frameworks */,
-				471E66F79E39019B230A302DD72E6FB5 /* Pods */,
+				B0D071FC13D4DC1380B0B3B3611581D7 /* Pods */,
 				1323F8A930EE4BF6C553D987EC3D263B /* Products */,
 				EB9240C3794C00479F3338005C8DE70F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DBAB4474984EABB8D91B4977734B6511 /* Smart-Instream-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				0ECB3F67D48104EBFFD716E7898EA18B /* Frameworks */,
+				5BB9759DDFE25AEA9BA855EC07BC03FC /* Support Files */,
+			);
+			name = "Smart-Instream-SDK";
+			path = "Smart-Instream-SDK";
 			sourceTree = "<group>";
 		};
 		DCADEF5968BA4BD0936606315FB57A49 /* tvOS */ = {
@@ -206,14 +155,6 @@
 			path = "Target Support Files/Pods-SVSTVSample";
 			sourceTree = "<group>";
 		};
-		EAF4D184093898C3108BF844F4F54446 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B142920E19B5E5C1D58055599C9E97CD /* SCSCoreKit.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		EB9240C3794C00479F3338005C8DE70F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,11 +166,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4927DC3AA905165EF621EA076D4A958B /* Headers */ = {
+		0777E8F1F1241EC91E4EA13B09D24C52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88215ADEA5E0AA4DDEC4D08BE65D1FD4 /* Pods-SVSTVSample-umbrella.h in Headers */,
+				F718564CC21E1E1912CC12E6E0E0A68A /* Pods-SVSTVSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,18 +179,17 @@
 /* Begin PBXNativeTarget section */
 		F19F2E785306FC0BE625EE4AFEE48B9B /* Pods-SVSTVSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB0E5CC10361241D1D3A59ACC2AB2642 /* Build configuration list for PBXNativeTarget "Pods-SVSTVSample" */;
+			buildConfigurationList = 05E574136322F689F7C59EBA395FB6DF /* Build configuration list for PBXNativeTarget "Pods-SVSTVSample" */;
 			buildPhases = (
-				4927DC3AA905165EF621EA076D4A958B /* Headers */,
-				1F702C2770D6437911CFD70CAFD232BB /* Sources */,
-				CF48599DB4848A11E3D0D2AD3A29645C /* Frameworks */,
-				6C366856B5ED18DC753C4177C2356ED1 /* Resources */,
+				0777E8F1F1241EC91E4EA13B09D24C52 /* Headers */,
+				62F69956A997B16152278BC2E4C376F1 /* Sources */,
+				7180D874F42924D2D77A841EDAF86959 /* Frameworks */,
+				988EE764AADD048A48C1633A939C1FDC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1900856235508E7E50C6C9BE09FD4063 /* PBXTargetDependency */,
-				4B7472EB6920F02E6CD17018610D868E /* PBXTargetDependency */,
+				7F6E659406E28A644F30E83525F0AEF1 /* PBXTargetDependency */,
 			);
 			name = "Pods-SVSTVSample";
 			productName = Pods_SVSTVSample;
@@ -279,14 +219,13 @@
 			projectRoot = "";
 			targets = (
 				F19F2E785306FC0BE625EE4AFEE48B9B /* Pods-SVSTVSample */,
-				5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */,
 				83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C366856B5ED18DC753C4177C2356ED1 /* Resources */ = {
+		988EE764AADD048A48C1633A939C1FDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,24 +235,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D49CA89255896893EF8120A603DAEDC /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Smart-Core-SDK/Smart-Core-SDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B95EA78A77FC242C4AE71F1F836F68B3 /* [CP] Copy XCFrameworks */ = {
+		331DB9412CBE71AC500FF6F1A8BA744F /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,57 +255,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F702C2770D6437911CFD70CAFD232BB /* Sources */ = {
+		62F69956A997B16152278BC2E4C376F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5646484FD7DB559BA4ED5B5E897D3C96 /* Pods-SVSTVSample-dummy.m in Sources */,
+				2ACED6D842B909607068613E4B31AF2A /* Pods-SVSTVSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1900856235508E7E50C6C9BE09FD4063 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = F6C1C72ED910458A7E2EC562F1714E47 /* PBXContainerItemProxy */;
-		};
-		3F0B97CCE9F7C36426A8683EFF3FA74B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Smart-Core-SDK";
-			target = 5229D3DCAB881F587206D01F4898841C /* Smart-Core-SDK */;
-			targetProxy = 3F5F59ED7769AA915693C849E78D6437 /* PBXContainerItemProxy */;
-		};
-		4B7472EB6920F02E6CD17018610D868E /* PBXTargetDependency */ = {
+		7F6E659406E28A644F30E83525F0AEF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Smart-Instream-SDK";
 			target = 83420444455CC590599000F4CD728D9D /* Smart-Instream-SDK */;
-			targetProxy = 59EF4F5824151AA80BD31689445E2640 /* PBXContainerItemProxy */;
+			targetProxy = 9C9AB3B9DAE7D8E7E26A32D261E9A50D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09D664080AEA3CCB5133DF89DBA85581 /* Debug */ = {
+		076DC3C41339655DEBA030F574DB9FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86926ABA39982BE6017B6E266EFF350B /* Smart-Core-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		2FDEE771BEAB2D4AE1530C6ACDE0698D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53C2DD9710A9EA7FABDB2BBB634A15A9 /* Smart-Instream-SDK.release.xcconfig */;
+			baseConfigurationReference = 5FDA74C963F5A9B1AD6513C654C8C519 /* Smart-Instream-SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,22 +358,41 @@
 			};
 			name = Debug;
 		};
-		A04C5B21C5670B888BCE7BD8744794BF /* Release */ = {
+		8FB4839AD93A70975255F5C498C13F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAC0ABFDACEB000CC1119A83787D5395 /* Smart-Core-SDK.release.xcconfig */;
+			baseConfigurationReference = 98EF2B289230BECC44DBD7F5FB2B07C9 /* Pods-SVSTVSample.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		A9B29EE673A51E145878A6CDAA3B4999 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -543,23 +456,7 @@
 			};
 			name = Release;
 		};
-		C1A947BF21BA54E5FBAC48312996C09B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF1BEA28A5D05682518DD41EC77A12C9 /* Smart-Instream-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
-			};
-			name = Debug;
-		};
-		E35AF0CD5E55D7BC16309637CD7C7743 /* Release */ = {
+		B6139FAEE54635C10D7AA2230C2BC8E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A25DC8F7C799B572393D9C981A8C847 /* Pods-SVSTVSample.release.xcconfig */;
 			buildSettings = {
@@ -596,50 +493,30 @@
 			};
 			name = Release;
 		};
-		F30F09EC02235E190BA1540A9F8969AC /* Debug */ = {
+		BC2D72D109D9492C463F08A50F50FF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98EF2B289230BECC44DBD7F5FB2B07C9 /* Pods-SVSTVSample.debug.xcconfig */;
+			baseConfigurationReference = BD1A828D8849DCD2932FB3758800018A /* Smart-Instream-SDK.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EEE41CB360CDF4523EE72E2C00DF654 /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */ = {
+		05E574136322F689F7C59EBA395FB6DF /* Build configuration list for PBXNativeTarget "Pods-SVSTVSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1A947BF21BA54E5FBAC48312996C09B /* Debug */,
-				2FDEE771BEAB2D4AE1530C6ACDE0698D /* Release */,
+				8FB4839AD93A70975255F5C498C13F82 /* Debug */,
+				B6139FAEE54635C10D7AA2230C2BC8E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -653,20 +530,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		916F372EFC24CC6D855112197E571E3A /* Build configuration list for PBXAggregateTarget "Smart-Core-SDK" */ = {
+		8B03B81A09D039CBEFA53C3A9705A470 /* Build configuration list for PBXAggregateTarget "Smart-Instream-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09D664080AEA3CCB5133DF89DBA85581 /* Debug */,
-				A04C5B21C5670B888BCE7BD8744794BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB0E5CC10361241D1D3A59ACC2AB2642 /* Build configuration list for PBXNativeTarget "Pods-SVSTVSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F30F09EC02235E190BA1540A9F8969AC /* Debug */,
-				E35AF0CD5E55D7BC16309637CD7C7743 /* Release */,
+				BC2D72D109D9492C463F08A50F50FF91 /* Debug */,
+				076DC3C41339655DEBA030F574DB9FC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

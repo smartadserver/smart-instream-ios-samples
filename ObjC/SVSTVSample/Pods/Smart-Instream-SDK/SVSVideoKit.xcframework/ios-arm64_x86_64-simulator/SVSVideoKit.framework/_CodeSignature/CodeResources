@@ -4,38 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>BuildDocumentationDeploy.sh</key>
-		<data>
-		gB+eqCWBSFpi+Uumf1oLy0XOiN8=
-		</data>
-		<key>BuildInternalDeploy.sh</key>
-		<data>
-		2uFDGYJzN94tXWGo/oVyKg7E0zw=
-		</data>
-		<key>BuildSonar.sh</key>
-		<data>
-		Wc/CQocZemb9EIMqnXu/In+EJz8=
-		</data>
-		<key>BuildUniversal.sh</key>
-		<data>
-		n3CTOcRUvrTBFCY2PVm+v45okbg=
-		</data>
-		<key>BuildUtils.sh</key>
-		<data>
-		ZzAcKB8VZMpPBFEb+YoCUn96ou8=
-		</data>
-		<key>DeployCocoapodsTrunk.sh</key>
-		<data>
-		YI4bFJge51qOFZTliGxayzLOqsI=
-		</data>
-		<key>DeployGitRepository.sh</key>
-		<data>
-		vvqFYl83j8mjSjA7d0w02EDKIt8=
-		</data>
-		<key>DeploySDKSnapshotInSamples.sh</key>
-		<data>
-		GRzwDHkEy+K5GAKWmcllknBdZo4=
-		</data>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
 		FoBw6gPHefcgXlDkPIJoUBqmtQw=
@@ -46,7 +14,7 @@
 		</data>
 		<key>Headers/SVSAdManagerDelegate.h</key>
 		<data>
-		7NtnlQNoa6sdNJBM0xvGf2WFXnE=
+		NYNygZgk6zHsx1VUcDjvYU6h6Tk=
 		</data>
 		<key>Headers/SVSAdPlacement.h</key>
 		<data>
@@ -114,11 +82,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CubGH3Vpv7ybmFbWin+92crMr2s=
+		8hSPPtPOzfbKWUY6wlWgAI2jHoQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		jN8RXKlujqh5wtrFMVexPn9upW8=
+		0V97qHnn6mnLZhECnC72Hq1fCTY=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		dH+MX4/rGSKwakoM8479q/udzNo=
 		</data>
 		<key>de.lproj/SVSVideoKit.strings</key>
 		<dict>
@@ -261,62 +233,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>BuildDocumentationDeploy.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Oddv0K8I71Qr66zNEFikkpeRnmEPG2NGdCsPPGaDQ7E=
-			</data>
-		</dict>
-		<key>BuildInternalDeploy.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XNi/yXbiIxVqoTkM0jRsyPYOC72Q0p8KY0th6QNhAbQ=
-			</data>
-		</dict>
-		<key>BuildSonar.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BigOpKbZKwVSD0dTH4Titvqi4JArOBOblqXMG4jHu78=
-			</data>
-		</dict>
-		<key>BuildUniversal.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9/Iy2TGEKdm7LRWYtTkLkdc96qsGT/Ymlioj33TuiQM=
-			</data>
-		</dict>
-		<key>BuildUtils.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m/uaYIYsQuMdD6l3FhArAKj3D0xOfEFBTUnUNTnUhhw=
-			</data>
-		</dict>
-		<key>DeployCocoapodsTrunk.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
-			</data>
-		</dict>
-		<key>DeployGitRepository.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qKMTa6bMdfS6BaAM/VDDWAzPgW46SqiVikB3jHEP5xQ=
-			</data>
-		</dict>
-		<key>DeploySDKSnapshotInSamples.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9U0NXODIWGj3bQbj2YmYbrIqcoNwi/19r371h7IH0rg=
-			</data>
-		</dict>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<dict>
 			<key>hash2</key>
@@ -335,7 +251,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EdXUCZ3gzuj97oWqh9PVgYFM/B1eK2Ua0k4nTFnTHb4=
+			SfGrvDBYmxQz72jpUZuQtu8ixBN4qEGNlEvWwQil9rg=
 			</data>
 		</dict>
 		<key>Headers/SVSAdPlacement.h</key>
@@ -454,7 +370,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qvSU8hYSgVttp/Z/DdVYQDdE53tkemHprg5RTRuZMWc=
+			W7F9kplONEgIyXSRC+axKuAXytqg8gsjxuhTiKVq4kw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tUn6U0OtIHxkfwJR6DQVy6VCD1eFcpuT7BE08clITxo=
 			</data>
 		</dict>
 		<key>de.lproj/SVSVideoKit.strings</key>

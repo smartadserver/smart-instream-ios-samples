@@ -202,13 +202,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SVSBrightcoveSample/Pods-SVSBrightcoveSample-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Brightcove-Player-Core/XCFramework/BrightcovePlayerSDK.framework/BrightcovePlayerSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Core-SDK/SCSCoreKit.framework/SCSCoreKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Smart-Instream-SDK/SVSVideoKit.framework/SVSVideoKit",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVSVideoKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,9 +4,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SVSBrightcoveSample' do
 
   use_frameworks!
-  platform :ios, '11.0'
+  platform :ios, '12.0'
 
   pod 'Brightcove-Player-Core/XCFramework', '6.10.2'
-  pod 'Smart-Instream-SDK', '~> 7.21.0'
+  pod 'Smart-Instream-SDK', '~> 7.23.0'
 
 end
