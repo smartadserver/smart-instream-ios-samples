@@ -82,7 +82,7 @@
 		</data>
 		<key>ios-arm64/SVSVideoKit.framework/Info.plist</key>
 		<data>
-		JkZe4b62Qr4UFLRS3Jbc31K31IU=
+		L7PY3zY43S1MKiCdrIuLnVg6XC4=
 		</data>
 		<key>ios-arm64/SVSVideoKit.framework/Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64/SVSVideoKit.framework/SVSVideoKit</key>
 		<data>
-		gNPRJxJjl+DJabifmLEhz5q3rCs=
+		YO9x/+UyZdyh5ZHoeSFl+AYIoZA=
 		</data>
 		<key>ios-arm64/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
 		<dict>
@@ -312,7 +312,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/Info.plist</key>
 		<data>
-		DiHAetCzFVomm5aPg5FayJIeG3o=
+		VcF4Yj8L5Dcwv+H1/tdywBZlflQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/Modules/module.modulemap</key>
 		<data>
@@ -324,11 +324,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/SVSVideoKit</key>
 		<data>
-		tfJlkMVOoIHrJ6ATXDExSX0432o=
+		LnuB1UNfJ+TrWow9NnFvhErFJog=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		hotP42bAPcIGHAU/SDD/t0Ipwjo=
+		7JNBoIuX2K1EJmIm9X7jxaGg9L0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
 		<dict>
@@ -468,6 +468,18 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<data>
+		nwMkU4gsJ1xLw0dBQFH7+iED8y8=
+		</data>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<data>
+		IHNeQ7rPiNSDdAaWYV+EFGNSjKc=
+		</data>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<data>
+		2XA/1RPrk0s7w67J4sPF90rasxo=
+		</data>
 		<key>tvos-arm64/SVSVideoKit.framework/Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
 		FoBw6gPHefcgXlDkPIJoUBqmtQw=
@@ -546,7 +558,7 @@
 		</data>
 		<key>tvos-arm64/SVSVideoKit.framework/Info.plist</key>
 		<data>
-		Exat8Vnm+pLYC1mGhg5ZlbLZ0D8=
+		NB4jNosacXFQjNcWs7p/mDucMzE=
 		</data>
 		<key>tvos-arm64/SVSVideoKit.framework/Modules/module.modulemap</key>
 		<data>
@@ -558,7 +570,7 @@
 		</data>
 		<key>tvos-arm64/SVSVideoKit.framework/SVSVideoKit</key>
 		<data>
-		I9CJ7KIWotLfsyappB9CGA+TEM4=
+		CEczW92gpr455gJ7f2hRWhSxRMY=
 		</data>
 		<key>tvos-arm64/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
 		<dict>
@@ -698,6 +710,26 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<data>
+		YOS4FQrPOdsgiLTl7b0XA8h9LfA=
+		</data>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
+		<data>
+		h56TAdmV0fCYzWgqL9byM8nimJc=
+		</data>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<data>
+		IHNeQ7rPiNSDdAaWYV+EFGNSjKc=
+		</data>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<data>
+		2XA/1RPrk0s7w67J4sPF90rasxo=
+		</data>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		xzB7KgQljT1aCgvP32U9LNeVMNw=
+		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
 		FoBw6gPHefcgXlDkPIJoUBqmtQw=
@@ -776,7 +808,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Info.plist</key>
 		<data>
-		H6psSJUYW7EqfylnhUIJb3bAK9c=
+		SClH0mOpny5S/UQgCif7GS1LBQU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Modules/module.modulemap</key>
 		<data>
@@ -788,11 +820,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/SVSVideoKit</key>
 		<data>
-		NBBySqK+BWsMuCsWdMtly/jYCuQ=
+		8kUgs69Rj5OwWjF939MLOhCuB5k=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		dkFDbA7bV3qU8a74VFZeW2MTYpw=
+		AXLSUYjE2dgfeLhE84k/jLTPk78=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
 		<dict>
@@ -1148,11 +1180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JkZe4b62Qr4UFLRS3Jbc31K31IU=
+			L7PY3zY43S1MKiCdrIuLnVg6XC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GWMuOLLJAj3w9/qCEJLboxIkeq7HjlwgDIscKeg2HlU=
+			iVHU3LvKz69wgF4gMl3weQnw+yK4/oq72OlrKQ0qHC8=
 			</data>
 		</dict>
 		<key>ios-arm64/SVSVideoKit.framework/Modules/module.modulemap</key>
@@ -1181,11 +1213,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gNPRJxJjl+DJabifmLEhz5q3rCs=
+			YO9x/+UyZdyh5ZHoeSFl+AYIoZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			B67kqjP0i/HK3OAeLp9HPvQqcdUvGObd1LoTQSY2j5c=
+			c0l7yvBKdCqslsEodPoZg2xPbhRQ2vBY/mslS4nygIo=
 			</data>
 		</dict>
 		<key>ios-arm64/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
@@ -1663,11 +1695,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DiHAetCzFVomm5aPg5FayJIeG3o=
+			VcF4Yj8L5Dcwv+H1/tdywBZlflQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bx6452Yf2vbrxFL9hUJXrSSGsHiRJzF6WV0tS1THfds=
+			wb7fzP9dS7JfpRNzYzgr0Io9mrBY5WgPqRDXXVmiNiU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/Modules/module.modulemap</key>
@@ -1696,22 +1728,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tfJlkMVOoIHrJ6ATXDExSX0432o=
+			LnuB1UNfJ+TrWow9NnFvhErFJog=
 			</data>
 			<key>hash2</key>
 			<data>
-			F+BqYpDk4aA16c9K0JiAUkUyNcBxE/3uODRTw91K44o=
+			ZOegtvpsWzyoZKAdmmQxkSgNNf7Upv7iR2/Ejo3U1NI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hotP42bAPcIGHAU/SDD/t0Ipwjo=
+			7JNBoIuX2K1EJmIm9X7jxaGg9L0=
 			</data>
 			<key>hash2</key>
 			<data>
-			vMSCNRIwX4X4eWE4DvO5LgXItxpnQJSMirvDgkvHKk4=
+			UcYvoII8eBGxRgomYtLWikjMzoY97EhDxR3UbRnxOBQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
@@ -1976,6 +2008,39 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nwMkU4gsJ1xLw0dBQFH7+iED8y8=
+			</data>
+			<key>hash2</key>
+			<data>
+			mIlXuMWB9Cq+jc8pdNp//lk1cUUMVesj47Eok5aH1tI=
+			</data>
+		</dict>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IHNeQ7rPiNSDdAaWYV+EFGNSjKc=
+			</data>
+			<key>hash2</key>
+			<data>
+			I7OTPyADj5GJsn00owPNrmiLw0GEvgNgPVr/yf/bAGk=
+			</data>
+		</dict>
+		<key>tvos-arm64/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2XA/1RPrk0s7w67J4sPF90rasxo=
+			</data>
+			<key>hash2</key>
+			<data>
+			YZCpgr4neZ9JJeGt36onmZ+Q57f+Id+qwstjuhCA9bM=
+			</data>
+		</dict>
 		<key>tvos-arm64/SVSVideoKit.framework/Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<dict>
 			<key>hash</key>
@@ -2189,11 +2254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Exat8Vnm+pLYC1mGhg5ZlbLZ0D8=
+			NB4jNosacXFQjNcWs7p/mDucMzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jIMmThBSNLpHGKKgpEb5ct4H9cqOvtZgTJnkPqTZKm0=
+			4EQ3xRaxUfJjjx2RtYh73HL1iyYBbARB7+PICLunoRI=
 			</data>
 		</dict>
 		<key>tvos-arm64/SVSVideoKit.framework/Modules/module.modulemap</key>
@@ -2222,11 +2287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9CJ7KIWotLfsyappB9CGA+TEM4=
+			CEczW92gpr455gJ7f2hRWhSxRMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WflKFgTAvBQjxOyqRMAWoBbPaXFAFrc5WM2wGoCsFDc=
+			lgj+RSQtpT3a++y94tLQopVZ/jzwnnGR0JsUB5VY4fw=
 			</data>
 		</dict>
 		<key>tvos-arm64/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>
@@ -2491,6 +2556,61 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YOS4FQrPOdsgiLTl7b0XA8h9LfA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Gy4IvgNJXjbXEf6b+ORt7ufT5mVHM8NWxXuY77hQacg=
+			</data>
+		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h56TAdmV0fCYzWgqL9byM8nimJc=
+			</data>
+			<key>hash2</key>
+			<data>
+			o3xs1l03TcJEChJn4cyHSdpNyj7ReY7m6mGViSEHOWA=
+			</data>
+		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IHNeQ7rPiNSDdAaWYV+EFGNSjKc=
+			</data>
+			<key>hash2</key>
+			<data>
+			I7OTPyADj5GJsn00owPNrmiLw0GEvgNgPVr/yf/bAGk=
+			</data>
+		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2XA/1RPrk0s7w67J4sPF90rasxo=
+			</data>
+			<key>hash2</key>
+			<data>
+			YZCpgr4neZ9JJeGt36onmZ+Q57f+Id+qwstjuhCA9bM=
+			</data>
+		</dict>
+		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xzB7KgQljT1aCgvP32U9LNeVMNw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NYKJfGhjvV1/gxwbJuIid4/lbkv8i3ZgOtYLT7MV2es=
+			</data>
+		</dict>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<dict>
 			<key>hash</key>
@@ -2704,11 +2824,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H6psSJUYW7EqfylnhUIJb3bAK9c=
+			SClH0mOpny5S/UQgCif7GS1LBQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VDm58Kv5OoJjZ7kPZB3f/J5g2QhqyOewgG7AbotQQtg=
+			HxPMYKKzScSVZ3J2rbmzzobtALc28nbw/RgsJPMfYVY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/Modules/module.modulemap</key>
@@ -2737,22 +2857,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBBySqK+BWsMuCsWdMtly/jYCuQ=
+			8kUgs69Rj5OwWjF939MLOhCuB5k=
 			</data>
 			<key>hash2</key>
 			<data>
-			E24dvLeHZBXyPU5TdWT78st0ZYMa73O/rQn6HxqUnbM=
+			Y5aKxIr6ywDttLE7v2Ff8lGVT0jCo6KMK9LA9UIX4dE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dkFDbA7bV3qU8a74VFZeW2MTYpw=
+			AXLSUYjE2dgfeLhE84k/jLTPk78=
 			</data>
 			<key>hash2</key>
 			<data>
-			53Uzfh009CVgie2Xa/TXdCaO7mi9lc3SExGqrT3gnWk=
+			DgblWLvZ4TLN+x09USjZLQxDywmmRad2018pc/kZSsY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/SVSVideoKit.framework/de.lproj/SVSVideoKit.strings</key>

@@ -1,0 +1,13 @@
+Pod::Spec.new do |s|
+  s.name                = "${COMMERCIAL_NAME}"
+  s.version             = "${VERSION}"
+  s.summary             = "Smart AdServer — Core SDK"
+  s.homepage            = "http://www.smartadserver.com/"
+  s.documentation_url   = "https://documentation.smartadserver.com/"
+  s.license             = { :type => "COMMERCIAL", :text => "" }
+  s.author              = "Smart AdServer"
+  s.platforms           = { :ios => '12.0', :tvos => '12.0' }
+
+  s.source              = { :http => "https://sdk.sascdn.com/mobile/coresdk/ios/SCSCoreKit-${VERSION}.zip" }
+  s.vendored_framework  = "SCSCoreKit.xcframework"
+end

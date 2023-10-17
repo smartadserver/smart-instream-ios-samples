@@ -4,6 +4,26 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<data>
+		YOS4FQrPOdsgiLTl7b0XA8h9LfA=
+		</data>
+		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
+		<data>
+		h56TAdmV0fCYzWgqL9byM8nimJc=
+		</data>
+		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<data>
+		IHNeQ7rPiNSDdAaWYV+EFGNSjKc=
+		</data>
+		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<data>
+		2XA/1RPrk0s7w67J4sPF90rasxo=
+		</data>
+		<key>Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		xzB7KgQljT1aCgvP32U9LNeVMNw=
+		</data>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
 		FoBw6gPHefcgXlDkPIJoUBqmtQw=
@@ -82,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		H6psSJUYW7EqfylnhUIJb3bAK9c=
+		SClH0mOpny5S/UQgCif7GS1LBQU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -233,6 +253,41 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/SCSCoreKit.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gy4IvgNJXjbXEf6b+ORt7ufT5mVHM8NWxXuY77hQacg=
+			</data>
+		</dict>
+		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o3xs1l03TcJEChJn4cyHSdpNyj7ReY7m6mGViSEHOWA=
+			</data>
+		</dict>
+		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I7OTPyADj5GJsn00owPNrmiLw0GEvgNgPVr/yf/bAGk=
+			</data>
+		</dict>
+		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec-trunk</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YZCpgr4neZ9JJeGt36onmZ+Q57f+Id+qwstjuhCA9bM=
+			</data>
+		</dict>
+		<key>Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NYKJfGhjvV1/gxwbJuIid4/lbkv8i3ZgOtYLT7MV2es=
+			</data>
+		</dict>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<dict>
 			<key>hash2</key>
