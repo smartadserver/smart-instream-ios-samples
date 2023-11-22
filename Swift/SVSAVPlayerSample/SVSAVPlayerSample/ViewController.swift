@@ -83,14 +83,7 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControll
                         NSLog("[ATT] The tracking authorization is not granted!")
                         
                         // The tracking authorization has not been granted!
-                        //
-                        // The SDK will only uses a technical randomly generated ID that will not be
-                        // shared cross apps and will be reset every 24 hours.
-                        // This 'transient ID' will only be used for technical purposes (ad fraud
-                        // detection, capping, …).
-                        //
-                        // You can disable it completely by using the following configuration flag:
-                        // SASConfiguration.shared.transientIDEnabled = false
+                        // The SDK will not track the user.
                     }
                 })
             }
@@ -300,9 +293,6 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControll
     func adManager(_ adManager: SVSAdManager, didStart adBreakType: SVSAdBreakType) {
         // Called when an AdBreak starts.
         
-        // Here we hide the player controls to make sure they are not displayed over the ad.
-        playerViewController?.showControls(false)
-        
         // Show the ad container view
         playerViewController?.adContainerView.isHidden = false
     }
@@ -349,6 +339,9 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControll
          This means that if you allow you content player to enter/exit fullscreen you have to modify the container view frame || bounds || superview || player state…
          Once you modified the container view size or status, gently let the SVSAdManager know about it by setting the new state of the content player through the contentPlayerIsFullscreen: method of SVSAdManager
          */
+        
+        // Updating the content player state
+        adManager.contentPlayerIsFullscreen(true)
     }
     
     func adManagerDidRequest(toExitFullscreen adManager: SVSAdManager) {
@@ -356,6 +349,9 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControll
         // Adapt your UI to properly react to this user action: you should resize your container view so it goes back to its original size.
         playerViewController.setFullscreen(false)
         updatePlayerConstraints(fullscreenState: false)
+        
+        // Updating the content player state
+        adManager.contentPlayerIsFullscreen(false)
     }
     
     func adManagerDidRequestPostClickPresentationViewController(_ adManager: SVSAdManager) -> UIViewController {

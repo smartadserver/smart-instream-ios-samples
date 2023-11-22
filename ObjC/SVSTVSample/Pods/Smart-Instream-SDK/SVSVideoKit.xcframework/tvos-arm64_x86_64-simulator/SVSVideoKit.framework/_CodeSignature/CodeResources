@@ -6,11 +6,11 @@
 	<dict>
 		<key>Frameworks/SCSCoreKit.framework/Info.plist</key>
 		<data>
-		YOS4FQrPOdsgiLTl7b0XA8h9LfA=
+		HJz1SZ46UVXnHcwo6mkVox5J/KA=
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
 		<data>
-		h56TAdmV0fCYzWgqL9byM8nimJc=
+		5tqj6M11kAGb0p1yI1keJuZJYTk=
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		xzB7KgQljT1aCgvP32U9LNeVMNw=
+		gtuUYWxEBB+cLRsyeZhXFb0udPs=
 		</data>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/SVSAdPlayerConfigurationPublisherOptions.h</key>
 		<data>
-		disTxTPRRiC2OH/4RhMCe7o3J14=
+		PGQxZ2OceHbQZAjX92F83AlMg3Y=
 		</data>
 		<key>Headers/SVSAdPlayerConfigurationRTBOptions.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/SVSConfiguration.h</key>
 		<data>
-		XasxTtUq+m9ltYrFPWxDotCKyqc=
+		bckOylHy7+ZyIUUoFT3xTvE2w2I=
 		</data>
 		<key>Headers/SVSContentData.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SClH0mOpny5S/UQgCif7GS1LBQU=
+		JASS1DgTdi/mmN/wjES6AvKkchc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -257,14 +257,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gy4IvgNJXjbXEf6b+ORt7ufT5mVHM8NWxXuY77hQacg=
+			SCvAYuBeF3krg+wAPhlx4lE7TKfqKxK/JiDfslN/Kz0=
 			</data>
 		</dict>
 		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3xs1l03TcJEChJn4cyHSdpNyj7ReY7m6mGViSEHOWA=
+			w0DBYtrinybEr285dC6969ZsCXUXDxT4C9BkWfeQAlY=
 			</data>
 		</dict>
 		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
@@ -285,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NYKJfGhjvV1/gxwbJuIid4/lbkv8i3ZgOtYLT7MV2es=
+			XZijkM10aRwRkGEll/Umt+c2wYcbL6DOH8mnzpRbTVc=
 			</data>
 		</dict>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ND6vOz9ULLvjyf3uq7PSIQ5PT/8Q35WbLSUWyIwpDKE=
+			xu0hOwe3NNbnNF1Zhq1mMM40n8Cpd5c3WHRzY+GKiio=
 			</data>
 		</dict>
 		<key>Headers/SVSAdPlayerConfigurationRTBOptions.h</key>
@@ -376,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CoPcLbN7QDqFtyowxC7myhCnG1D8e2+jWcpoRcr+kAc=
+			dFsT4Rbwc2W6xoto+PY3dMeYBLNQ0SppHJQjEm0M5GI=
 			</data>
 		</dict>
 		<key>Headers/SVSContentData.h</key>

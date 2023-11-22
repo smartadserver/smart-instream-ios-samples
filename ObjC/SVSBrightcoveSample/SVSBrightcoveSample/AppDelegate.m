@@ -79,16 +79,9 @@
     
     ////////////////////////////////////////////
     // SDK - User Tracking
-    // OPTIONAL
-    // By default the SDK will use the IDFA of the device to identify the user.
-    // If IDFA is not available due to user's privacy settings, SDK will generate a transientID, renewed every 24h.
-    // This transientID will not be used for tracking but only for capping purposes.
     ////////////////////////////////////////////
     
-    // You can deactivate the transientID if you prefer:
-    //[SVSConfiguration sharedInstance].transientIDEnabled = NO;
-    
-    // You can also set a custom identifier to identify the user, for example to match one of your DMP segments.
+    // You can set a custom identifier to identify the user, for example to match one of your DMP segments.
     // If you do so, the IDFA will not be passed to the ad server and the user will be only identified by
     // your custom identifier.
     //[SVSConfiguration sharedInstance].customIdentifier = @"CustomIdentifier";

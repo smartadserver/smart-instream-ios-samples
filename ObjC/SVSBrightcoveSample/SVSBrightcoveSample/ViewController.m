@@ -328,9 +328,6 @@
     // Called when the SVSAdManager failed to start for some reason.
     // Most of the time it will be because your playheadAdapter is not ready…
     // See error description for more info.
-    
-    // You should start your content player because no ad will be played
-    [self.playbackController play];
 }
 
 #pragma mark - SVSAdManagerDelegate - AdBreak informations
@@ -385,6 +382,9 @@
      This means that if you allow you content player to enter/exit fullscreen you have to modify the container view frame || bounds || superview || player state…
      Once you modified the container view size or status, gently let the SVSAdManager know about it by setting the new state of the content player through the contentPlayerIsFullscreen: method of SVSAdManager
      */
+    
+    // Updating the content player state
+    [adManager contentPlayerIsFullscreen:YES];
 }
 
 
@@ -392,6 +392,9 @@
     // Called when the exit fullscreen button of an Ad is clicked by the user.
     // Adapt your UI to properly react to this user action: you should resize your container view so it goes back to its original size.
     [self.playerView performScreenTransitionWithScreenMode:BCOVPUIScreenModeNormal];
+    
+    // Updating the content player state
+    [adManager contentPlayerIsFullscreen:NO];
 }
 
 

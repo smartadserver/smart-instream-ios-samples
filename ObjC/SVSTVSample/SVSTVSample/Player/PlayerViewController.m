@@ -252,9 +252,6 @@
     // Called when the SVSAdManager failed to start for some reason.
     // Most of the time it will be because your playheadAdapter is not ready…
     // See error description for more info.
-    
-    // You should start your content player because no ad will be played
-    [self.player play];
 }
 
 #pragma mark - Smart Instream SDK - <SVSAdManagerDelegate> - AdBreak informations
