@@ -6,11 +6,11 @@
 	<dict>
 		<key>Frameworks/SCSCoreKit.framework/Info.plist</key>
 		<data>
-		HJz1SZ46UVXnHcwo6mkVox5J/KA=
+		rKdmp+uoz5GJZIjyuZK9hldC6ws=
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
 		<data>
-		5tqj6M11kAGb0p1yI1keJuZJYTk=
+		hPeAvU7zwcsEbGckR6abY+OPP08=
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SCSCoreKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gtuUYWxEBB+cLRsyeZhXFb0udPs=
+		tgj7Tg2GPSl1sNe526VnCIfX0w0=
 		</data>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/SVSAdPlayerConfigurationPublisherOptions.h</key>
 		<data>
-		PGQxZ2OceHbQZAjX92F83AlMg3Y=
+		vMbBPJK4ENUNGhE9S2CG29JAweM=
 		</data>
 		<key>Headers/SVSAdPlayerConfigurationRTBOptions.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JASS1DgTdi/mmN/wjES6AvKkchc=
+		dr38fSig93qq0AATEvfhybSDiJA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -257,14 +257,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SCvAYuBeF3krg+wAPhlx4lE7TKfqKxK/JiDfslN/Kz0=
+			rinOcqw0PM8HTCCuJUWATbMX29aw4BKy7CMTA2IgqH4=
 			</data>
 		</dict>
 		<key>Frameworks/SCSCoreKit.framework/SCSCoreKit</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w0DBYtrinybEr285dC6969ZsCXUXDxT4C9BkWfeQAlY=
+			BWGaOGuvyMI9/H21vzOIvcj3QNGycN91zIm4o8eJqkc=
 			</data>
 		</dict>
 		<key>Frameworks/SCSCoreKit.framework/Smart-Core-SDK.podspec</key>
@@ -285,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZijkM10aRwRkGEll/Umt+c2wYcbL6DOH8mnzpRbTVc=
+			6lREy6pd5F64MVA8wb8oiIrba+gqCyCoXLX7PPJDpIM=
 			</data>
 		</dict>
 		<key>Headers/SVSAVPlayerPlayHeadAdapter.h</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xu0hOwe3NNbnNF1Zhq1mMM40n8Cpd5c3WHRzY+GKiio=
+			wm9JFjJJhXQaGW/njthXXc+65FabJFDR7+8H5I/FUsI=
 			</data>
 		</dict>
 		<key>Headers/SVSAdPlayerConfigurationRTBOptions.h</key>

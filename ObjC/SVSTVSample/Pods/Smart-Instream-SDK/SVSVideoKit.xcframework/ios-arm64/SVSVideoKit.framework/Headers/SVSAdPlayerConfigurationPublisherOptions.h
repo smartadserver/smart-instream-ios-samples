@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Time allowed for stall. If the stall timeout is reached before the ad can resume, the AdBreak playback is cancelled and the content player is resumed.
 
- Default: 30s
+ Default: 10s
 */
 @property (nonatomic, assign) NSTimeInterval stallTimeout;
 
