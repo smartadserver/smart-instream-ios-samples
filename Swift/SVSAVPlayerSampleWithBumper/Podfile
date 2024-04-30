@@ -5,6 +5,6 @@ target 'SVSAVPlayerSampleWithBumper' do
   use_frameworks!
   platform :ios, '12.0'
 
-  pod 'Smart-Instream-SDK', '~> 7.24.2'
+  pod 'Smart-Instream-SDK', '~> 7.24.3'
 
 end
