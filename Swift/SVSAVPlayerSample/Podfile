@@ -5,6 +5,6 @@ target 'SVSAVPlayerSample' do
   use_frameworks!
   platform :ios, '12.0'
 
-  pod 'Smart-Instream-SDK', '~> 7.24.3'
+  pod 'Smart-Instream-SDK', '~> 7.25.0'
 
 end
