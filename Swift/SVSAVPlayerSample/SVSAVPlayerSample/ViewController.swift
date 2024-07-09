@@ -297,6 +297,10 @@ class ViewController: UIViewController, SVSAdManagerDelegate, PlayerViewControll
         playerViewController?.adContainerView.isHidden = false
     }
     
+    func adManager(_ adManager: SVSAdManager, didStartAdWith adInfo: SVSAdInfo) {
+        // Called when an ad has started. Will be called for every ads of an ad break.
+    }
+    
     func adManager(_ adManager: SVSAdManager, didFinish adBreakType: SVSAdBreakType, numberOfAds numberOfAdsPlayed: Int, duration: TimeInterval, error: Error?) {
         // Called when an AdBreak finishes.
         

@@ -23,6 +23,9 @@
 // Ad Placement
 #import <SVSVideoKit/SVSAdPlacement.h>
 
+// Ad Info
+#import <SVSVideoKit/SVSAdInfo.h>
+
 // Ad Rules
 #import <SVSVideoKit/SVSAdRules.h>
 #import <SVSVideoKit/SVSAdRule.h>

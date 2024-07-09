@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class SVSAdManager;
+@class SVSAdInfo;
 
 /**
  Delegate protocol for SVSAdManager instances.
@@ -67,6 +68,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param cuePoints A NSArray containing SVSCuePoint instances. Each SCSVideoCuePoint instance represent the position of an adbreak.
  */
 - (void)adManager:(SVSAdManager *)adManager didGenerateCuePoints:(NSArray<SVSCuePoint *> *)cuePoints;
+
+#pragma mark - Ad Informations
+
+/**
+ Called when an ad manager instance did start an ad. Can be useful to retrieve information about the played ad.
+ 
+ @param adManager The SVSAdManager instance that starts playing an ad.
+ @param adInfo The SVSAdInfo instance corresponding to the started ad.
+ */
+- (void)adManager:(SVSAdManager *)adManager didStartAdWithInfo:(SVSAdInfo *)adInfo;
 
 #pragma mark - Playback
 

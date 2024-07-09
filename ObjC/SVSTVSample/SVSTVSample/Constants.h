@@ -6,7 +6,7 @@
 //  Copyright © 2018 Smart AdServer. All rights reserved.
 //
 
-#define ContentVideoURL                 @"http://ns.sascdn.com/mobilesdk/samples/videos/BigBuckBunnyTrailer_360p.mp4"
+#define ContentVideoURL                 @"https://ns.sascdn.com/mobilesdk/samples/videos/BigBuckBunnyTrailer_360p.mp4"
 
 #define SmartInstreamSDK_SiteID         213040
 #define SmartInstreamSDK_PageID         901271

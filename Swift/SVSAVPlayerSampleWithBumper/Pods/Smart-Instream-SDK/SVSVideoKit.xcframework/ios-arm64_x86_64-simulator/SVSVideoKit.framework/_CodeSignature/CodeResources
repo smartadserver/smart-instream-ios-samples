@@ -8,13 +8,17 @@
 		<data>
 		FoBw6gPHefcgXlDkPIJoUBqmtQw=
 		</data>
+		<key>Headers/SVSAdInfo.h</key>
+		<data>
+		WlXoiS82PX1TEeydDncNexHdTr0=
+		</data>
 		<key>Headers/SVSAdManager.h</key>
 		<data>
 		9aXG3FJQSk9IG7PcJVitGp6S2tc=
 		</data>
 		<key>Headers/SVSAdManagerDelegate.h</key>
 		<data>
-		NYNygZgk6zHsx1VUcDjvYU6h6Tk=
+		liYBDRwCJ51QE729Ongc56BvtMs=
 		</data>
 		<key>Headers/SVSAdPlacement.h</key>
 		<data>
@@ -78,11 +82,11 @@
 		</data>
 		<key>Headers/SVSVideoKit.h</key>
 		<data>
-		GLmNtG5rJlodIwZlKXtWN0Xttbk=
+		YDi/jHgPLqavDecloqei3tk7M0s=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dBeZXpClkJClqK4xClq6JPyEaEk=
+		1Qkig5LF3rpr/6VNLRXyOCZ2YJI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -240,6 +244,13 @@
 			4aiK8+Jdm7wbs3k4aqX1KtFpcQ0pYBXAKMhoL4pYrZo=
 			</data>
 		</dict>
+		<key>Headers/SVSAdInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kS8FX0F/8l/MOBpyO4MTYpszq+fOhqAwnm/5JyMox28=
+			</data>
+		</dict>
 		<key>Headers/SVSAdManager.h</key>
 		<dict>
 			<key>hash2</key>
@@ -251,7 +262,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SfGrvDBYmxQz72jpUZuQtu8ixBN4qEGNlEvWwQil9rg=
+			PPtLcpbrZPA24+CWhL4QwbFo40sdr8oy6iiGLE3ZIO8=
 			</data>
 		</dict>
 		<key>Headers/SVSAdPlacement.h</key>
@@ -363,7 +374,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3AHErXzS9r1iSdGW0gsRb/E8i0uF30uRg445+Nv1mTQ=
+			WW20C7LBK9Z0iecg578BoEeXevb0021XbzmPL5UZxVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

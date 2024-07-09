@@ -266,6 +266,11 @@
 }
 
 
+- (void)adManager:(SVSAdManager *)adManager didStartAdWithInfo:(SVSAdInfo *)adInfo {
+    // Called when an ad has started. Will be called for every ads of an ad break.
+}
+
+
 - (void)adManager:(SVSAdManager *)adManager didFinishAdBreak:(SVSAdBreakType)adBreakType numberOfAds:(NSInteger)numberOfAdsPlayed duration:(NSTimeInterval)duration error:(NSError *)error {
     // Called when an AdBreak finishes.
 }
