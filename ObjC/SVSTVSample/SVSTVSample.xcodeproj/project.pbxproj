@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2551B3BF79B996AD2B0936C1 /* Pods_SVSTVSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */; };
+		7E9F34942F27C8A500216469 /* SVSVideoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9F34932F27C8A500216469 /* SVSVideoKit */; };
 		E93C4E1E207B92280022598B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E93C4E1D207B92280022598B /* AppDelegate.m */; };
 		E93C4E21207B92280022598B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93C4E20207B92280022598B /* ViewController.m */; };
 		E93C4E24207B92280022598B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93C4E22207B92280022598B /* Main.storyboard */; };
@@ -30,9 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5658B7B9527876CDB23128AC /* Pods-SVSTVSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSTVSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.release.xcconfig"; sourceTree = "<group>"; };
-		99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVSTVSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94FD06A485079281283F7A1 /* Pods-SVSTVSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSTVSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E93C4E19207B92280022598B /* SVSTVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVSTVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93C4E1C207B92280022598B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E93C4E1D207B92280022598B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,37 +49,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2551B3BF79B996AD2B0936C1 /* Pods_SVSTVSample.framework in Frameworks */,
+				7E9F34942F27C8A500216469 /* SVSVideoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23B3D67409D995F5FA9A2987 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99BDE76048969825DE5F259A /* Pods_SVSTVSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		57947BF096A004E9152A8001 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B94FD06A485079281283F7A1 /* Pods-SVSTVSample.debug.xcconfig */,
-				5658B7B9527876CDB23128AC /* Pods-SVSTVSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		E93C4E10207B92280022598B = {
 			isa = PBXGroup;
 			children = (
 				E93C4E1B207B92280022598B /* SVSTVSample */,
 				E93C4E1A207B92280022598B /* Products */,
-				57947BF096A004E9152A8001 /* Pods */,
-				23B3D67409D995F5FA9A2987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,12 +105,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E93C4E2C207B92290022598B /* Build configuration list for PBXNativeTarget "SVSTVSample" */;
 			buildPhases = (
-				6F2F416E4DDD0E1AEDA75F0C /* [CP] Check Pods Manifest.lock */,
 				E93C4E15207B92280022598B /* Sources */,
 				E93C4E16207B92280022598B /* Frameworks */,
 				E93C4E17207B92280022598B /* Resources */,
 				E93C4E3A207BA5130022598B /* Embed Frameworks */,
-				58249381AAEE7D37EFA9B9F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +142,9 @@
 				Base,
 			);
 			mainGroup = E93C4E10207B92280022598B;
+			packageReferences = (
+				7E9F34922F27C8A500216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */,
+			);
 			productRefGroup = E93C4E1A207B92280022598B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,44 +165,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		58249381AAEE7D37EFA9B9F6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SVSTVSample/Pods-SVSTVSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F2F416E4DDD0E1AEDA75F0C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SVSTVSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E93C4E15207B92280022598B /* Sources */ = {
@@ -361,7 +302,6 @@
 		};
 		E93C4E2D207B92290022598B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B94FD06A485079281283F7A1 /* Pods-SVSTVSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -385,7 +325,6 @@
 		};
 		E93C4E2E207B92290022598B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5658B7B9527876CDB23128AC /* Pods-SVSTVSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -429,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E9F34922F27C8A500216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartadserver/swift-package-manager-instream-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 7.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E9F34932F27C8A500216469 /* SVSVideoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9F34922F27C8A500216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */;
+			productName = SVSVideoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E93C4E11207B92280022598B /* Project object */;
 }

@@ -4,11 +4,11 @@ This repository contains some samples demonstrating how to integrate the _Smart 
 
 ## Requirements
 
-* A _Smart AdServer_ account
+* A _Equativ_ account
 * _Xcode 15.0_ or higher
 * _iOS 13.0_ or higher
 * _tvOS 13.0_ or higher
-* Cocoapods or Swift Package Manager
+* Swift Package Manager
 
 ## Installation
 

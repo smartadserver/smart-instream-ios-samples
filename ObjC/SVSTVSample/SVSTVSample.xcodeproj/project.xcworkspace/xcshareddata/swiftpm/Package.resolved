@@ -1,0 +1,15 @@
+{
+  "originHash" : "4d9a873d0a3728bc226e9aadec2df6b5a60379ca754ae4e06ad3e7589122d33d",
+  "pins" : [
+    {
+      "identity" : "swift-package-manager-instream-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/smartadserver/swift-package-manager-instream-sdk",
+      "state" : {
+        "revision" : "bfc2d52c879f5c75ae5604d21f9ebefc002d8b46",
+        "version" : "7.26.0"
+      }
+    }
+  ],
+  "version" : 3
+}

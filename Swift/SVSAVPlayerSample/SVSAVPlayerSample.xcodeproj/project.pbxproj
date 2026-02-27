@@ -3,24 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11379D23F6869ABA8D39BEDF /* Pods_SVSAVPlayerSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC7619EA893B5AAE97F939 /* Pods_SVSAVPlayerSample.framework */; };
 		7E85EA06231683C3000AA298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA05231683C3000AA298 /* AppDelegate.swift */; };
 		7E85EA0D231683C3000AA298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA0B231683C3000AA298 /* Main.storyboard */; };
 		7E85EA0F231683C4000AA298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA0E231683C4000AA298 /* Assets.xcassets */; };
 		7E85EA12231683C4000AA298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E85EA10231683C4000AA298 /* LaunchScreen.storyboard */; };
 		7E85EA1A23168558000AA298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E85EA1923168558000AA298 /* Constants.swift */; };
+		7E9F34972F27C93B00216469 /* SVSVideoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9F34962F27C93B00216469 /* SVSVideoKit */; };
 		F96E4947296F0AF500A1689C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E4946296F0AF500A1689C /* PlayerViewController.swift */; };
 		F96E4949297042CD00A1689C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E4948297042CD00A1689C /* ViewController.swift */; };
 		F97432402978453B0070D74C /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974323F2978453B0070D74C /* VideoContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48CC2734E46CAB76AAB5D703 /* Pods-SVSAVPlayerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSAVPlayerSample.release.xcconfig"; path = "Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample.release.xcconfig"; sourceTree = "<group>"; };
-		6FBC302EBD0DB5EC190A95D8 /* Pods-SVSAVPlayerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVSAVPlayerSample.debug.xcconfig"; path = "Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample.debug.xcconfig"; sourceTree = "<group>"; };
 		7E85EA02231683C3000AA298 /* SVSAVPlayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVSAVPlayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E85EA05231683C3000AA298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E85EA0C231683C3000AA298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +26,6 @@
 		7E85EA11231683C4000AA298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E85EA13231683C4000AA298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E85EA1923168558000AA298 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C9EC7619EA893B5AAE97F939 /* Pods_SVSAVPlayerSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVSAVPlayerSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96E4946296F0AF500A1689C /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		F96E4948297042CD00A1689C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F974323F2978453B0070D74C /* VideoContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
@@ -39,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11379D23F6869ABA8D39BEDF /* Pods_SVSAVPlayerSample.framework in Frameworks */,
+				7E9F34972F27C93B00216469 /* SVSVideoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +48,6 @@
 			children = (
 				7E85EA04231683C3000AA298 /* SVSAVPlayerSample */,
 				7E85EA03231683C3000AA298 /* Products */,
-				F4B12C56B6B87D96B3806411 /* Pods */,
-				860EC93ABDFCB0693C9C67AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,23 +74,6 @@
 			path = SVSAVPlayerSample;
 			sourceTree = "<group>";
 		};
-		860EC93ABDFCB0693C9C67AB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9EC7619EA893B5AAE97F939 /* Pods_SVSAVPlayerSample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F4B12C56B6B87D96B3806411 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6FBC302EBD0DB5EC190A95D8 /* Pods-SVSAVPlayerSample.debug.xcconfig */,
-				48CC2734E46CAB76AAB5D703 /* Pods-SVSAVPlayerSample.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F9743241297845490070D74C /* Player */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +90,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E85EA16231683C4000AA298 /* Build configuration list for PBXNativeTarget "SVSAVPlayerSample" */;
 			buildPhases = (
-				CBBB3D0D1992A6338057A6DE /* [CP] Check Pods Manifest.lock */,
 				7E85E9FE231683C3000AA298 /* Sources */,
 				7E85E9FF231683C3000AA298 /* Frameworks */,
 				7E85EA00231683C3000AA298 /* Resources */,
-				6B91DAC209FF80F927F0BF32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 7E85E9F9231683C3000AA298;
+			packageReferences = (
+				7E9F34952F27C93B00216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */,
+			);
 			productRefGroup = 7E85EA03231683C3000AA298 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,48 +151,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6B91DAC209FF80F927F0BF32 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SVSAVPlayerSample/Pods-SVSAVPlayerSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBBB3D0D1992A6338057A6DE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SVSAVPlayerSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E85E9FE231683C3000AA298 /* Sources */ = {
@@ -368,7 +305,6 @@
 		};
 		7E85EA17231683C4000AA298 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FBC302EBD0DB5EC190A95D8 /* Pods-SVSAVPlayerSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,7 +324,6 @@
 		};
 		7E85EA18231683C4000AA298 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48CC2734E46CAB76AAB5D703 /* Pods-SVSAVPlayerSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -428,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E9F34952F27C93B00216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartadserver/swift-package-manager-instream-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 7.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E9F34962F27C93B00216469 /* SVSVideoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9F34952F27C93B00216469 /* XCRemoteSwiftPackageReference "swift-package-manager-instream-sdk" */;
+			productName = SVSVideoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E85E9FA231683C3000AA298 /* Project object */;
 }
